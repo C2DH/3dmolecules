@@ -1,8 +1,5 @@
 import './MenuFullPage.css'
 import RobeFrancaiseContent from '../Data/robeFrancaise.json'
-import DoubletContent from '../Data/doublet.json'
-import ArmorContent from '../Data/armor.json'
-import GreekStyleDressContent from '../Data/greekStyleDress.json'
 import { NavLink } from 'react-router-dom'
 import { useSpring, a } from '@react-spring/web'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
@@ -138,28 +135,12 @@ const MenuFullPage = () => {
     >
       <menu className=" flex">
         <ul className="flex flex-col items-center">
+          {/* <li>
+            <NavLink to="/test">Test</NavLink>
+          </li> */}
           <li>
-            <NavLink to="/">Introduction</NavLink>
-          </li>
-          <li>
-            {pathnameUpdated !== '/robe' ? <NavLink to="/robe">A luxurious Robe à la francaise</NavLink> : null}
-            {pathnameUpdated === '/robe' ? <Navigation data={RobeFrancaiseContent} /> : null}
-          </li>
-          <li>
-            {pathnameUpdated !== '/armor' ? (
-              <NavLink to="/armor">A plate armor for Elector Christian I. of Saxony</NavLink>
-            ) : null}
-            {pathnameUpdated === '/armor' ? <Navigation data={ArmorContent} /> : null}
-          </li>
-          <li>
-            {pathnameUpdated !== '/doublet' ? <NavLink to="/doublet">The Doublet in the 17th century</NavLink> : null}
-            {pathnameUpdated === '/doublet' ? <Navigation data={DoubletContent} /> : null}
-          </li>
-          <li>
-            {pathnameUpdated !== '/greek_style_dress' ? (
-              <NavLink to="/greek_style_dress">Greek Style Dress</NavLink>
-            ) : null}
-            {pathnameUpdated === '/greek_style_dress' ? <Navigation data={GreekStyleDressContent} /> : null}
+            {pathnameUpdated !== '/test' ? <NavLink to="/test">A luxurious Robe à la francaise</NavLink> : null}
+            {pathnameUpdated === '/test' ? <Navigation data={RobeFrancaiseContent} /> : null}
           </li>
         </ul>
       </menu>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --dark: #1b1a1d;
+  --dark: #0e0c12;
   --white: #d6d2cf;
   --accent: #acacac;
   --active: #fd5982;
@@ -30,7 +30,7 @@ body,
   min-height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'satoshi';
+  font-family: 'ClashDisplay-Variable';
   color: var(--white);
 }
 
@@ -42,22 +42,27 @@ body {
   z-index: var(--z-canvas);
 }
 
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0;
+*
+* available axes:
+'wght' (range from 200.0 to 700.0
+*/
 @font-face {
-  font-family: 'stardom';
-  src: url('./fonts/Stardom-Regular.ttf') format(truetype);
-  font-weight: normal;
-  font-size: normal;
-}
-
-@font-face {
-  font-family: 'satoshi';
-  src: url('./fonts/Satoshi-Variable.ttf') format(truetype);
-  font-weight: 100 1000;
-  font-size: normal;
+  font-family: 'ClashDisplay-Variable';
+  src:
+    url('./fonts/ClashDisplay-Variable.woff2') format('woff2'),
+    url('./fonts/ClashDisplay-Variable.woff') format('woff'),
+    url('./fonts/ClashDisplay-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
 }
 
 h1 {
-  font-family: 'stardom';
+  font-family: 'ClashDisplay-Variable';
   font-size: 4.375rem;
   line-height: 5rem;
   text-shadow: 2px 2px 10px rgba(var(--dark-rgb), 0.7);
@@ -78,13 +83,13 @@ h1 {
 }
 
 h2 {
-  font-family: 'stardom';
+  font-family: 'ClashDisplay-Variable';
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
 p {
-  font-family: 'satoshi';
+  font-family: 'ClashDisplay-Variable';
   font-size: 1.2rem;
 }
 

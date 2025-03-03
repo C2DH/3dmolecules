@@ -9,13 +9,10 @@ import ContentManager from './components/ContentManager'
 import ViewportManager from './components/ViewportManager'
 import MenuFullPage from './Ui/MenuFullPage'
 import RobeFrancaisePage from './Pages/RobeFrancaisePage'
-import GreekStyleDressPage from './Pages/GreekStyleDressPage'
 import { useLocation } from 'react-router-dom'
-import DoubletPage from './Pages/DoubletPage'
 import ModalWindow from './Ui/ModalWindow'
 import Images from './Data/images.json'
 import { AnimatePresence } from 'framer-motion'
-import ArmorPage from './Pages/ArmorPage'
 import IntroPage from './Pages/IntroPage'
 import Preloader from './Ui/Preloader'
 import { useEffect, useRef } from 'react'
@@ -69,10 +66,7 @@ function App() {
       <AnimatePresence mode="wait">
         <Routes location={location} key={pathname} pathname={pathname}>
           <Route path="/" element={<IntroPage pathname={pathname} />}></Route>
-          <Route path="/robe" element={<RobeFrancaisePage pathname={pathname} scrollToTopEf={scrollToTopEf} />}></Route>
-          <Route path="/armor" element={<ArmorPage pathname={pathname} />}></Route>
-          <Route path="/doublet" element={<DoubletPage pathname={pathname} />}></Route>
-          <Route path="/greek_style_dress" element={<GreekStyleDressPage pathname={pathname} />}></Route>
+          <Route path="/test" element={<RobeFrancaisePage pathname={pathname} scrollToTopEf={scrollToTopEf} />}></Route>
         </Routes>
         {pathname === '/' ? null : (
           <ContentManager openModal={openModal} isModalVisible={isModalVisible} key="sss-robe" />

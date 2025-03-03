@@ -12,7 +12,7 @@ import ScrollDownIndicator from '../Ui/ScrollDownIndicator'
 // import { modalVisible } from '../GlobalState'
 // import { useAtom } from 'jotai'
 
-const RobexRoute = '/robe'
+const RobexRoute = '/test'
 const ArmorRoute = '/armor'
 const DoubletRoute = '/doublet'
 const GreekStyleDressRoute = '/greek_style_dress'

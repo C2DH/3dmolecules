@@ -11,9 +11,7 @@ import { val } from '@theatre/core'
 import { useMediaQuery } from 'react-responsive'
 import RobeFrancaiseModel from '../modelComps/RobeFrancaiseModel'
 import { editable as e } from '@theatre/r3f'
-import * as THREE from 'three'
 import Transition from '../Ui/Transition'
-import EffectComposerComp from '../Ui/EffectComposerComp'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 const RobeFrancaise = () => {
@@ -54,12 +52,12 @@ const RobeFrancaise = () => {
 
   return (
     <>
-      <ambientLight intensity={1} />
-      <Environment preset="studio" environmentIntensity={0.2} environmentRotation={[2.5, 1.3, 1.3]} />
+      <ambientLight intensity={2} />
+      {/* <Environment preset="studio" environmentIntensity={0.2} environmentRotation={[2.5, 1.3, 1.3]} /> */}
       <PerspectiveCamera theatreKey="Camera" makeDefault position={[0, 0.2, 8]} fov={45} near={0.1} far={70} />
-      <group position={isBigScreen ? [0, -1.4, 0] : [-1, -1.6, 0]} scale={isBigScreen ? 1 : 1}>
+      <group position={isBigScreen ? [0, 0.3, 0] : [-1, -1.6, 0]} scale={isBigScreen ? 1 : 1}>
         <e.group theatreKey="Robe">
-          <RobeFrancaiseModel position={[0, 0, 0]} rotation={0} />
+          <RobeFrancaiseModel />
         </e.group>
       </group>
     </>
@@ -81,15 +79,7 @@ const RobeFrancaisePage = ({ pathname }) => {
           <meta name="keywords" content="Robe, UCLAB, C²DH" />
         </Helmet>
       </HelmetProvider>
-      <Canvas
-        gl={{
-          physicallyCorrectLights: true,
-          preserveDrawingBuffer: true,
-          antialias: false,
-          toneMapping: THREE.LinearToneMapping
-        }}
-      >
-        <EffectComposerComp />
+      <Canvas gl={{ pixelRatio: Math.min(window.devicePixelRatio, 2), antialias: true }}>
         <SheetProvider sheet={sheet}>
           <RobeFrancaise pathname={pathname} />
         </SheetProvider>
