@@ -3,13 +3,13 @@ import { watchLoadedAtom } from '../GlobalState'
 import { useAtom } from 'jotai'
 import { Sparkles } from '@react-three/drei'
 import { forwardRef, useEffect, useMemo } from 'react'
-import { EffectComposer, Bloom } from '@react-three/postprocessing'
+import { EffectComposer, Bloom, DepthOfField } from '@react-three/postprocessing'
 import * as THREE from 'three'
 import { getSafeBasePathUrl } from '../utils'
 import vertexShader from '../shaders/TrifluoroaceticAcid6422/vertex.glsl?raw'
 import fragmentShader from '../shaders/TrifluoroaceticAcid6422/fragment.glsl?raw'
 
-const modelUrl = getSafeBasePathUrl('/gltf/TrifluoroaceticAcid6422f.glb')
+const modelUrl = getSafeBasePathUrl('/gltf/Caffeine.glb')
 
 const RobeFrancaiseModel = forwardRef(({ position, ...props }, ref) => {
   const [, setWatchLoadedAtom] = useAtom(watchLoadedAtom)
@@ -28,6 +28,10 @@ const RobeFrancaiseModel = forwardRef(({ position, ...props }, ref) => {
         vertexShader,
         fragmentShader,
         uniforms: {
+          fogColor: { value: new THREE.Color(0x000000) }, // Black fog
+          fogNear: { value: 1 }, // Fog starts at 5 units
+          fogFar: { value: 2 }, // Fog ends at 15 units
+          cameraPosition: { value: new THREE.Vector3() }, // Updated automatically
           uSize: { value: 0.15 }, // Default point size
           uColor: { value: new THREE.Color('') }, // Default color (green)
           uAlpha: { value: 1.0 }, // Default alpha (fully opaque)
@@ -64,29 +68,33 @@ const RobeFrancaiseModel = forwardRef(({ position, ...props }, ref) => {
     return pointsGeometry
   }
 
-  const customPhysicalMaterial = useMemo(
-    () =>
-      new THREE.MeshPhysicalMaterial({
-        color: new THREE.Color(0x000000), // Default color (white)
-        metalness: 0.1, // Default metalness
-        roughness: 0.3 // Default roughness
-      }),
-    []
-  )
+  // const customPhysicalMaterial = useMemo(
+  //   () =>
+  //     new THREE.MeshPhysicalMaterial({
+  //       color: new THREE.Color(0x000000), // Default color (white)
+  //       metalness: 0.1, // Default metalness
+  //       roughness: 0.3 // Default roughness
+  //     }),
+  //   []
+  // )
 
   // Define colors for atomsPoints
   const fluorine = '#C5F097' // Green
   const oxygen = '#FF3F3F' // Red
-  const carbon = '#C5C5C5' // White
-  const atomsColors = [fluorine, oxygen, carbon] // Green, Red, White
+  const carbon = '#C5C5C5' // Grey
+  const nitrogen = '#7697FC' // Blue
+  const hydrogen = '#FFFFFF' // White
+  const atomsColors = [fluorine, oxygen, carbon, nitrogen, hydrogen] // Green, Red, White
 
   // Create points geometries for each mesh with specific colors
-  const atoms1Points = createPointsGeometry(nodes.atoms_1.geometry, atomsColors[0])
-  const atoms2Points = createPointsGeometry(nodes.atoms_2.geometry, atomsColors[1])
-  const atoms3Points = createPointsGeometry(nodes.atoms_3.geometry, atomsColors[2])
-  const sticks1Points = createPointsGeometry(nodes.sticks_1.geometry, atomsColors[2])
-  const sticks2Points = createPointsGeometry(nodes.sticks_2.geometry, atomsColors[0])
-  const sticks3Points = createPointsGeometry(nodes.sticks_3.geometry, atomsColors[1])
+  const atoms1Points = createPointsGeometry(nodes.atoms_1.geometry, atomsColors[1])
+  const atoms2Points = createPointsGeometry(nodes.atoms_2.geometry, atomsColors[2])
+  const atoms3Points = createPointsGeometry(nodes.atoms_3.geometry, atomsColors[3])
+  const atoms4Points = createPointsGeometry(nodes.atoms_4.geometry, atomsColors[4])
+  const sticks1Points = createPointsGeometry(nodes.sticks_1.geometry, atomsColors[1])
+  const sticks2Points = createPointsGeometry(nodes.sticks_2.geometry, atomsColors[2])
+  const sticks3Points = createPointsGeometry(nodes.sticks_3.geometry, atomsColors[3])
+  const sticks4Points = createPointsGeometry(nodes.sticks_4.geometry, atomsColors[4])
 
   const stickMaterial = useMemo(() => {
     const mat = customShaderMaterial.clone()
@@ -96,27 +104,29 @@ const RobeFrancaiseModel = forwardRef(({ position, ...props }, ref) => {
 
   return (
     <>
-      <group {...props} dispose={null} position={position} ref={ref} scale={1}>
+      <group {...props} dispose={null} position={position} rotation={[0.4, 0, 0]} ref={ref} scale={1}>
         <points geometry={atoms1Points} material={customShaderMaterial} />
         <points geometry={atoms2Points} material={customShaderMaterial} />
         <points geometry={atoms3Points} material={customShaderMaterial} />
+        <points geometry={atoms4Points} material={customShaderMaterial} />
         <points geometry={sticks1Points} material={stickMaterial} />
         <points geometry={sticks2Points} material={stickMaterial} />
         <points geometry={sticks3Points} material={stickMaterial} />
-        {/* <mesh geometry={nodes.atoms_1.geometry} material={customPhysicalMaterial} />
-        <mesh geometry={nodes.atoms_2.geometry} material={customPhysicalMaterial} />
-        <mesh geometry={nodes.atoms_3.geometry} material={customPhysicalMaterial} />
-        <mesh geometry={nodes.sticks_1.geometry} material={customPhysicalMaterial} />
-        <mesh geometry={nodes.sticks_2.geometry} material={customPhysicalMaterial} />
-        <mesh geometry={nodes.sticks_3.geometry} material={customPhysicalMaterial} /> */}
+        <points geometry={sticks4Points} material={stickMaterial} />
       </group>
-      <Sparkles count={60} size={1} scale={4} speed={0.1} opacity={0.5} />
+      <Sparkles count={60} size={1} scale={5} speed={0.1} opacity={0.3} />
       <EffectComposer>
         <Bloom
-          intensity={1} // Adjust the intensity of the glow
-          kernelSize={2} // Adjust the size of the glow
+          intensity={1.5} // Adjust the intensity of the glow
+          kernelSize={3} // Adjust the size of the glow
           luminanceThreshold={0.01} // Adjust the threshold for what gets glowing
           luminanceSmoothing={0.01} // Adjust the smoothness of the glow
+        />
+        <DepthOfField
+          focusDistance={0} // Distance to the focus target
+          focalLength={0.6} // Strength of the blur
+          bokehScale={4} // Scale of the bokeh effect
+          height={480} // Optional: Height of the effect (can be adjusted)
         />
       </EffectComposer>
     </>

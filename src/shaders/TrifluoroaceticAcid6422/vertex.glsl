@@ -5,6 +5,8 @@ uniform float uTime; // Optional: For animations or time-based effects
 attribute float aScale; // Optional: Per-point scale factor
 attribute vec3 color; // Add color attribute
 
+
+varying vec3 vWorldPosition;
 varying vec3 vColor; // Pass color to the fragment shader
 
 void main() {
@@ -20,6 +22,8 @@ void main() {
     vec4 viewPosition = viewMatrix * modelPosition;
     vec4 projectedPosition = projectionMatrix * viewPosition;
     gl_Position = projectedPosition;
+
+    vWorldPosition = (modelMatrix * vec4(position, 1.0)).xyz;
 
     // Point size
     gl_PointSize = uSize * uSize * uResolution.y;
