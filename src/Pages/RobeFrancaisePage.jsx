@@ -55,7 +55,7 @@ const RobeFrancaise = () => {
       <ambientLight intensity={2} />
       {/* <Environment preset="studio" environmentIntensity={0.2} environmentRotation={[2.5, 1.3, 1.3]} /> */}
       <PerspectiveCamera theatreKey="Camera" makeDefault position={[0, 0.2, 8]} fov={45} near={0.1} far={70} />
-      <group position={isBigScreen ? [0, 0.3, 0] : [-1, -1.6, 0]} scale={isBigScreen ? 1 : 1}>
+      <group position={isBigScreen ? [0, 0.3, 0] : [-1.3, 0.3, 0]} scale={isBigScreen ? 1 : 0.8}>
         <e.group theatreKey="Robe">
           <RobeFrancaiseModel />
         </e.group>
