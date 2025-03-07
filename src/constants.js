@@ -1,22 +1,35 @@
-export const IndexRoute = {
-  pathname: '/robe',
+export const TrifluoroaceticAcidRoute = {
+  pathname: '/trifluoroacetic_acid',
   isSmoothScrollActive: true
 }
-export const ArmorsRoute = {
-  pathname: '/armor',
+export const CaffeineRoute = {
+  pathname: '/caffeine',
   isSmoothScrollActive: true
 }
-export const DoubletRoute = {
-  pathname: '/doublet',
+export const NicotineRoute = {
+  pathname: '/nicotine',
   isSmoothScrollActive: true
 }
-export const GreekStyleDressRoute = {
-  pathname: '/greek_style_dress',
+
+export const ClofenotanRoute = {
+  pathname: '/clofenotan',
   isSmoothScrollActive: true
 }
+
+export const BisphenolSRoute = {
+  pathname: '/bisphenol_s',
+  isSmoothScrollActive: true
+}
+
 export const IntroPage = {
   pathname: '/',
   isSmoothScrollActive: false
 }
 
-export const RoutesUsingButtons = [IndexRoute, ArmorsRoute, DoubletRoute, GreekStyleDressRoute]
+export const RoutesUsingButtons = [
+  TrifluoroaceticAcidRoute,
+  CaffeineRoute,
+  NicotineRoute,
+  ClofenotanRoute,
+  BisphenolSRoute
+]
