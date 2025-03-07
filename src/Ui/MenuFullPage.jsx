@@ -1,5 +1,9 @@
 import './MenuFullPage.css'
-import RobeFrancaiseContent from '../Data/robeFrancaise.json'
+import TrifluoroaceticAcidContent from '../Data/trifluoroaceticAcid.json'
+import CaffeineContent from '../Data/caffeine.json'
+import NicotineContent from '../Data/nicotine.json'
+import BisphenolSContent from '../Data/bisphenol.json'
+import ClofenotanContent from '../Data/clofenotan.json'
 import { NavLink } from 'react-router-dom'
 import { useSpring, a } from '@react-spring/web'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
@@ -139,8 +143,26 @@ const MenuFullPage = () => {
             <NavLink to="/test">Test</NavLink>
           </li> */}
           <li>
-            {pathnameUpdated !== '/test' ? <NavLink to="/test">A luxurious Robe à la francaise</NavLink> : null}
-            {pathnameUpdated === '/test' ? <Navigation data={RobeFrancaiseContent} /> : null}
+            {pathnameUpdated !== '/trifluoroacetic_acid' ? (
+              <NavLink to="/trifluoroacetic_acid">Trifluoroacetic Acid (TFA)</NavLink>
+            ) : null}
+            {pathnameUpdated === '/trifluoroacetic_acid' ? <Navigation data={TrifluoroaceticAcidContent} /> : null}
+          </li>
+          <li>
+            {pathnameUpdated !== '/caffeine' ? <NavLink to="/caffeine">Caffeine</NavLink> : null}
+            {pathnameUpdated === '/caffeine' ? <Navigation data={CaffeineContent} /> : null}
+          </li>
+          <li>
+            {pathnameUpdated !== '/nicotine' ? <NavLink to="/nicotine">Nicotine</NavLink> : null}
+            {pathnameUpdated === '/nicotine' ? <Navigation data={NicotineContent} /> : null}
+          </li>
+          <li>
+            {pathnameUpdated !== '/clofenotan' ? <NavLink to="/clofenotan">Clofenotan</NavLink> : null}
+            {pathnameUpdated === '/clofenotan' ? <Navigation data={ClofenotanContent} /> : null}
+          </li>
+          <li>
+            {pathnameUpdated !== '/bispheno_s' ? <NavLink to="/bispheno_s">Bispheno S</NavLink> : null}
+            {pathnameUpdated === '/bispheno_s' ? <Navigation data={BisphenolSContent} /> : null}
           </li>
         </ul>
       </menu>
