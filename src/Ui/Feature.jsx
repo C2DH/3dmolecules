@@ -42,10 +42,6 @@ const Feature = ({ title, description, ref, i, lastItem, contents, openModal, sc
       null
     }
   }
-
-  function flashionPlatform() {
-    window.open('https://refareader.fh-potsdam.de', '_blank')
-  }
   function onClickHandler(e) {
     if (e.target.hasAttribute('data-href')) {
       const href = e.target.getAttribute('data-href')
@@ -57,7 +53,7 @@ const Feature = ({ title, description, ref, i, lastItem, contents, openModal, sc
 
   return (
     <div
-      className={`Feature ${i === 0 ? null : `bg-black/50`} min-w-full relative text-left py-[1rem] md:py-[2rem] px-[1rem] md:px-[2rem]`}
+      className={`Feature ${i === 0 ? null : `bg-black/70`} min-w-full relative text-left py-[1rem] md:py-[2rem] px-[1rem] md:px-[2rem]`}
     >
       {i === 0 ? (
         <div className="flex items-center flex-col lg:flex-row">
@@ -97,22 +93,15 @@ const Feature = ({ title, description, ref, i, lastItem, contents, openModal, sc
             <Button
               onClick={findThisItem}
               className="mt-5 w-full md:w-auto sm:mr-0 md:mr-3 xl2:mr-3 pointer-events-auto"
-              value={contents?.links?.[0]?.linkValue ? contents.links[0].linkValue : 'Database'}
+              value={contents?.links?.[0]?.linkValue ? contents.links[0].linkValue : 'PubChemLite'}
             />
           ) : null}
           {contents?.links?.[1] ? (
             <Button
               onClick={findThisItemTwo}
-              className="mt-5 w-full md:w-auto sm:mr-0 md:mr-3 xl2:mr-3 pointer-events-auto"
-              value={contents?.links?.[1]?.linkValue ? contents.links[1].linkValue : 'Database'}
-            />
-          ) : null}
-          {pathname !== '/' ? (
-            <Button
-              onClick={flashionPlatform}
               type="secondary"
               className="mt-5 w-full md:w-auto sm:mr-0 md:mr-3 xl2:mr-3 pointer-events-auto"
-              value="Data visualization"
+              value={contents?.links?.[1]?.linkValue ? contents.links[1].linkValue : ' PubChem'}
             />
           ) : null}
         </>

@@ -1,7 +1,9 @@
-import RobeFrancaiseContent from '../Data/robeFrancaise.json'
-import ArmorContent from '../Data/armor.json'
-import GreekStyleDressContent from '../Data/greekStyleDress.json'
-import DoubletContent from '../Data/doublet.json'
+import TrifluoroaceticAcidContent from '../Data/trifluoroaceticAcid.json'
+import CaffeineContent from '../Data/caffeine.json'
+import NicotineContent from '../Data/nicotine.json'
+import BisphenolSContent from '../Data/bisphenol.json'
+import ClofenotanContent from '../Data/clofenotan.json'
+
 import { useLocation } from 'react-router-dom'
 import ScrollManager, { useScrollStore } from './ScrollManager'
 import Feature from '../Ui/Feature'
@@ -12,16 +14,18 @@ import ScrollDownIndicator from '../Ui/ScrollDownIndicator'
 // import { modalVisible } from '../GlobalState'
 // import { useAtom } from 'jotai'
 
-const RobexRoute = '/test'
-const ArmorRoute = '/armor'
-const DoubletRoute = '/doublet'
-const GreekStyleDressRoute = '/greek_style_dress'
+const TrifluoroaceticAcidRoute = '/trifluoroacetic_acid'
+const CaffeineRoute = '/caffeine'
+const NicotineRoute = '/nicotine'
+const ClofenotanRoute = '/clofenotan'
+const BisphenolSRoute = '/bisphenol_s'
 
 const AvailableContents = {
-  [RobexRoute]: RobeFrancaiseContent,
-  [ArmorRoute]: ArmorContent,
-  [DoubletRoute]: DoubletContent,
-  [GreekStyleDressRoute]: GreekStyleDressContent
+  [TrifluoroaceticAcidRoute]: TrifluoroaceticAcidContent,
+  [CaffeineRoute]: CaffeineContent,
+  [NicotineRoute]: NicotineContent,
+  [ClofenotanRoute]: ClofenotanContent,
+  [BisphenolSRoute]: BisphenolSContent
 }
 const ContentManager = ({ openModal, scrollToTop }) => {
   const bottomRef = useRef(null)

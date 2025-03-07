@@ -1,7 +1,7 @@
 import './Background.css'
 import { useEffect, useRef, useState } from 'react'
 import { useScrollStore } from '../components/ScrollManager'
-import RobeFrancaiseContent from '../Data/robeFrancaise.json'
+import CaffeineContent from '../Data/caffeine.json'
 import IntroContent from '../Data/introduction.json'
 const Background = ({ pathname, showFullscreenMode }) => {
   const ratioRef = useRef(useScrollStore.getState().scrollRatio)
@@ -9,12 +9,10 @@ const Background = ({ pathname, showFullscreenMode }) => {
   const totalPagesRef = useRef(0)
   const [backgroundClass, setBackgroundClass] = useState('')
 
-  const IntroRoute = '/test'
-  // const RobexRoute = '/robe'
+  const CaffeineRoute = '/caffeine'
 
   const AvailableContents = {
-    [IntroRoute]: RobeFrancaiseContent
-    // [RobexRoute]: RobeFrancaiseContent
+    [CaffeineRoute]: CaffeineContent
   }
   const contents = AvailableContents[pathname]
 
