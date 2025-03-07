@@ -1,0 +1,61 @@
+{
+  "links": [
+    { "externalUrl": "https://pubchemlite.lcsb.uni.lu/e/compound/6422" },
+    { "externalUrlTwo": "https://pubchem.ncbi.nlm.nih.gov/compound/6422" }
+  ],
+  "sections": [
+    {
+      "id": 1,
+      "title": "Trifluoroacetic acid (TFA)",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "title": "",
+      "description": "Trifluoroacetic acid or TFA is a very small molecule composed of a CF3 group connected to a carboxylic acid. It is one of the smallest 'forever chemicals' according to the new defintion. TFA is used in many manufacturing processes, but can also form from larger 'forever chemicals'."
+    },
+    {
+      "id": 3,
+      "title": "What are 'forever chemicals'?",
+      "description": "The term 'forever chemicals' is used to describe per- or polyfluoroalkyl substances or PFAS that contain at least one CF2 or CF3 group, or longer chains of fluorinated carbons. The term is used because the carbon-fluorine (C-F) bond present in all 'forever chemicals' is very stable and does not break down easily in the environment."
+    },
+    {
+      "id": 4,
+      "title": "How many 'forever chemicals' are there?",
+      "description": "The estimated number of 'forever chemicals' ranges from several thousand to several million when accounting for recent definitions (at least one CF2 or CF3 group). We found over 7 million PFAS matching this definition in <a href='https://pubchem.ncbi.nlm.nih.gov/classification/#hid=120' target='_blanc'>PubChem</a>. You can read more at DOI: <a href='https://doi.org/10.1021/acs.est.3c04855' target='_blanc'>10.1021/acs.est.3c04855</a>."
+    },
+    {
+      "id": 5,
+      "title": "Why is TFA a problem?",
+      "description": "TFA is accumulating rapidly in our environment, leading to concerns due to its persistance and mobility. Persistance means that it does not break down (i.e. concentrations increase over time), while mobility means that it spreads easily - TFA is now found almost everywhere."
+    },
+    {
+      "id": 6,
+      "title": "Can we remove TFA?",
+      "description": "Because it is so small, it is very difficult to remove TFA from water or other matrices, because it does not respond to normal treatment. Thus, if it accumulates to high levels, clean-up of the water could get very expensive."
+    },
+    {
+      "id": 7,
+      "title": "Where does TFA come from?",
+      "description": "TFA is used in the manufacturing industry, so it can be present due to spills from industry, but it can also be formed from other forever chemicals. Since there are many PFAS in use, the sources of TFA are extremely complicated, and likely a mixture of many different contributing factors."
+    },
+    {
+      "id": 8,
+      "title": "Can TFA form from pesticides?",
+      "description": "TFA can form TFA from pesticides such as flurtamone, fluopyram and tembotrione (among others) but also from other PFAS. We have been adding data about PFAS transformation processes to open resources in collaboration with several contributors via the <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>.",
+      "background": "right"
+    },
+    {
+      "id": 9,
+      "title": "Measuring TFA",
+      "description": "TFA and compounds potentially producing TFA can be measured using mass spectrometry and are found in surface waters, wastewater, house dust and many other samples. Since it is so small, it can be tricky to measure! You can view mass spectra of TFA on <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, an open mass spectral library where the University of Luxembourg acts as both contributor and developer.",
+      "background": "right"
+    },
+    {
+      "id": 10,
+      "title": "Further details and sources",
+      "description": "Find out more about TFA on <a href='https://pubchemlite.lcsb.uni.lu/e/compound/6422' target='_blanc'>PubChemLite</a>, which includes the <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“chemical stripes”</a> visualization. Further details can be found on <a href='https://pubchem.ncbi.nlm.nih.gov/compound/6422' target='_blanc'>PubChem</a>. This 3D story about TFA also mentions other developments at the LCSB, University of Luxembourg, including the NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, (<a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>website</a>) and <a href='https://massbank.eu/' target='_blanc'>MassBank</a>. You can read more about the 7 million PFAS in PubChem at DOI: <a href='https://doi.org/10.1021/acs.est.3c04855' target='_blanc'>10.1021/acs.est.3c04855</a> or explore more <a href='https://pubchem.ncbi.nlm.nih.gov/classification/#hid=120' target='_blanc'>here</a>. Text compiled by <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, University of Luxembourg.",
+      "background": "left"
+    }
+  ]
+}
