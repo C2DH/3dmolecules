@@ -8,7 +8,11 @@ import FullscreenModelPage from './Pages/FullscreenModelPage'
 import ContentManager from './components/ContentManager'
 import ViewportManager from './components/ViewportManager'
 import MenuFullPage from './Ui/MenuFullPage'
-import RobeFrancaisePage from './Pages/RobeFrancaisePage'
+import TrifluoroaceticAcidPage from './Pages/TrifluoroaceticAcidPage'
+import CaffeinePage from './Pages/CaffeinePage'
+import NicotinePage from './Pages/NicotinePage'
+import BisphenolSPage from './Pages/BisphenolSPage'
+import ClofenotanPage from './Pages/ClofenotanPage'
 import { useLocation } from 'react-router-dom'
 import ModalWindow from './Ui/ModalWindow'
 import Images from './Data/images.json'
@@ -66,7 +70,20 @@ function App() {
       <AnimatePresence mode="wait">
         <Routes location={location} key={pathname} pathname={pathname}>
           <Route path="/" element={<IntroPage pathname={pathname} />}></Route>
-          <Route path="/test" element={<RobeFrancaisePage pathname={pathname} scrollToTopEf={scrollToTopEf} />}></Route>
+          <Route
+            path="/trifluoroacetic_acid"
+            element={<TrifluoroaceticAcidPage pathname={pathname} scrollToTopEf={scrollToTopEf} />}
+          ></Route>
+          <Route path="/caffeine" element={<CaffeinePage pathname={pathname} scrollToTopEf={scrollToTopEf} />}></Route>
+          <Route path="/nicotine" element={<NicotinePage pathname={pathname} scrollToTopEf={scrollToTopEf} />}></Route>
+          <Route
+            path="/clofenotan"
+            element={<ClofenotanPage pathname={pathname} scrollToTopEf={scrollToTopEf} />}
+          ></Route>
+          <Route
+            path="/bisphenol_s"
+            element={<BisphenolSPage pathname={pathname} scrollToTopEf={scrollToTopEf} />}
+          ></Route>
         </Routes>
         {pathname === '/' ? null : (
           <ContentManager openModal={openModal} isModalVisible={isModalVisible} key="sss-robe" />

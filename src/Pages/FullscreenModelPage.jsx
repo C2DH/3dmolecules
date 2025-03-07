@@ -4,7 +4,11 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import Background from '../Ui/Background'
 import { useMediaQuery } from 'react-responsive'
-import RobeFrancaiseModel from '../modelComps/RobeFrancaiseModel'
+import CaffeineModel from '../modelComps/CaffeineModel'
+import NicotineModel from '../modelComps/NicotineModel'
+import TrifluoroaceticAcidModel from '../modelComps/TrifluoroaceticAcidModel'
+import ClofenotanModel from '../modelComps/ClofenotanModel'
+import BisphenolSModel from '../modelComps/BisphenolSModel'
 import CloseButton from '../Ui/CloseButton'
 import { useEffect } from 'react'
 import { useSpring, a, config } from '@react-spring/web'
@@ -51,11 +55,37 @@ const FullscreenModelPage = ({ pathname }) => {
       <Canvas gl={{ pixelRatio: Math.min(window.devicePixelRatio, 2), antialias: true }}>
         <PerspectiveCamera makeDefault position={[0, 0.2, 8]} fov={45} near={0.1} far={70} />
         <OrbitControls autoRotate={false} autoRotateSpeed={0.5} enableDamping={true} />
-        <ambientLight intensity={1} />
-        {/* <Environment preset="studio" environmentIntensity={0.2} environmentRotation={[1, 1, 0]} /> */}
-        {pathname === '/test' ? (
+        {pathname === '/trifluoroacetic_acid' ? (
           <>
-            <RobeFrancaiseModel position={[0, 0, 0]} scale={1.2} />
+            <TrifluoroaceticAcidModel position={[0, 0, 0]} scale={1.2} />
+            <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
+            <Annotation id={14} position={[-0.15, 0, 0.6]} />
+          </>
+        ) : null}
+        {pathname === '/caffeine' ? (
+          <>
+            <CaffeineModel position={[0, 0, 0]} scale={1.2} />
+            <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
+            <Annotation id={14} position={[-0.15, 0, 0.6]} />
+          </>
+        ) : null}
+        {pathname === '/nicotine' ? (
+          <>
+            <NicotineModel position={[0, 0, 0]} scale={1.2} />
+            <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
+            <Annotation id={14} position={[-0.15, 0, 0.6]} />
+          </>
+        ) : null}
+        {pathname === '/clofenotan' ? (
+          <>
+            <ClofenotanModel position={[0, 0, 0]} scale={1.2} />
+            <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
+            <Annotation id={14} position={[-0.15, 0, 0.6]} />
+          </>
+        ) : null}
+        {pathname === '/bisphenol_s' ? (
+          <>
+            <BisphenolSModel position={[0, 0, 0]} scale={1.2} />
             <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
             <Annotation id={14} position={[-0.15, 0, 0.6]} />
           </>
