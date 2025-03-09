@@ -79,14 +79,14 @@ const TrifluoroaceticAcidModel = forwardRef(({ position, ...props }, ref) => {
 
   // Create points geometries for each mesh with specific colors
   const atoms1Points = createPointsGeometry(nodes.atoms_1.geometry, atomsColors[0])
-  const atoms2Points = createPointsGeometry(nodes.atoms_2.geometry, atomsColors[1])
-  const atoms3Points = createPointsGeometry(nodes.atoms_3.geometry, atomsColors[2])
+  const atoms2Points = createPointsGeometry(nodes.atoms_2.geometry, atomsColors[2])
+  const atoms3Points = createPointsGeometry(nodes.atoms_3.geometry, atomsColors[1])
 
   const hydrogenPoints = createPointsGeometry(nodes.hydrogen.geometry, atomsColors[4])
 
-  const sticks1Points = createPointsGeometry(nodes.sticks_1.geometry, atomsColors[0])
-  const sticks2Points = createPointsGeometry(nodes.sticks_2.geometry, atomsColors[1])
-  const sticks3Points = createPointsGeometry(nodes.sticks_3.geometry, atomsColors[2])
+  const sticks1Points = createPointsGeometry(nodes.sticks_1.geometry, atomsColors[2])
+  const sticks2Points = createPointsGeometry(nodes.sticks_2.geometry, atomsColors[0])
+  const sticks3Points = createPointsGeometry(nodes.sticks_3.geometry, atomsColors[1])
   const sticks4Points = createPointsGeometry(nodes.sticks_4.geometry, atomsColors[4])
 
   const stickMaterial = useMemo(() => {

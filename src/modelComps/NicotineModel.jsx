@@ -8,10 +8,12 @@ import * as THREE from 'three'
 import { getSafeBasePathUrl } from '../utils'
 import vertexShader from '../shaders/vertex.glsl?raw'
 import fragmentShader from '../shaders/fragment.glsl?raw'
+import { useMediaQuery } from 'react-responsive'
 
 const modelUrl = getSafeBasePathUrl('/gltf/Nicotine.glb')
 
 const NicotineModel = forwardRef(({ position, ...props }, ref) => {
+  const isBigScreen = useMediaQuery({ query: '(min-width: 640px)' })
   const [, setWatchLoadedAtom] = useAtom(watchLoadedAtom)
 
   useEffect(() => {
@@ -77,8 +79,8 @@ const NicotineModel = forwardRef(({ position, ...props }, ref) => {
   const atomsColors = [fluorine, oxygen, carbon, nitrogen, hydrogen]
 
   // Create points geometries for each mesh with specific colors
-  const atoms1Points = createPointsGeometry(nodes.atoms_1.geometry, atomsColors[2])
-  const atoms2Points = createPointsGeometry(nodes.atoms_2.geometry, atomsColors[3])
+  const atoms1Points = createPointsGeometry(nodes.atoms_1.geometry, atomsColors[3])
+  const atoms2Points = createPointsGeometry(nodes.atoms_2.geometry, atomsColors[2])
 
   const hydrogenPoints = createPointsGeometry(nodes.hydrogen.geometry, atomsColors[4])
 
@@ -106,18 +108,22 @@ const NicotineModel = forwardRef(({ position, ...props }, ref) => {
       </group>
       <Sparkles count={60} size={1} scale={5} speed={0.1} opacity={0.3} />
       <EffectComposer>
-        <Bloom
-          intensity={1.5} // Adjust the intensity of the glow
-          kernelSize={3} // Adjust the size of the glow
-          luminanceThreshold={0.01} // Adjust the threshold for what gets glowing
-          luminanceSmoothing={0.01} // Adjust the smoothness of the glow
-        />
-        <DepthOfField
-          focusDistance={0} // Distance to the focus target
-          focalLength={0.6} // Strength of the blur
-          bokehScale={4} // Scale of the bokeh effect
-          height={480} // Optional: Height of the effect (can be adjusted)
-        />
+        {isBigScreen ? (
+          <>
+            <Bloom
+              intensity={1.5} // Adjust the intensity of the glow
+              kernelSize={3} // Adjust the size of the glow
+              luminanceThreshold={0.01} // Adjust the threshold for what gets glowing
+              luminanceSmoothing={0.01} // Adjust the smoothness of the glow
+            />
+            <DepthOfField
+              focusDistance={0} // Distance to the focus target
+              focalLength={0.6} // Strength of the blur
+              bokehScale={4} // Scale of the bokeh effect
+              height={480} // Optional: Height of the effect (can be adjusted)
+            />
+          </>
+        ) : null}
       </EffectComposer>
     </>
   )
