@@ -20,6 +20,11 @@ button.secondary {
   background-color: rgba(var(--dark-rgb), 0.4) !important;
 }
 
+button.secondary:hover {
+  color: var(--accent) !important;
+  border-color: var(--accent);
+}
+
 @media (max-width: 640px) {
   button.lg {
     font-size: 14px !important;

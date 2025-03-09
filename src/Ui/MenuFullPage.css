@@ -49,6 +49,19 @@
   background-color: rgba(var(--dark-rgb), 1);
 }
 
+.MenuFullPage menu nav ul li {
+  transition: all 0.3s ease-in-out;
+}
+
+.MenuFullPage menu nav ul li:first-child,
+.MenuFullPage menu nav ul li:hover {
+  color: var(--accent);
+}
+
+.MenuFullPage ul nav ul li:hover button::after {
+  background-color: var(--accent);
+}
+
 @media (max-width: 640px) {
   .MenuFullPage {
     font-size: 1.4rem;
