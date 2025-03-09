@@ -1,13 +1,12 @@
 import { useGLTF } from '@react-three/drei'
 import { watchLoadedAtom } from '../GlobalState'
 import { useAtom } from 'jotai'
-import { Sparkles } from '@react-three/drei'
 import { forwardRef, useEffect, useMemo } from 'react'
-import { EffectComposer, Bloom, DepthOfField } from '@react-three/postprocessing'
 import * as THREE from 'three'
 import { getSafeBasePathUrl } from '../utils'
 import vertexShader from '../shaders/vertex.glsl?raw'
 import fragmentShader from '../shaders/fragment.glsl?raw'
+import SpecialEffects from '../Ui/SpecialEffects'
 
 const modelUrl = getSafeBasePathUrl('/gltf/Clofenotane.glb')
 
@@ -106,21 +105,7 @@ const ClofenotaneModel = forwardRef(({ position, ...props }, ref) => {
         <points geometry={sticks2Points} material={stickMaterial} />
         <points geometry={sticks3Points} material={stickMaterial} />
       </group>
-      <Sparkles count={60} size={1} scale={5} speed={0.1} opacity={0.3} />
-      <EffectComposer>
-        <Bloom
-          intensity={1.5} // Adjust the intensity of the glow
-          kernelSize={3} // Adjust the size of the glow
-          luminanceThreshold={0.01} // Adjust the threshold for what gets glowing
-          luminanceSmoothing={0.01} // Adjust the smoothness of the glow
-        />
-        <DepthOfField
-          focusDistance={0} // Distance to the focus target
-          focalLength={0.6} // Strength of the blur
-          bokehScale={4} // Scale of the bokeh effect
-          height={480} // Optional: Height of the effect (can be adjusted)
-        />
-      </EffectComposer>
+      <SpecialEffects />
     </>
   )
 })
