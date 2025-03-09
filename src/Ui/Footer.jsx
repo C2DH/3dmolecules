@@ -1,6 +1,5 @@
-import LogoFhp from '../Svg/LogoFhp'
-import LogoUcl from '../Svg/LogoUcl'
-import LogoUni from '../Svg/LogoUni'
+import LogoC2DH from '../Svg/LogoC2DH'
+import LogoLCSB from '../Svg/LogoLCSB'
 import { useMediaQuery } from 'react-responsive'
 import { useEffect, useState } from 'react'
 import { useSpring, a } from '@react-spring/web'
@@ -44,6 +43,8 @@ const Footer = ({ scrollToTop, pathname }) => {
     return () => clearTimeout(timer)
   }, [pathname])
 
+  const currentYear = new Date().getFullYear()
+
   return (
     <a.footer
       style={stylesScrollUp}
@@ -60,33 +61,33 @@ const Footer = ({ scrollToTop, pathname }) => {
       ) : null}
       <div className="flex z-40 flex-wrap w-screen justify-between ">
         <div className="footer-left my-3 justify-center md:justify-start flex-wrap flex flex-row items-center flex-grow">
-          <LogoFhp width={isBigScreen ? 160 : 90} />
-          <LogoUcl className={'ml-5'} width={isBigScreen ? 120 : 80} />
-          <LogoUni className={'ml-5'} width={isBigScreen ? 140 : 90} />
+          {/* <LogoFhp width={isBigScreen ? 160 : 90} />
+          <LogoUcl className={'ml-5'} width={isBigScreen ? 120 : 80} /> */}
+          <LogoC2DH className={'ml-5'} width={isBigScreen ? 140 : 110} />
+          <LogoLCSB className={'ml-5'} width={isBigScreen ? 116 : 90} />
         </div>
         <div className="mt-3 md:mt-0 flex items-center footer-right justify-center md:justify-end flex-grow">
-          <a
+          {/* <a
             href="https://www.fh-potsdam.de/impressum"
             aria-label="Link to FH;P impressum"
             rel="no-referrer"
             target="_blank"
           >
             Imprint
-          </a>
+          </a> */}
           <a
             className="ml-5"
             aria-label="Link to FH;P datenschutz"
-            href="https://www.fh-potsdam.de/datenschutz"
+            href="https://www.uni.lu/en/legal-notice/"
             rel="no-referrer"
             target="_blank"
           >
-            Privacy policy
+            Legal Notice
           </a>
         </div>
       </div>
       <span className="mt-3  flex text-xs grow md:text-right text-center justify-center">
-        © University of Applied Arts Potsdam (FHP) & Centre for Contemporary and Digital History Luxembourg (C²DH),
-        2024.
+        © University of Luxembourg {currentYear}. All rights reserved.
       </span>
     </a.footer>
   )
