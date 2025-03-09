@@ -64,6 +64,7 @@ function App() {
     <>
       <ModalWindow closeModal={closeModal} isModalImage={isModalImage} isModalVisible={isModalVisible} />
       <Header scrollToTop={scrollToTop} />
+
       <MenuFullPage />
       <Preloader pathname={pathname} />
       <FullscreenModelPage pathname={pathname} />

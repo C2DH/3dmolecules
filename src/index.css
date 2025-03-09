@@ -13,6 +13,14 @@
   --accent-rgb: 255, 149, 126;
   --bg-rgb: 203, 144, 165;
 
+  --fluorine: #c5f097;
+  --oxygen: #ff3f3f;
+  --carbon: #e9dcb0;
+  --nitrogen: #7697fc;
+  --hydrogen: #ffffff;
+  --chlorine: #61f861;
+  --sulfur: #ffff76;
+
   /* z-index */
   --z-canvas: 0;
   --z-default: 1;
