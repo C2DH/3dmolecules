@@ -3,7 +3,7 @@
   "sections": [
     {
       "id": 1,
-      "title": "Telling stories about<br>historical dress",
+      "title": "Telling stories about<br>chemicals",
       "description": ""
     },
     {
@@ -37,11 +37,11 @@
       "team": [
         {
           "id": 1,
-          "uni": "UCLAB",
-          "role": "Fashion History",
+          "uni": "LCSB",
+          "role": "Deputy Director of LCSB",
           "img": "img/team/sabine_de_gunther.jpg",
-          "name": "Sabine de Günther",
-          "link": "https://uclab.fh-potsdam.de/people/sabine-de-guenther/"
+          "name": "Emma SCHYMANSKI",
+          "link": "https://www.uni.lu/lcsb-en/people/emma-schymanski/"
         },
 
         {
@@ -49,23 +49,15 @@
           "uni": "C²DH",
           "role": "UI/UX Design/Development",
           "img": "img/team/kirill_mitsurov.jpg",
-          "name": "Kirill Mitsurov",
+          "name": "Kirill MITSUROV",
           "link": "https://www.c2dh.uni.lu/people/kirill-mitsurov"
         },
         {
           "id": 3,
-          "uni": "UCLAB",
-          "role": "Research Supervision",
-          "img": "img/team/marian_dork.jpg",
-          "name": "Marian Dörk",
-          "link": "https://uclab.fh-potsdam.de/people/marian-doerk/"
-        },
-        {
-          "id": 4,
           "uni": "C²DH",
           "role": "Development",
           "img": "img/team/daniele_guido.jpg",
-          "name": "Daniele Guido",
+          "name": "Daniele GUIDO",
           "link": "https://www.c2dh.uni.lu/people/daniele-guido"
         }
       ]
