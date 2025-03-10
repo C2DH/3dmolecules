@@ -1,0 +1,18 @@
+.ComponentAnnotation span {
+  margin-right: 0.5rem;
+  width: 20px;
+  height: 2px;
+}
+
+.ComponentAnnotation p {
+  font-size: 1rem;
+}
+
+@media (max-width: 420px) {
+  .ComponentAnnotation span {
+    display: none;
+  }
+  .ComponentAnnotation p {
+    font-size: 0.9rem;
+  }
+}

@@ -30,6 +30,49 @@
   --z-info: 5;
 }
 
+.fluorine-color {
+  color: var(--fluorine);
+}
+.fluorine-color-bg {
+  background-color: var(--fluorine);
+}
+.oxygen-color {
+  color: var(--oxygen);
+}
+.oxygen-color-bg {
+  background-color: var(--oxygen);
+}
+.carbon-color {
+  color: var(--carbon);
+}
+.carbon-color-bg {
+  background-color: var(--carbon);
+}
+.nitrogen-color {
+  color: var(--nitrogen);
+}
+.nitrogen-color-bg {
+  background-color: var(--nitrogen);
+}
+.hydrogen-color {
+  color: var(--hydrogen);
+}
+.hydrogen-color-bg {
+  background-color: var(--hydrogen);
+}
+.chlorine-color {
+  color: var(--chlorine);
+}
+.chlorine-color-bg {
+  background-color: var(--chlorine);
+}
+.sulfur-color {
+  color: var(--sulfur);
+}
+.sulfur-color-bg {
+  background-color: var(--sulfur);
+}
+
 html,
 body,
 #root {

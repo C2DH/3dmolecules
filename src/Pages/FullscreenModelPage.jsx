@@ -15,6 +15,7 @@ import { useSpring, a, config } from '@react-spring/web'
 import InfoPanel from '../Ui/InfoPanel'
 import Annotation from '../Ui/Annotation'
 import TrifluoroaceticAcidSvg from '../Svg/Chemical/TrifluoroaceticAcidSvg'
+import ComponentAnnotation from '../Ui/ComponentAnnotation'
 
 const FullscreenModelPage = ({ pathname }) => {
   const showFullscreenMode = useStore(state => state.showFullscreenMode)
@@ -46,9 +47,10 @@ const FullscreenModelPage = ({ pathname }) => {
       style={styles}
       className={`FullscreenModelPage ${showFullscreenMode ? 'pointer-events-auto z-50' : 'pointer-events-none z-[-1]'}`}
     >
-      <div className="ChemicalSvg flex justify-center opacity-60 w-full fixed top-10 left-5 z-1">
+      <div className="ChemicalSvg flex justify-center opacity-50 w-full fixed top-10 left-5 z-1">
         <TrifluoroaceticAcidSvg width={200} />
       </div>
+      <ComponentAnnotation pathname={pathname} />
       <CloseButton
         onClick={fullscreenMode}
         className="mb-2"
