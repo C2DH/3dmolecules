@@ -1,0 +1,51 @@
+{
+  "links": [
+    { "externalUrl": "https://pubchemlite.lcsb.uni.lu/e/compound/6626" },
+    { "externalUrlTwo": "https://pubchem.ncbi.nlm.nih.gov/compound/6626" }
+  ],
+  "sections": [
+    {
+      "id": 1,
+      "title": "Bisphenol S",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "title": "",
+      "description": "Bisphenol S (BPS) is one of several compounds used to replace the more well-known Bisphenol A or BPA (think of all those 'BPA-free products'). Sadly, it has become a good example of 'regrettable substitution', where one chemical has been replaced by another chemical that shows similar negative effects."
+    },
+    {
+      "id": 3,
+      "title": "",
+      "description": "Bisphenol S is used in a number of products, including in paper, polymers and fine chemicals. It is used to develop thermal paper (e.g., payment receipts) and also used in industry, for electroplating and washfastening. It is known as a high production volume chemical (it is produced annually in very large amounts)."
+    },
+    {
+      "id": 4,
+      "title": "Regrettable substitution",
+      "description": "Although Bisphenol S (BPS) has been used extensively to replace BPA, evidence shows that BPS can have similar or greater toxicity than BPA. It exhibits stronger reproductive effects and DNA damage, is more bioavailable and less resistant to biodegradation, meaning it will accumulate in the environment over time."
+    },
+    {
+      "id": 5,
+      "title": "BPS and Parkinson's disease",
+      "description": "Did you know that a recent study at LCSB, University of Luxembourg, indicated that Bisphenol S may be related to whether genetic mutation carriers for Parkinson's disease develop the disease or not? You can read more about this collaborative effort here: DOI: <a href='https://doi.org/10.1016/j.envint.2024.109151' target='_blanc'>10.1016/j.envint.2024.109151</a>. "
+    },
+    {
+      "id": 6,
+      "title": "Bisphenol S metabolites",
+      "description": "Bisphenol S does not biodegrade easily and so far no metabolites or environmental transformation products of BPS are recorded in openly available resources such as the <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>.",
+      "background": "right"
+    },
+    {
+      "id": 7,
+      "title": "Measuring Bisphenol S",
+      "description": "Bisphenol S can be measured using mass spectrometry and is found in surface waters and house dust samples, among others. You can view mass spectra on <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, an open mass spectral library where the University of Luxembourg acts as both contributor and developer.",
+      "background": "right"
+    },
+    {
+      "id": 8,
+      "title": "Further details and sources",
+      "description": "Find out more about Bisphenol S on <a href='https://pubchemlite.lcsb.uni.lu/e/compound/6626' target='_blanc'>PubChemLite</a>, which includes the <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“chemical stripes”</a> visualization. Further details can be found on <a href='https://pubchem.ncbi.nlm.nih.gov/compound/6626' target='_blanc'>PubChem</a> and in Talavera Andújar et al (2024) DOI: <a href='https://doi.org/10.1016/j.envint.2024.109151' target='_blanc'>10.1016/j.envint.2024.109151</a>, the resources used to compile the text here. This 3D story also mentions other developments at the LCSB, University of Luxembourg, including the NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, (<a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>website</a>) and <a href='https://massbank.eu/' target='_blanc'>MassBank</a>. You can read more about our work on chemicals related to Parkinson's disease at DOI: <a href='https://doi.org/10.1016/j.envint.2024.109151' target='_blanc'>10.1016/j.envint.2024.109151</a>. Text compiled by <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, University of Luxembourg.",
+      "background": "left"
+    }
+  ]
+}
