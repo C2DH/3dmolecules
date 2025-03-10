@@ -11,8 +11,8 @@ export const NicotineRoute = {
   isSmoothScrollActive: true
 }
 
-export const ClofenotanRoute = {
-  pathname: '/clofenotan',
+export const DdtRoute = {
+  pathname: '/ddt',
   isSmoothScrollActive: true
 }
 
@@ -26,10 +26,4 @@ export const IntroPage = {
   isSmoothScrollActive: false
 }
 
-export const RoutesUsingButtons = [
-  TrifluoroaceticAcidRoute,
-  CaffeineRoute,
-  NicotineRoute,
-  ClofenotanRoute,
-  BisphenolSRoute
-]
+export const RoutesUsingButtons = [TrifluoroaceticAcidRoute, CaffeineRoute, NicotineRoute, DdtRoute, BisphenolSRoute]

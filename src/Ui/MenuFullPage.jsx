@@ -2,8 +2,8 @@ import './MenuFullPage.css'
 import TrifluoroaceticAcidContent from '../Data/trifluoroaceticAcid.json'
 import CaffeineContent from '../Data/caffeine.json'
 import NicotineContent from '../Data/nicotine.json'
-import BisphenolSContent from '../Data/bisphenol.json'
-import ClofenotanContent from '../Data/clofenotan.json'
+import BisphenolSContent from '../Data/bisphenolS.json'
+import DdtContent from '../Data/ddt.json'
 import { NavLink } from 'react-router-dom'
 import { useSpring, a } from '@react-spring/web'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
@@ -157,8 +157,8 @@ const MenuFullPage = () => {
             {pathnameUpdated === '/nicotine' ? <Navigation data={NicotineContent} /> : null}
           </li>
           <li>
-            {pathnameUpdated !== '/clofenotan' ? <NavLink to="/clofenotan">Clofenotan</NavLink> : null}
-            {pathnameUpdated === '/clofenotan' ? <Navigation data={ClofenotanContent} /> : null}
+            {pathnameUpdated !== '/ddt' ? <NavLink to="/ddt">DDT</NavLink> : null}
+            {pathnameUpdated === '/ddt' ? <Navigation data={DdtContent} /> : null}
           </li>
           <li>
             {pathnameUpdated !== '/bisphenol_s' ? <NavLink to="/bisphenol_s">Bispheno S</NavLink> : null}

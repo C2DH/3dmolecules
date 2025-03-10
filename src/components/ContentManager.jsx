@@ -1,8 +1,8 @@
 import TrifluoroaceticAcidContent from '../Data/trifluoroaceticAcid.json'
 import CaffeineContent from '../Data/caffeine.json'
 import NicotineContent from '../Data/nicotine.json'
-import BisphenolSContent from '../Data/bisphenol.json'
-import ClofenotanContent from '../Data/clofenotan.json'
+import BisphenolSContent from '../Data/bisphenolS.json'
+import DdtContent from '../Data/ddt.json'
 
 import { useLocation } from 'react-router-dom'
 import ScrollManager, { useScrollStore } from './ScrollManager'
@@ -17,14 +17,14 @@ import ScrollDownIndicator from '../Ui/ScrollDownIndicator'
 const TrifluoroaceticAcidRoute = '/trifluoroacetic_acid'
 const CaffeineRoute = '/caffeine'
 const NicotineRoute = '/nicotine'
-const ClofenotanRoute = '/clofenotan'
+const DdtRoute = '/ddt'
 const BisphenolSRoute = '/bisphenol_s'
 
 const AvailableContents = {
   [TrifluoroaceticAcidRoute]: TrifluoroaceticAcidContent,
   [CaffeineRoute]: CaffeineContent,
   [NicotineRoute]: NicotineContent,
-  [ClofenotanRoute]: ClofenotanContent,
+  [DdtRoute]: DdtContent,
   [BisphenolSRoute]: BisphenolSContent
 }
 const ContentManager = ({ openModal, scrollToTop }) => {

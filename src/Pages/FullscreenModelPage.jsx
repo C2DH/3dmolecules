@@ -7,15 +7,15 @@ import { useMediaQuery } from 'react-responsive'
 import CaffeineModel from '../modelComps/CaffeineModel'
 import NicotineModel from '../modelComps/NicotineModel'
 import TrifluoroaceticAcidModel from '../modelComps/TrifluoroaceticAcidModel'
-import ClofenotanModel from '../modelComps/ClofenotanModel'
+import DdtModel from '../modelComps/ddtModel'
 import BisphenolSModel from '../modelComps/BisphenolSModel'
 import CloseButton from '../Ui/CloseButton'
 import { useEffect } from 'react'
 import { useSpring, a, config } from '@react-spring/web'
 import InfoPanel from '../Ui/InfoPanel'
 import Annotation from '../Ui/Annotation'
-import TrifluoroaceticAcidSvg from '../Svg/Chemical/TrifluoroaceticAcidSvg'
 import ComponentAnnotation from '../Ui/ComponentAnnotation'
+import TwoDFormula from '../Ui/TwoDFormula'
 
 const FullscreenModelPage = ({ pathname }) => {
   const showFullscreenMode = useStore(state => state.showFullscreenMode)
@@ -47,9 +47,7 @@ const FullscreenModelPage = ({ pathname }) => {
       style={styles}
       className={`FullscreenModelPage ${showFullscreenMode ? 'pointer-events-auto z-50' : 'pointer-events-none z-[-1]'}`}
     >
-      <div className="ChemicalSvg flex justify-center opacity-50 w-full fixed top-10 left-5 z-1">
-        <TrifluoroaceticAcidSvg width={200} />
-      </div>
+      <TwoDFormula pathname={pathname} />
       <ComponentAnnotation pathname={pathname} />
       <CloseButton
         onClick={fullscreenMode}
@@ -82,9 +80,9 @@ const FullscreenModelPage = ({ pathname }) => {
             <Annotation id={14} position={[-0.15, 0, 0.6]} />
           </>
         ) : null}
-        {pathname === '/clofenotan' ? (
+        {pathname === '/ddt' ? (
           <>
-            <ClofenotanModel position={[0, 0, 0]} scale={1.2} />
+            <DdtModel position={[0, 0, 0]} scale={1.2} />
             <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
             <Annotation id={14} position={[-0.15, 0, 0.6]} />
           </>

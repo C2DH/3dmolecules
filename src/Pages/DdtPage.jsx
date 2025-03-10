@@ -8,12 +8,12 @@ import { useCurrentSheet, PerspectiveCamera } from '@theatre/r3f'
 import { useScrollStore } from '../components/ScrollManager'
 import { val } from '@theatre/core'
 import { useMediaQuery } from 'react-responsive'
-import ClofenotanModel from '../modelComps/ClofenotanModel'
+import DdtModel from '../modelComps/DdtModel'
 import { editable as e } from '@theatre/r3f'
 import Transition from '../Ui/Transition'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
-const Clofenotan = () => {
+const Ddt = () => {
   const ratioRef = useRef(useScrollStore.getState().scrollRatio)
   const menuLinkRef = useRef(useScrollStore.getState().menuLinkPosition)
   const isBigScreen = useMediaQuery({ query: '(min-width: 640px)' })
@@ -54,14 +54,14 @@ const Clofenotan = () => {
       <PerspectiveCamera theatreKey="Camera" makeDefault position={[0, 0.2, 8]} fov={45} near={0.1} far={70} />
       <group position={isBigScreen ? [0, 0.3, 0] : [-1.3, 0.3, 0]} scale={isBigScreen ? 1 : 0.8}>
         <e.group theatreKey="Robe">
-          <ClofenotanModel />
+          <DdtModel />
         </e.group>
       </group>
     </>
   )
 }
 
-const ClofenotanPage = ({ pathname }) => {
+const DdtPage = ({ pathname }) => {
   const project = getProject('Robe Francaise Animation', {
     state: robeAnimation
   })
@@ -78,11 +78,11 @@ const ClofenotanPage = ({ pathname }) => {
       </HelmetProvider>
       <Canvas gl={{ pixelRatio: Math.min(window.devicePixelRatio, 2), antialias: true }}>
         <SheetProvider sheet={sheet}>
-          <Clofenotan pathname={pathname} />
+          <Ddt pathname={pathname} />
         </SheetProvider>
       </Canvas>
     </div>
   )
 }
 
-export default Transition(ClofenotanPage)
+export default Transition(DdtPage)

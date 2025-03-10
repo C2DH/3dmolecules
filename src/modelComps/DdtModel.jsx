@@ -8,9 +8,9 @@ import vertexShader from '../shaders/vertex.glsl?raw'
 import fragmentShader from '../shaders/fragment.glsl?raw'
 import SpecialEffects from '../Ui/SpecialEffects'
 
-const modelUrl = getSafeBasePathUrl('/gltf/Clofenotane.glb')
+const modelUrl = getSafeBasePathUrl('/gltf/Ddt.glb')
 
-const ClofenotaneModel = forwardRef(({ position, ...props }, ref) => {
+const DdtModel = forwardRef(({ position, ...props }, ref) => {
   const [, setWatchLoadedAtom] = useAtom(watchLoadedAtom)
 
   useEffect(() => {
@@ -111,5 +111,5 @@ const ClofenotaneModel = forwardRef(({ position, ...props }, ref) => {
 })
 
 useGLTF.preload(modelUrl)
-ClofenotaneModel.displayName = 'ClofenotaneModel'
-export default ClofenotaneModel
+DdtModel.displayName = 'DdtModel'
+export default DdtModel

@@ -25,6 +25,10 @@ const ComponentAnnotation = ({ pathname }) => {
       ) : null}
       {pathname === '/caffeine' ? (
         <>
+          <div className="flex items-center nitrogen-color mr-0 sm:mr-5">
+            <span className="nitrogen-color-bg "></span>
+            <p>Nitrogen</p>
+          </div>
           <div className="flex items-center carbon-color mr-0 sm:mr-5">
             <span className="carbon-color-bg "></span>
             <p>Carbon</p>
@@ -32,10 +36,6 @@ const ComponentAnnotation = ({ pathname }) => {
           <div className="flex items-center oxygen-color mr-0 sm:mr-5">
             <span className="oxygen-color-bg "></span>
             <p>Oxygen</p>
-          </div>
-          <div className="flex items-center nitrogen-color mr-0 sm:mr-5">
-            <span className="nitrogen-color-bg "></span>
-            <p>Nitrogen</p>
           </div>
           <div className="flex items-center hydrogen-color">
             <span className="hydrogen-color-bg "></span>
@@ -45,13 +45,13 @@ const ComponentAnnotation = ({ pathname }) => {
       ) : null}
       {pathname === '/nicotine' ? (
         <>
-          <div className="flex items-center carbon-color mr-0 sm:mr-5">
-            <span className="carbon-color-bg "></span>
-            <p>Carbon</p>
-          </div>
           <div className="flex items-center nitrogen-color mr-0 sm:mr-5">
             <span className="nitrogen-color-bg "></span>
             <p>Nitrogen</p>
+          </div>
+          <div className="flex items-center carbon-color mr-0 sm:mr-5">
+            <span className="carbon-color-bg "></span>
+            <p>Carbon</p>
           </div>
           <div className="flex items-center hydrogen-color">
             <span className="hydrogen-color-bg "></span>
@@ -59,7 +59,7 @@ const ComponentAnnotation = ({ pathname }) => {
           </div>
         </>
       ) : null}
-      {pathname === '/clofenotan' ? (
+      {pathname === '/ddt' ? (
         <>
           <div className="flex items-center chlorine-color mr-0 sm:mr-5">
             <span className="chlorine-color-bg "></span>
@@ -77,13 +77,17 @@ const ComponentAnnotation = ({ pathname }) => {
       ) : null}
       {pathname === '/bisphenol_s' ? (
         <>
-          <div className="flex items-center oxygen-color mr-0 sm:mr-5">
-            <span className="oxygen-color-bg "></span>
-            <p>Oxygen</p>
-          </div>
           <div className="flex items-center sulfur-color mr-0 sm:mr-5">
             <span className="sulfur-color-bg "></span>
             <p>Sulfur</p>
+          </div>
+          <div className="flex items-center carbon-color mr-0 sm:mr-5">
+            <span className="carbon-color-bg "></span>
+            <p>Carbon</p>
+          </div>
+          <div className="flex items-center oxygen-color mr-0 sm:mr-5">
+            <span className="oxygen-color-bg "></span>
+            <p>Oxygen</p>
           </div>
           <div className="flex items-center hydrogen-color">
             <span className="hydrogen-color-bg "></span>
