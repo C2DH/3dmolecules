@@ -12,7 +12,7 @@ export const NicotineRoute = {
 }
 
 export const ClofenotanRoute = {
-  pathname: '/clofenotan',
+  pathname: '/ddt',
   isSmoothScrollActive: true
 }
 

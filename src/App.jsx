@@ -12,7 +12,7 @@ import TrifluoroaceticAcidPage from './Pages/TrifluoroaceticAcidPage'
 import CaffeinePage from './Pages/CaffeinePage'
 import NicotinePage from './Pages/NicotinePage'
 import BisphenolSPage from './Pages/BisphenolSPage'
-import ClofenotanPage from './Pages/ClofenotanPage'
+import DdtPage from './Pages/ddtPage'
 import { useLocation } from 'react-router-dom'
 import ModalWindow from './Ui/ModalWindow'
 import Images from './Data/images.json'
@@ -77,10 +77,7 @@ function App() {
           ></Route>
           <Route path="/caffeine" element={<CaffeinePage pathname={pathname} scrollToTopEf={scrollToTopEf} />}></Route>
           <Route path="/nicotine" element={<NicotinePage pathname={pathname} scrollToTopEf={scrollToTopEf} />}></Route>
-          <Route
-            path="/clofenotan"
-            element={<ClofenotanPage pathname={pathname} scrollToTopEf={scrollToTopEf} />}
-          ></Route>
+          <Route path="/ddt" element={<DdtPage pathname={pathname} scrollToTopEf={scrollToTopEf} />}></Route>
           <Route
             path="/bisphenol_s"
             element={<BisphenolSPage pathname={pathname} scrollToTopEf={scrollToTopEf} />}
