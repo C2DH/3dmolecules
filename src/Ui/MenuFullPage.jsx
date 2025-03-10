@@ -23,8 +23,6 @@ const Navigation = ({ data }) => {
   const setMenuLinkPosition = useScrollStore(state => state.setMenuLinkPosition)
   const toggleMenuTimerRef = useRef(null)
   const setClickedSlideId = useStore(state => state.setClickedSlideId)
-  // const setClickedSlideId = useStore(state => state.setClickedSlideId)
-  // const [clickedSlideId, setClickedSlideId] = useState(null)
 
   const scrollToSlide = id => {
     // const isBigScreen = useMediaQuery({ query: '(min-width: 640px)' })
