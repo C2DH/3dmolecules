@@ -7,7 +7,7 @@ import DDTSvg from '../Svg/Chemical/DdtSvg'
 const TwoDFormula = ({ pathname }) => {
   return (
     <>
-      <div className="ChemicalSvg flex justify-center opacity-50 w-full fixed top-10 left-5 z-1">
+      <div className="ChemicalSvg flex justify-center opacity-50 w-full fixed top-10 z-1">
         {pathname === '/trifluoroacetic_acid' ? <TrifluoroaceticAcidSvg width={200} /> : null}
         {pathname === '/caffeine' ? <CaffeineSvg width={220} /> : null}
         {pathname === '/nicotine' ? <NicotineSvg width={240} /> : null}
