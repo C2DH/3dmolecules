@@ -61,7 +61,7 @@ const InfoPanel = ({ mobile = false }) => {
   return mobile === true ? (
     <>
       <a.div
-        className="InfoIcon-wrapper absolute w-full flex items-center justify-center bottom-[6rem] z-[2]"
+        className="InfoIcon-wrapper fixed w-full flex items-center justify-center bottom-[6rem] z-[2]"
         style={stylesIMobile}
       >
         <InfoIcon opacity={0.4} width={24} style={{ transform: 'translateX(0px)' }} onClick={toggleInfoPanel} />
