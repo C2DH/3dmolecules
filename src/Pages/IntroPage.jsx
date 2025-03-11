@@ -41,7 +41,7 @@ const IntroPage = () => {
           .map((d, i, arr) => (
             <section
               key={d.path ?? i}
-              className="flex relative flex-col with-background w-screen justify-center items-center"
+              className="flex intro-description relative flex-col w-screen justify-center items-center"
             >
               {console.debug('PATH', arr)}
               <div
