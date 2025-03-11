@@ -159,7 +159,7 @@ const MenuFullPage = () => {
             {pathnameUpdated === '/ddt' ? <Navigation data={DdtContent} /> : null}
           </li>
           <li>
-            {pathnameUpdated !== '/bisphenol_s' ? <NavLink to="/bisphenol_s">Bispheno S</NavLink> : null}
+            {pathnameUpdated !== '/bisphenol_s' ? <NavLink to="/bisphenol_s">Bisphenol S</NavLink> : null}
             {pathnameUpdated === '/bisphenol_s' ? <Navigation data={BisphenolSContent} /> : null}
           </li>
         </ul>
