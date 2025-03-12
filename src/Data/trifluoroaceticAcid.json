@@ -48,7 +48,7 @@
     {
       "id": 9,
       "title": "Measuring TFA",
-      "description": "TFA and compounds potentially producing TFA can be measured using mass spectrometry and are found in surface waters, wastewater, house dust and many other samples. Since it is so small, it can be tricky to measure! You can view mass spectra of TFA on <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, an open mass spectral library where the University of Luxembourg acts as both contributor and developer.",
+      "description": "TFA and compounds potentially producing TFA can be measured using mass spectrometry and are found in surface waters, wastewater, house dust and many other samples. Since it is so small, it can be tricky to measure! You can view mass spectra of TFA on <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, an open mass spectral library where the University of Luxembourg acts as both contributor and developer. Find out more about our MassBank efforts <a href='https://doi.org/10.1039/D3EM00181D' target='_blanc'>here</a>.",
       "background": "right"
     },
     {

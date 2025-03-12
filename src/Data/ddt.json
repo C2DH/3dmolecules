@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "title": "",
+      "title": "What is DDT?",
       "description": "DDT or dichlorodiphenyltrichloroethane (also known as clofenotane) is an insecticide that is infamous for its environmental impacts. It was first used during the second world war to limit the spread of diseases such as malaria and typhus, but had a devestating effect on wildlife. It is a 'persistent organic pollutant' or POP."
     },
     {
@@ -37,19 +37,19 @@
     {
       "id": 7,
       "title": "DDT metabolites",
-      "description": "DDT can be transformed to metabolites including DDD, DDE and 2,3-dihydrodiol-DDT. At LCSB we have been adding data about DDT (and other) metabolites to open resources, via the <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>, among others.",
+      "description": "DDT can be transformed to metabolites including DDD, DDE and 2,3-dihydrodiol-DDT. At LCSB we have been adding data about DDT (and other) metabolites to open resources, via the <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>, among others. You can view some of the DDT metabolites in the '<a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Transformations' target='_blanc'>Transformations</a>' section of <a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Transformations' target='_blanc'>PubChem</a>.",
       "background": "right"
     },
     {
       "id": 8,
       "title": "Measuring DDT",
-      "description": "DDT can be measured using gas chromatography mass spectrometry and is found in water, soil and many other samples. You can view mass spectra on <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, an open mass spectral library where the University of Luxembourg acts as both contributor and developer.",
+      "description": "DDT can be measured using gas chromatography mass spectrometry and is found in water, soil and many other samples. You can view mass spectra on <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, an open mass spectral library where the University of Luxembourg acts as both contributor and developer. Find out more about our MassBank efforts <a href='https://doi.org/10.1039/D3EM00181D' target='_blanc'>here</a>.",
       "background": "right"
     },
     {
       "id": 9,
       "title": "Further details and sources",
-      "description": "Find out more about DDT on <a href='https://pubchemlite.lcsb.uni.lu/e/compound/3036' target='_blanc'>PubChemLite</a>, which includes the <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>'chemical stripes'</a> visualization. Further details can be found on <a href='https://en.wikipedia.org/wiki/DDT' target='_blanc'>Wikipedia</a> and <a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036' target='_blanc'>PubChem</a>, which were used to compile the text presented here. This 3D story also mentions other developments at the LCSB, University of Luxembourg, including the NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, (<a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>website</a>), <a href='https://massbank.eu/' target='_blanc'>MassBank</a>. Text compiled by <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, University of Luxembourg.",
+      "description": "Find out more about DDT on <a href='https://pubchemlite.lcsb.uni.lu/e/compound/3036' target='_blanc'>PubChemLite</a>, which includes the <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>'chemical stripes'</a> visualization, sonificed (<a href='https://soundcloud.com/jamieperera/our-chemical-past-present-and-future' target='_blanc'>SoundCloud</a>, <a href='https://vimeo.com/862087332' target='_blanc'>Vimeo</a>) by <a href='https://www.jamieperera.com/' target='_blanc'>Jamie Perera</a>. Further details can be found on <a href='https://en.wikipedia.org/wiki/DDT' target='_blanc'>Wikipedia</a> and <a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036' target='_blanc'>PubChem</a>, which were used to compile the text presented here. This 3D story also mentions other developments at the LCSB, University of Luxembourg, including the NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>website</a>), <a href='https://massbank.eu/' target='_blanc'>MassBank</a> and the <a href='https://doi.org/10.1021/acs.estlett.4c00560' target='_blanc'>chemical stripes</a>. Text compiled by <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, University of Luxembourg.",
       "background": "left"
     }
   ]
