@@ -32,6 +32,7 @@ function App() {
   const scrollToTopEf = useStore(state => state.scrollToTopEf)
   const setScrollToTopEf = useStore(state => state.setScrollToTopEf)
 
+  console.info('[App] pathname', pathname, '\n - isModalVisible', isModalVisible, '\n - isModalImage', isModalImage)
   const scrollToTop = () => {
     window.scrollTo({
       top: window.top,
@@ -86,8 +87,9 @@ function App() {
         {pathname === '/' ? null : (
           <ContentManager openModal={openModal} isModalVisible={isModalVisible} key="sss-robe" />
         )}
-        <ViewportManager />
       </AnimatePresence>
+
+      <ViewportManager />
       <Footer scrollToTop={scrollToTop} pathname={pathname} />
       <VideoBackground pathname={pathname} />
       <Background pathname={pathname} showFullscreenMode={true} />

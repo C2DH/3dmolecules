@@ -16,7 +16,7 @@ if (editMode) {
 }
 
 console.info('Welcome to 3dStories')
-console.info('BASE_UR:', import.meta.env.BASE_URL)
+console.info('BASE_URL:', import.meta.env.BASE_URL)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

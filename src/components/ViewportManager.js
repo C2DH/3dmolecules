@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { UAParser } from 'ua-parser-js'
 import { create } from 'zustand'
 
@@ -7,20 +7,18 @@ export const useViewportStore = create(set => ({
   availableWidth: window.innerWidth,
   setAvailableHeight: availableHeight => set({ availableHeight }),
   setAvailableWidth: availableWidth => set({ availableWidth }),
-  updateAvailableDimensions: () => {
+  updateAvailableDimensions: () =>
     set({
       availableHeight: window.innerHeight,
       availableWidth: window.innerWidth
-    })
-  },
+    }),
   isPortrait: window.innerHeight > window.innerWidth,
   isLandscape: window.innerHeight < window.innerWidth,
-  updateOrientation: () => {
+  updateOrientation: () =>
     set({
       isPortrait: window.innerHeight > window.innerWidth,
       isLandscape: window.innerHeight < window.innerWidth
-    })
-  },
+    }),
   isBackgroundVideoReady: false,
   setBackgroundVideoReady: isBackgroundVideoReady => set({ isBackgroundVideoReady }),
 
@@ -29,19 +27,27 @@ export const useViewportStore = create(set => ({
 }))
 
 const ViewportManager = () => {
-  const parser = new UAParser()
-  const device = parser.getDevice()
+  const [device] = useState(() => new UAParser().getDevice())
 
-  console.info('[ViewportManager] \n - navigator.userAgent', navigator.userAgent, '\n - device:', device)
   const isPortrait = useRef(window.innerHeight > window.innerWidth)
 
-  const [updateOrientation, updateAvailableDimensions] = useViewportStore(state => [
-    state.updateOrientation,
-    state.updateAvailableDimensions
-  ])
+  const updateOrientation = useViewportStore(state => state.updateOrientation)
+  const updateAvailableDimensions = useViewportStore(state => state.updateAvailableDimensions)
+
+  console.info(
+    '[ViewportManager] \n - navigator.userAgent',
+    navigator.userAgent,
+    '\n - device:',
+    device,
+    '\n',
+    '- isPortrait',
+    isPortrait.current
+  )
 
   useEffect(() => {
+    console.info('[ViewportManager] @useEffect')
     const resize = () => {
+      console.info('[ViewportManager] @resize', device.type)
       // windowHeight.current = window.innerHeight
       if (device.type === 'mobile') {
         // detect if the device CHANGED from portrait to landscape mode
@@ -68,7 +74,7 @@ const ViewportManager = () => {
       console.info('[ViewportManager] @useEffect cleanup')
       window.removeEventListener('resize', resize)
     }
-  }, [window.innerHeight])
+  }, [])
 }
 
 export default ViewportManager
