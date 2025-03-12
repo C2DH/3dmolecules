@@ -76,7 +76,14 @@ const BisphenolSPage = ({ pathname }) => {
           <meta name="keywords" content="Robe, UCLAB, C²DH" />
         </Helmet>
       </HelmetProvider>
-      <Canvas gl={{ pixelRatio: Math.min(window.devicePixelRatio, 2), antialias: true }}>
+      <Canvas
+        gl={{
+          pixelRatio: Math.min(window.devicePixelRatio, 2),
+          antialias: false,
+          forceWebGL1: true,
+          powerPreference: 'low-power'
+        }}
+      >
         <SheetProvider sheet={sheet}>
           <BisphenolS pathname={pathname} />
         </SheetProvider>
