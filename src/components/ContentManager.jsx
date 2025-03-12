@@ -46,6 +46,7 @@ const ContentManager = ({ openModal, scrollToTop }) => {
     config: config.slow
   }))
 
+  console.log('[ContentManager] @contents', contents)
   useLayoutEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {

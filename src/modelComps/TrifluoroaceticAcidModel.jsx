@@ -20,7 +20,7 @@ const TrifluoroaceticAcidModel = forwardRef(({ position, ...props }, ref) => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-
+  console.log('[TrifluoroaceticAcidModel] @modelUrl', modelUrl)
   const customShaderMaterial = useMemo(
     () =>
       new THREE.ShaderMaterial({

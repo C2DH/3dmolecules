@@ -33,7 +33,7 @@ const FullscreenModelPage = ({ pathname }) => {
     opacity: 0,
     config: config.slow
   }))
-
+  console.log('[FullscreenModelPage] @pathname', pathname)
   useEffect(() => {
     console.debug('API', api.start)
     api.start({

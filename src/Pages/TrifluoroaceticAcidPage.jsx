@@ -27,13 +27,13 @@ const TrifluoroaceticAcid = () => {
       sheet.sequence.position = value.position
     }
   }))
-
+  console.log('[TrifluoroaceticAcid] @sheet', sheet)
   useEffect(() => {
     return useScrollStore.subscribe(state => {
       ratioRef.current = state.scrollRatio
       let ratioMenuLinkPosition = window.scrollY / state.menuLinkPosition
       console.debug(
-        '[RobeFrancaise] @useEffect @useScrollStore.subscribe',
+        '[TrifluoroaceticAcid] @useEffect @useScrollStore.subscribe',
         state.menuLinkPosition,
         window.scrollY,
         state.scrollRatio,
@@ -66,7 +66,7 @@ const TrifluoroaceticAcidPage = ({ pathname }) => {
     state: robeAnimation
   })
   const sheet = project.sheet('Scene')
-
+  console.log('[TrifluoroaceticAcidPage] @sheet', sheet)
   return (
     <div className="Scene fixed h-screen w-full top-0">
       <HelmetProvider>
