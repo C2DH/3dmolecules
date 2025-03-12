@@ -34,7 +34,7 @@
 	{
       "id": 7,
       "title": "Suggest a (Chemical) Story",
-      "description": "Would you like us to add more chemical stories? Is your favourite chemical missing? You can suggest new stories by posting an issue on the <a href='https://github.com/C2DH/3dmolecules' target='_blank'>C2DH GitHub repository</a> or reaching out to one of the team."
+      "description": "Would you like us to add more chemical stories? Is your favourite chemical missing? You can suggest new stories by posting an <a href='https://github.com/C2DH/3dmolecules/issues' target='_blank'>issue</a> on the <a href='https://github.com/C2DH/3dmolecules' target='_blank'>C2DH GitHub repository</a> or reaching out to one of the team."
     },
     {
       "id": 8,
