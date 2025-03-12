@@ -28,7 +28,7 @@ const NicotineModel = forwardRef(({ position, ...props }, ref) => {
         fragmentShader,
         uniforms: {
           cameraPosition: { value: new THREE.Vector3() }, // Updated automatically
-          uSize: { value: 0.025 }, // Default point size
+          uSize: { value: 0.15 }, // Default point size
           uColor: { value: new THREE.Color('') }, // Default color (green)
           uAlpha: { value: 1.0 }, // Default alpha (fully opaque)
           uTime: { value: 0 }, // Optional: For animations
@@ -36,8 +36,7 @@ const NicotineModel = forwardRef(({ position, ...props }, ref) => {
             new THREE.Vector2(window.innerWidth * window.devicePixelRatio, window.innerHeight * window.devicePixelRatio)
           )
         },
-        transparent: true, // Enable transparency
-        blending: THREE.AdditiveBlending // Additive blending mode
+        transparent: true // Enable transparency
       }),
     []
   )
@@ -85,7 +84,7 @@ const NicotineModel = forwardRef(({ position, ...props }, ref) => {
 
   const stickMaterial = useMemo(() => {
     const mat = customShaderMaterial.clone()
-    mat.uniforms.uSize.value = 0.015
+    mat.uniforms.uSize.value = 0.1
     return mat
   }, [])
 

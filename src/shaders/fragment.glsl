@@ -1,17 +1,22 @@
 uniform vec3 uColor; // Uniform color for all points
 uniform float uAlpha; // Uniform alpha (transparency) for all points
 
+varying vec3 vWorldPosition;
 varying vec3 vColor; // Receive color from the vertex shader
 
 void main() {
     // Set the color of the point
-    vec3 finalColor = uColor * vColor;
+    vec3 finalColor = uColor * vColor; // Combine uniform color with vertex color
 
-    // Create a circular point with smooth edges
-    vec2 coord = gl_PointCoord - vec2(0.5);
-    float distanceFromCenter = dot(coord, coord); // Squared distance
-    float alpha = smoothstep(0.25, 0.24, distanceFromCenter); // Smooth edge
+    // Optional: Create a circular point (instead of square)
+    vec2 coord = gl_PointCoord - vec2(0.5); // Center the coordinate system
+    float distanceFromCenter = length(coord);
+    if (distanceFromCenter > 0.5) {
+        discard; // Discard fragments outside the circle
+    }
 
     // Output the final color with transparency
-    gl_FragColor = vec4(finalColor, uAlpha * alpha);
+    gl_FragColor = vec4(finalColor, uAlpha);
+    #include <tonemapping_fragment>
+    #include <colorspace_fragment>
 }
