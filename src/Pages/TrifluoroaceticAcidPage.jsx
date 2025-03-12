@@ -75,7 +75,6 @@ const TrifluoroaceticAcidPage = ({ pathname }) => {
     const handleContextLost = event => {
       event.preventDefault()
       console.error('WebGL context lost!')
-      alert('WebGL context lost!')
       // Handle context loss (e.g., show a message, save state)
     }
 
@@ -106,7 +105,14 @@ const TrifluoroaceticAcidPage = ({ pathname }) => {
           <meta name="keywords" content="Robe, UCLAB, C²DH" />
         </Helmet>
       </HelmetProvider>
-      <Canvas gl={{ pixelRatio: Math.min(window.devicePixelRatio, 2), antialias: true }}>
+      <Canvas
+        dpr={[1, 2]}
+        gl={{
+          powerPreference: 'high-performance',
+          pixelRatio: Math.min(window.devicePixelRatio, 2),
+          antialias: true
+        }}
+      >
         <SheetProvider sheet={sheet}>
           <TrifluoroaceticAcid pathname={pathname} />
         </SheetProvider>
