@@ -33,7 +33,7 @@ const NavPrevNextButtons = ({ className }) => {
   return (
     <div className={`button-control-group ${className} self-start lg:self-center`}>
       <div className="NavPrevNextButtons z-[1]  flex justify-center items-center">
-        Test-2
+        {/* Test-2 */}
         {pathname !== '/' ? (
           <div className="mb-5 lg:mb-0">
             <div
