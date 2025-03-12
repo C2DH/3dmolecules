@@ -112,10 +112,11 @@ const TrifluoroaceticAcidPage = ({ pathname }) => {
         gl={{
           pixelRatio: Math.min(window.devicePixelRatio, 2),
           antialias: false,
+          forceWebGL1: true,
           powerPreference: 'low-power'
         }}
       >
-        <DebugMemory />
+        {/* <DebugMemory /> */}
         <SheetProvider sheet={sheet}>
           <TrifluoroaceticAcid pathname={pathname} />
         </SheetProvider>
