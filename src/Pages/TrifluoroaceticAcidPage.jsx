@@ -12,6 +12,7 @@ import TrifluoroaceticAcidModel from '../modelComps/TrifluoroaceticAcidModel'
 import { editable as e } from '@theatre/r3f'
 import Transition from '../Ui/Transition'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
+import DebugMemory from '../components/DebugMemory'
 
 const TrifluoroaceticAcid = () => {
   const ratioRef = useRef(useScrollStore.getState().scrollRatio)
@@ -63,6 +64,7 @@ const TrifluoroaceticAcid = () => {
 
 const TrifluoroaceticAcidPage = ({ pathname }) => {
   const canvasRef = useRef()
+
   const project = getProject('Robe Francaise Animation', {
     state: robeAnimation
   })
@@ -108,11 +110,12 @@ const TrifluoroaceticAcidPage = ({ pathname }) => {
       <Canvas
         dpr={[1, 2]}
         gl={{
-          powerPreference: 'high-performance',
           pixelRatio: Math.min(window.devicePixelRatio, 2),
-          antialias: true
+          antialias: false,
+          powerPreference: 'low-power'
         }}
       >
+        <DebugMemory />
         <SheetProvider sheet={sheet}>
           <TrifluoroaceticAcid pathname={pathname} />
         </SheetProvider>
