@@ -62,11 +62,41 @@ const TrifluoroaceticAcid = () => {
 }
 
 const TrifluoroaceticAcidPage = ({ pathname }) => {
+  const canvasRef = useRef()
   const project = getProject('Robe Francaise Animation', {
     state: robeAnimation
   })
   const sheet = project.sheet('Scene')
   console.log('[TrifluoroaceticAcidPage] @sheet', sheet)
+
+  useEffect(() => {
+    const canvas = canvasRef.current
+
+    const handleContextLost = event => {
+      event.preventDefault()
+      console.error('WebGL context lost!')
+      alert('WebGL context lost!')
+      // Handle context loss (e.g., show a message, save state)
+    }
+
+    const handleContextRestored = event => {
+      console.log('WebGL context restored!')
+      // Handle context restoration (e.g., reload resources)
+    }
+
+    if (canvas) {
+      canvas.addEventListener('webglcontextlost', handleContextLost)
+      canvas.addEventListener('webglcontextrestored', handleContextRestored)
+    }
+
+    return () => {
+      if (canvas) {
+        canvas.removeEventListener('webglcontextlost', handleContextLost)
+        canvas.removeEventListener('webglcontextrestored', handleContextRestored)
+      }
+    }
+  }, [sheet])
+
   return (
     <div className="Scene fixed h-screen w-full top-0">
       <HelmetProvider>
