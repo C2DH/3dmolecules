@@ -11,8 +11,8 @@
     },
     {
       "id": 2,
-      "title": "",
-      "description": "Trifluoroacetic acid or TFA is a very small molecule composed of a CF3 group connected to a carboxylic acid. It is one of the smallest 'forever chemicals' according to the new defintion. TFA is used in many manufacturing processes, but can also form from larger 'forever chemicals'."
+      "title": "What is TFA?",
+      "description": "Trifluoroacetic acid or TFA is a very small molecule composed of a CF3 group connected to a carboxylic acid. It is one of the smallest 'forever chemicals' according to the new <a href='https://one.oecd.org/document/ENV/CBC/MONO(2021)25/En/pdf' target='_blanc'>OCED defintion</a>. TFA is used in many manufacturing processes, but can also form from larger 'forever chemicals'."
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
     {
       "id": 4,
       "title": "How many 'forever chemicals' are there?",
-      "description": "The estimated number of 'forever chemicals' ranges from several thousand to several million when accounting for recent definitions (at least one CF2 or CF3 group). We found over 7 million PFAS matching this definition in <a href='https://pubchem.ncbi.nlm.nih.gov/classification/#hid=120' target='_blanc'>PubChem</a>. You can read more at DOI: <a href='https://doi.org/10.1021/acs.est.3c04855' target='_blanc'>10.1021/acs.est.3c04855</a>."
+      "description": "The estimated number of 'forever chemicals' ranges from several thousand to several million when accounting for recent <a href='https://one.oecd.org/document/ENV/CBC/MONO(2021)25/En/pdf' target='_blanc'>OCED defintions</a> (at least one CF2 or CF3 group). We found over 7 million PFAS matching this definition in <a href='https://pubchem.ncbi.nlm.nih.gov/classification/#hid=120' target='_blanc'>PubChem</a>. You can read more in this article at DOI: <a href='https://doi.org/10.1021/acs.est.3c04855' target='_blanc'>10.1021/acs.est.3c04855</a>."
     },
     {
       "id": 5,
@@ -42,7 +42,7 @@
     {
       "id": 8,
       "title": "Can TFA form from pesticides?",
-      "description": "TFA can form TFA from pesticides such as flurtamone, fluopyram and tembotrione (among others) but also from other PFAS. We have been adding data about PFAS transformation processes to open resources in collaboration with several contributors via the <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>.",
+      "description": "TFA can form TFA from pesticides such as flurtamone, fluopyram and tembotrione (among others) but also from other PFAS. We have been adding data about PFAS transformation processes to open resources in collaboration with several contributors via the <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>. You can also view the transformations data related to TFA on <a href='https://pubchem.ncbi.nlm.nih.gov/compound/6422#section=Transformations' target='_blanc'>PubChem</a> ",
       "background": "right"
     },
     {
@@ -54,7 +54,7 @@
     {
       "id": 10,
       "title": "Further details and sources",
-      "description": "Find out more about TFA on <a href='https://pubchemlite.lcsb.uni.lu/e/compound/6422' target='_blanc'>PubChemLite</a>, which includes the <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“chemical stripes”</a> visualization. Further details can be found on <a href='https://pubchem.ncbi.nlm.nih.gov/compound/6422' target='_blanc'>PubChem</a>. This 3D story about TFA also mentions other developments at the LCSB, University of Luxembourg, including the NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, (<a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>website</a>) and <a href='https://massbank.eu/' target='_blanc'>MassBank</a>. You can read more about the 7 million PFAS in PubChem at DOI: <a href='https://doi.org/10.1021/acs.est.3c04855' target='_blanc'>10.1021/acs.est.3c04855</a> or explore more <a href='https://pubchem.ncbi.nlm.nih.gov/classification/#hid=120' target='_blanc'>here</a>. Text compiled by <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, University of Luxembourg.",
+      "description": "Find out more about TFA on <a href='https://pubchemlite.lcsb.uni.lu/e/compound/6422' target='_blanc'>PubChemLite</a>, which includes the <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“chemical stripes”</a> visualization. Further details can be found on <a href='https://pubchem.ncbi.nlm.nih.gov/compound/6422' target='_blanc'>PubChem</a>. This 3D story about TFA also mentions other developments at the LCSB, University of Luxembourg, including the NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>website</a>) and <a href='https://massbank.eu/' target='_blanc'>MassBank</a>. You can read more about the 7 million PFAS in PubChem at DOI: <a href='https://doi.org/10.1021/acs.est.3c04855' target='_blanc'>10.1021/acs.est.3c04855</a> or explore more <a href='https://pubchem.ncbi.nlm.nih.gov/classification/#hid=120' target='_blanc'>here</a>. Text compiled by <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, University of Luxembourg.",
       "background": "left"
     }
   ]
