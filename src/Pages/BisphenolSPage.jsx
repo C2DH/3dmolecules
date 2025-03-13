@@ -71,9 +71,9 @@ const BisphenolSPage = ({ pathname }) => {
     <div className="Scene fixed h-screen w-full top-0">
       <HelmetProvider>
         <Helmet>
-          <title>3D Stories · A luxurious Robe à la francaise</title>
-          <meta name="description" content="Telling stories about historical dress." data-rh="true" />
-          <meta name="keywords" content="Robe, UCLAB, C²DH" />
+          <title>3D Molecules · Bisphenol S (BPS)</title>
+          <meta name="description" content="Telling stories about chemicals." data-rh="true" />
+          <meta name="keywords" content="Bisphenol S, UCLAB, C²DH" />
         </Helmet>
       </HelmetProvider>
       <Canvas
