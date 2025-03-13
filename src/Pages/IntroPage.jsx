@@ -17,8 +17,8 @@ const IntroPage = () => {
         <HelmetProvider>
           <Helmet>
             <title>3D Stories</title>
-            <meta name="description" content="" data-rh="true" />
-            <meta name="keywords" content="UCLAB, C²DH" />
+            <meta name="description" content="Telling stories about chemicals." data-rh="true" />
+            <meta name="keywords" content="LCSB, C²DH" />
           </Helmet>
         </HelmetProvider>
         <div className="h-screen flex items-center sm:translate-x-[0rem] xl:translate-x-[-12rem]">
@@ -71,12 +71,12 @@ const IntroPage = () => {
               ))}
             </div>
           ))}
-        {/* <div className="intiroduction-links relative flex flex-wrap justify-center">
-          <a className="mx-3" href="https://uclab.fh-potsdam.de/refa/" target="_blank">
-            GitHub-Repro
+        {/* <div className="introduction-links relative flex flex-wrap justify-center">
+          <a className="mx-3" href="https://github.com/C2DH/3dmolecules" target="_blank">
+            GitHub-Repo
           </a>
-          <a className="mx-3" href="https://uclab.fh-potsdam.de/refa/" target="_blank">
-            Restaging Fashion (refa)
+          <a className="mx-3" href="https://github.com/C2DH/3dmolecules" target="_blank">
+           3D molecules
           </a>
         </div> */}
       </main>
