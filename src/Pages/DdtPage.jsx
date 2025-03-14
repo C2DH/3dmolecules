@@ -52,7 +52,7 @@ const Ddt = () => {
   return (
     <>
       <PerspectiveCamera theatreKey="Camera" makeDefault position={[0, 0.2, 8]} fov={45} near={0.1} far={70} />
-      <group position={isBigScreen ? [-0.4, 0.3, 0] : [-1, 0.3, 0]} scale={isBigScreen ? 1 : 0.5}>
+      <group position={isBigScreen ? [-0.4, 0.3, 0] : [-1, 0, 0]} scale={isBigScreen ? 1 : 0.5}>
         <e.group theatreKey="Robe">
           <DdtModel />
         </e.group>

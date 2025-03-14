@@ -86,7 +86,7 @@ const NicotineModel = forwardRef(({ position, ...props }, ref) => {
 
   const stickMaterial = useMemo(() => {
     const mat = customShaderMaterial.clone()
-    mat.uniforms.uSize.value = isBigScreen ? 0.1 : 0.075
+    mat.uniforms.uSize.value = isBigScreen ? 0.1 : 0.08
     return mat
   }, [])
 
