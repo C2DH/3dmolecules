@@ -57,7 +57,7 @@ const FullscreenModelPage = ({ pathname }) => {
       />
       {isBigScreen ? <InfoPanel /> : <InfoPanel mobile={true} />}
       <Canvas gl={{ pixelRatio: Math.min(window.devicePixelRatio, 2), antialias: true }}>
-        <PerspectiveCamera makeDefault position={[0, 0.2, 8]} fov={45} near={0.1} far={70} />
+        <PerspectiveCamera makeDefault position={[0, 0.2, 12]} fov={60} near={0.1} far={70} />
         <OrbitControls autoRotate={false} autoRotateSpeed={0.5} enableDamping={true} />
         {pathname === '/trifluoroacetic_acid' ? (
           <>
