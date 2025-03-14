@@ -1,8 +1,8 @@
 # 3D Stories
 
-3D Stories is a powerful tool designed to present 3D Models of historic garments from the textile collection at the Germanisches Nationalmuseum Nuremberg. Developed in collaboration with the Urban Complexity Lab of Potsdam, this tool provides an interactive and immersive experience for exploring historic textiles.
+3D Stories is a powerful tool designed to present 3D Models of selected chemicals from the research activities of the Environmental Cheminformatics group ([ECI](https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/)) at [LCSB](https://www.uni.lu/lcsb-en/), University of Luxembourg. This collaborative effort with [C2DH](https://www.uni.lu/c2dh-en/) provides an interactive and immersive experience for exploring chemicals.
 
-![Untitled](https://github.com/user-attachments/assets/e8b3b9da-e043-4c9e-be12-39fd98b82b02)
+![Untitled](https://github.com/C2DH/3dmolecules/raw/main/public/img/telling_stories_caffeine.jpg)
 
 ## Table of Contents
 
