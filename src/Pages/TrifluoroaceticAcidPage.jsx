@@ -1,7 +1,7 @@
 import { Canvas } from '@react-three/fiber'
 import { SheetProvider } from '@theatre/r3f'
 import { getProject } from '@theatre/core'
-import robeAnimation from '../Data/Animation/robeAnimation.json'
+import TfaAnimation from '../Data/Animation/tfaAnimation.json'
 import { useEffect, useRef } from 'react'
 import { config, useSpring } from '@react-spring/web'
 import { useCurrentSheet, PerspectiveCamera } from '@theatre/r3f'
@@ -53,7 +53,7 @@ const TrifluoroaceticAcid = () => {
   return (
     <>
       <PerspectiveCamera theatreKey="Camera" makeDefault position={[0, 0.2, 8]} fov={45} near={0.1} far={70} />
-      <group position={isBigScreen ? [0, 0.3, 0] : [-1.3, 0.3, 0]} scale={isBigScreen ? 1 : 0.8}>
+      <group position={isBigScreen ? [0, 0.3, 0] : [-1, 0.3, 0]} scale={isBigScreen ? 1 : 0.8}>
         <e.group theatreKey="Robe">
           <TrifluoroaceticAcidModel />
         </e.group>
@@ -66,7 +66,7 @@ const TrifluoroaceticAcidPage = ({ pathname }) => {
   const canvasRef = useRef()
 
   const project = getProject('Robe Francaise Animation', {
-    state: robeAnimation
+    state: TfaAnimation
   })
   const sheet = project.sheet('Scene')
   console.log('[TrifluoroaceticAcidPage] @sheet', sheet)
@@ -113,7 +113,8 @@ const TrifluoroaceticAcidPage = ({ pathname }) => {
           pixelRatio: Math.min(window.devicePixelRatio, 2),
           antialias: false,
           forceWebGL1: true,
-          powerPreference: 'low-power'
+          powerPreference: 'low-power',
+          preserveDrawingBuffer: true
         }}
       >
         {/* <DebugMemory /> */}

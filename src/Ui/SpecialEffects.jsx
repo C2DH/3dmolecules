@@ -7,7 +7,7 @@ const SpecialEffects = () => {
 
   return (
     <>
-      {isBigScreen ? <Sparkles count={60} size={1} scale={5} speed={0.1} opacity={0.3} /> : null}
+      {isBigScreen ? <Sparkles count={40} size={1} scale={5} speed={0.1} opacity={0.3} /> : null}
       <EffectComposer>
         {isBigScreen ? (
           <>

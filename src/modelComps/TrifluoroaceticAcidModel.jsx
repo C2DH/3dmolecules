@@ -7,11 +7,13 @@ import { getSafeBasePathUrl } from '../utils'
 import vertexShader from '../shaders/vertex.glsl?raw'
 import fragmentShader from '../shaders/fragment.glsl?raw'
 import SpecialEffects from '../Ui/SpecialEffects'
+import { useMediaQuery } from 'react-responsive'
 
 const modelUrl = getSafeBasePathUrl('/gltf/TrifluoroaceticAcid.glb')
 
 const TrifluoroaceticAcidModel = forwardRef(({ position, ...props }, ref) => {
   const [, setWatchLoadedAtom] = useAtom(watchLoadedAtom)
+  const isBigScreen = useMediaQuery({ query: '(min-width: 640px)' })
 
   useEffect(() => {
     setWatchLoadedAtom(true)
@@ -28,7 +30,7 @@ const TrifluoroaceticAcidModel = forwardRef(({ position, ...props }, ref) => {
         fragmentShader,
         uniforms: {
           cameraPosition: { value: new THREE.Vector3() }, // Updated automatically
-          uSize: { value: 0.15 }, // Default point size
+          uSize: { value: isBigScreen ? 0.15 : 0.13 }, // Default point size
           uColor: { value: new THREE.Color('') }, // Default color (green)
           uAlpha: { value: 1.0 }, // Default alpha (fully opaque)
           uTime: { value: 0 }, // Optional: For animations
@@ -87,7 +89,7 @@ const TrifluoroaceticAcidModel = forwardRef(({ position, ...props }, ref) => {
 
   const stickMaterial = useMemo(() => {
     const mat = customShaderMaterial.clone()
-    mat.uniforms.uSize.value = 0.1
+    mat.uniforms.uSize.value = isBigScreen ? 0.1 : 0.075
     return mat
   }, [])
 

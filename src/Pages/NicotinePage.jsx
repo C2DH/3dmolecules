@@ -1,7 +1,7 @@
 import { Canvas } from '@react-three/fiber'
 import { SheetProvider } from '@theatre/r3f'
 import { getProject } from '@theatre/core'
-import robeAnimation from '../Data/Animation/robeAnimation.json'
+import TfaAnimation from '../Data/Animation/tfaAnimation.json'
 import { useEffect, useRef } from 'react'
 import { config, useSpring } from '@react-spring/web'
 import { useCurrentSheet, PerspectiveCamera } from '@theatre/r3f'
@@ -52,7 +52,7 @@ const Nicotine = () => {
   return (
     <>
       <PerspectiveCamera theatreKey="Camera" makeDefault position={[0, 0.2, 8]} fov={45} near={0.1} far={70} />
-      <group position={isBigScreen ? [0, 0.3, 0] : [-1.3, 0.3, 0]} scale={isBigScreen ? 1 : 0.8}>
+      <group position={isBigScreen ? [-0.4, 0.3, 0] : [-0.8, 0, 0]} scale={isBigScreen ? 1 : 0.7}>
         <e.group theatreKey="Robe">
           <NicotineModel />
         </e.group>
@@ -63,7 +63,7 @@ const Nicotine = () => {
 
 const NicotinePage = ({ pathname }) => {
   const project = getProject('Robe Francaise Animation', {
-    state: robeAnimation
+    state: TfaAnimation
   })
   const sheet = project.sheet('Scene')
 

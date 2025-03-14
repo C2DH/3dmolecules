@@ -7,11 +7,13 @@ import { getSafeBasePathUrl } from '../utils'
 import vertexShader from '../shaders/vertex.glsl?raw'
 import fragmentShader from '../shaders/fragment.glsl?raw'
 import SpecialEffects from '../Ui/SpecialEffects'
+import { useMediaQuery } from 'react-responsive'
 
 const modelUrl = getSafeBasePathUrl('/gltf/BisphenolS.glb')
 
 const BisphenolSModel = forwardRef(({ position, ...props }, ref) => {
   const [, setWatchLoadedAtom] = useAtom(watchLoadedAtom)
+  const isBigScreen = useMediaQuery({ query: '(min-width: 640px)' })
 
   useEffect(() => {
     setWatchLoadedAtom(true)
@@ -28,7 +30,7 @@ const BisphenolSModel = forwardRef(({ position, ...props }, ref) => {
         fragmentShader,
         uniforms: {
           cameraPosition: { value: new THREE.Vector3() }, // Updated automatically
-          uSize: { value: 0.15 }, // Default point size
+          uSize: { value: isBigScreen ? 0.15 : 0.13 }, // Default point size
           uColor: { value: new THREE.Color('') }, // Default color (green)
           uAlpha: { value: 1.0 }, // Default alpha (fully opaque)
           uTime: { value: 0 }, // Optional: For animations
@@ -88,13 +90,20 @@ const BisphenolSModel = forwardRef(({ position, ...props }, ref) => {
 
   const stickMaterial = useMemo(() => {
     const mat = customShaderMaterial.clone()
-    mat.uniforms.uSize.value = 0.1
+    mat.uniforms.uSize.value = isBigScreen ? 0.1 : 0.075
     return mat
   }, [])
 
   return (
     <>
-      <group {...props} dispose={null} position={position} rotation={[0, 0, 0]} ref={ref} scale={1}>
+      <group
+        {...props}
+        dispose={null}
+        position={position}
+        rotation={isBigScreen ? [0, 0, 0] : [0, 0.67, 1.57]}
+        ref={ref}
+        scale={1}
+      >
         <points geometry={atoms1Points} material={customShaderMaterial} />
         <points geometry={atoms2Points} material={customShaderMaterial} />
         <points geometry={atoms3Points} material={customShaderMaterial} />

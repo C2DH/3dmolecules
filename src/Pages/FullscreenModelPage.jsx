@@ -62,36 +62,36 @@ const FullscreenModelPage = ({ pathname }) => {
         {pathname === '/trifluoroacetic_acid' ? (
           <>
             <TrifluoroaceticAcidModel position={[0, 0, 0]} scale={1.2} />
-            <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
-            <Annotation id={14} position={[-0.15, 0, 0.6]} />
+            {/* <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
+            <Annotation id={14} position={[-0.15, 0, 0.6]} /> */}
           </>
         ) : null}
         {pathname === '/caffeine' ? (
           <>
             <CaffeineModel position={[0, 0, 0]} scale={1.2} />
-            <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
-            <Annotation id={14} position={[-0.15, 0, 0.6]} />
+            {/* <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
+            <Annotation id={14} position={[-0.15, 0, 0.6]} /> */}
           </>
         ) : null}
         {pathname === '/nicotine' ? (
           <>
             <NicotineModel position={[0, 0, 0]} scale={1.2} />
-            <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
-            <Annotation id={14} position={[-0.15, 0, 0.6]} />
+            {/* <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
+            <Annotation id={14} position={[-0.15, 0, 0.6]} /> */}
           </>
         ) : null}
         {pathname === '/ddt' ? (
           <>
             <DdtModel position={[0, 0, 0]} scale={1.2} />
-            <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
-            <Annotation id={14} position={[-0.15, 0, 0.6]} />
+            {/* <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
+            <Annotation id={14} position={[-0.15, 0, 0.6]} /> */}
           </>
         ) : null}
         {pathname === '/bisphenol_s' ? (
           <>
             <BisphenolSModel position={[0, 0, 0]} scale={1.2} />
-            <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
-            <Annotation id={14} position={[-0.15, 0, 0.6]} />
+            {/* <Annotation id={8} position={[-0.1, 2.2, -0.5]} />
+            <Annotation id={14} position={[-0.15, 0, 0.6]} /> */}
           </>
         ) : null}
       </Canvas>
