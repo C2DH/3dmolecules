@@ -76,7 +76,10 @@ function App() {
     <>
       {}
       {isBigScreen && pathname !== '/' ? (
-        <button className="autoplay-button auto-play-trigger fixed flex justify-center z-10" onClick={autoPlayTrigger}>
+        <button
+          className="autoplay-button auto-play-trigger fixed flex justify-center items-center z-10"
+          onClick={autoPlayTrigger}
+        >
           <Autoplay className={'absolute'} width={100} />
           <span className="text-center absolute'">{isPaused ? 'OFF' : 'ON'}</span>
         </button>
