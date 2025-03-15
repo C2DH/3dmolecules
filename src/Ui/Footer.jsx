@@ -59,7 +59,7 @@ const Footer = ({ scrollToTop, pathname }) => {
           </button>
         </div>
       ) : null}
-      <div className="flex z-40 flex-wrap w-screen justify-between ">
+      <div className="flex z-2 flex-wrap w-screen justify-between ">
         <div className="footer-left my-3 justify-center md:justify-start flex-wrap flex flex-row items-center flex-grow">
           {/* <LogoFhp width={isBigScreen ? 160 : 90} />
           <LogoUcl className={'ml-5'} width={isBigScreen ? 120 : 80} /> */}

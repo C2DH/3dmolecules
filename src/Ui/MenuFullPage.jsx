@@ -9,7 +9,7 @@ import { useSpring, a } from '@react-spring/web'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import useStore from '../GlobalState'
 import { useMediaQuery } from 'react-responsive'
-import FlourishPattern from '../Svg/FlourishPattern'
+import CaffeineSvg from '../Svg/Chemical/CaffeineSvg'
 import { useViewportStore } from '../components/ViewportManager'
 import { useLocation } from 'react-router-dom'
 import { useScrollStore } from '../components/ScrollManager'
@@ -133,7 +133,7 @@ const MenuFullPage = () => {
   return (
     <a.section
       style={styles}
-      className={`MenuFullPage ${clickedSlideId === true ? 'black' : ''} z-100 ${isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
+      className={`MenuFullPage ${clickedSlideId === true ? 'black' : ''} ${isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
     >
       <menu className=" flex">
         <ul className="flex flex-col items-center">
@@ -164,13 +164,16 @@ const MenuFullPage = () => {
           </li>
         </ul>
       </menu>
-      <FlourishPattern
-        width={isBigScreen ? 400 : 150}
-        className={`${isBigScreen ? 'bottom-[3rem] right-[3rem]' : 'bottom-[1rem] right-[1rem]'} pointer-events-none`}
+
+      <CaffeineSvg
+        width={isBigScreen ? 200 : 100}
+        stroke={'var(--white)'}
+        className={`${isBigScreen ? 'opacity-10 absolute bottom-[3rem] right-[3rem]' : 'bottom-[1rem] right-[1rem]'} pointer-events-none`}
       />
-      <FlourishPattern
-        width={isBigScreen ? 400 : 150}
-        className={`${isBigScreen ? 'bottom-[3rem] left-[3rem]' : 'bottom-[1rem] left-[1rem]'} scale-x-[-1] pointer-events-none`}
+      <CaffeineSvg
+        width={isBigScreen ? 200 : 100}
+        stroke={'var(--white)'}
+        className={`${isBigScreen ? 'opacity-10 absolute bottom-[3rem] left-[3rem]' : 'bottom-[1rem] left-[1rem]'} scale-x-[-1] pointer-events-none`}
       />
     </a.section>
   )

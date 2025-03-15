@@ -24,10 +24,11 @@
   /* z-index */
   --z-canvas: 0;
   --z-default: 1;
-  --z-fullscreen-menu: 2;
-  --z-header: 3;
-  --z-modal: 4;
-  --z-info: 5;
+  --footer: 2;
+  --z-fullscreen-menu: 11;
+  --z-header: 12;
+  --z-modal: 13;
+  --z-info: 14;
 }
 
 .fluorine-color {
@@ -193,6 +194,7 @@ figcaption {
 }
 
 footer {
+  z-index: var(--footer);
   pointer-events: none;
 }
 
