@@ -22,17 +22,28 @@ import Preloader from './Ui/Preloader'
 import { useEffect, useRef } from 'react'
 import useStore from './GlobalState'
 import VideoBackground from './Ui/VideoBackground'
+import AutoScroller from './Ui/AutoScroller'
+import { useMediaQuery } from 'react-responsive'
+import Autoplay from './Svg/Autoplay'
 
 function App() {
   const location = useLocation()
   const pathname = location.pathname
   const [isModalVisible, setModalVisible] = useAtom(modalVisible)
   const [isModalImage, setModalImage] = useAtom(modalImage) // Use an empty object as the key
+  const { isPaused, setIsPaused } = useStore()
+  const isBigScreen = useMediaQuery({ query: '(min-width: 640px)' })
+
   const scrollToTopRef = useRef(null)
   const scrollToTopEf = useStore(state => state.scrollToTopEf)
   const setScrollToTopEf = useStore(state => state.setScrollToTopEf)
 
   console.info('[App] pathname', pathname, '\n - isModalVisible', isModalVisible, '\n - isModalImage', isModalImage)
+
+  const autoPlayTrigger = () => {
+    setIsPaused(!isPaused) // Toggle isPaused
+  }
+
   const scrollToTop = () => {
     window.scrollTo({
       top: window.top,
@@ -63,6 +74,14 @@ function App() {
 
   return (
     <>
+      {}
+      {isBigScreen ? (
+        <button className="autoplay-button auto-play-trigger fixed flex justify-center z-10" onClick={autoPlayTrigger}>
+          <Autoplay className={'absolute'} width={100} />
+          <span className="text-center absolute'">{isPaused ? 'OFF' : 'ON'}</span>
+        </button>
+      ) : null}
+      <AutoScroller />
       <ModalWindow closeModal={closeModal} isModalImage={isModalImage} isModalVisible={isModalVisible} />
       <Header scrollToTop={scrollToTop} />
 

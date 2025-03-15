@@ -19,12 +19,16 @@ const Feature = ({ title, description, ref, i, lastItem, contents, openModal, sc
     }
   }
 
-  const scrollToInnerHeight = () => {
+  const autoScrollTrigger = () => {
     window.scrollTo({
       top: window.innerHeight,
       behavior: 'smooth' // Optional: for smooth scrolling
     })
   }
+
+  // const autoScrollTrigger = () => {
+  //   setIsPaused(!isPaused) // Toggle isPaused
+  // }
 
   function findThisItem() {
     if (contents?.links?.[0].externalUrl) {
@@ -60,11 +64,11 @@ const Feature = ({ title, description, ref, i, lastItem, contents, openModal, sc
           <NavPrevNextButtons className="mr-[2rem]" scrollToTop={scrollToTop} />
           <div className="flex flex-col">
             <h1 className="" ref={ref} dangerouslySetInnerHTML={{ __html: title }}></h1>
-            <div className="intro-buttons">
+            <div className="intro-buttons flex">
               {pathname !== '/' ? (
                 <>
                   <Button
-                    onClick={scrollToInnerHeight}
+                    onClick={autoScrollTrigger}
                     className="mt-5 w-full md:w-auto sm:mr-0 md:mr-3 xl2:mr-3 pointer-events-auto"
                     value="Read model's story"
                   />
@@ -88,7 +92,7 @@ const Feature = ({ title, description, ref, i, lastItem, contents, openModal, sc
 
       ) : null} */}
       {lastItem ? (
-        <>
+        <div className="flex">
           {contents?.links?.[0] ? (
             <Button
               onClick={findThisItem}
@@ -104,7 +108,7 @@ const Feature = ({ title, description, ref, i, lastItem, contents, openModal, sc
               value={contents?.links?.[1]?.linkValue ? contents.links[1].linkValue : ' PubChem'}
             />
           ) : null}
-        </>
+        </div>
       ) : null}
     </div>
   )

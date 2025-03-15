@@ -280,3 +280,27 @@ hr {
     opacity: 0;
   }
 }
+
+.autoplay-button {
+  width: 100px;
+  height: 100px;
+  bottom: -1.2rem;
+  right: -1.2rem;
+}
+
+.autoplay-button .Autoplay {
+  animation: rotation 20s linear infinite;
+}
+
+.autoplay-button span {
+  opacity: 0.5;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

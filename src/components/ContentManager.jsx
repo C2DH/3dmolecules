@@ -11,6 +11,8 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { useSpring, a, config } from '@react-spring/web'
 import { useViewportStore } from './ViewportManager'
 import ScrollDownIndicator from '../Ui/ScrollDownIndicator'
+import useStore from '../GlobalState'
+
 // import { modalVisible } from '../GlobalState'
 // import { useAtom } from 'jotai'
 
@@ -37,6 +39,7 @@ const ContentManager = ({ openModal, scrollToTop }) => {
   const totalPagesRef = useRef(0)
   const [displayIndicator, setDisplayIndicator] = useState(true)
 
+  const setSectionCount = useStore(state => state.setSectionCount) // Get the setter
   const { pathname } = useLocation()
 
   const contents = AvailableContents[pathname]
@@ -45,6 +48,12 @@ const ContentManager = ({ openModal, scrollToTop }) => {
     y: 0,
     config: config.slow
   }))
+
+  useEffect(() => {
+    if (contents?.sections) {
+      setSectionCount(contents.sections.length) // Update the store with the number of sections
+    }
+  }, [pathname, contents]) // Run this effect when `pathname` or `contents` changes
 
   console.log('[ContentManager] @contents', contents)
   useLayoutEffect(() => {

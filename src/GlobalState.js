@@ -23,7 +23,11 @@ const useStore = create(set => ({
   clickedSlideId: false,
   setClickedSlideId: clickedSlideId => set({ clickedSlideId }),
   scrollToTopEf: false,
-  setScrollToTopEf: scrollToTopEf => set({ scrollToTopEf })
+  setScrollToTopEf: scrollToTopEf => set({ scrollToTopEf }),
+  sectionCount: 0, // Initial state
+  setSectionCount: count => set({ sectionCount: count }), // Action to update the count
+  isPaused: true, // isPaused is true by default
+  setIsPaused: value => set({ isPaused: value }) // Action to update isPaused
 }))
 
 export default useStore
