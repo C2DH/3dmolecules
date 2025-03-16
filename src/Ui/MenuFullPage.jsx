@@ -168,12 +168,12 @@ const MenuFullPage = () => {
       <CaffeineSvg
         width={isBigScreen ? 200 : 100}
         stroke={'var(--white)'}
-        className={`${isBigScreen ? 'opacity-10 absolute bottom-[3rem] right-[3rem]' : 'bottom-[1rem] right-[1rem]'} pointer-events-none`}
+        className={`${isBigScreen ? 'bottom-[3rem] right-[3rem]' : 'bottom-[1rem] right-[1rem]'} pointer-events-none opacity-10 absolute`}
       />
       <CaffeineSvg
         width={isBigScreen ? 200 : 100}
         stroke={'var(--white)'}
-        className={`${isBigScreen ? 'opacity-10 absolute bottom-[3rem] left-[3rem]' : 'bottom-[1rem] left-[1rem]'} scale-x-[-1] pointer-events-none`}
+        className={`${isBigScreen ? 'bottom-[3rem] left-[3rem]' : 'bottom-[1rem] left-[1rem]'} scale-x-[-1] pointer-events-none opacity-10 absolute`}
       />
     </a.section>
   )

@@ -64,7 +64,7 @@ const Feature = ({ title, description, ref, i, lastItem, contents, openModal, sc
           <NavPrevNextButtons className="mr-[2rem]" scrollToTop={scrollToTop} />
           <div className="flex flex-col">
             <h1 className="" ref={ref} dangerouslySetInnerHTML={{ __html: title }}></h1>
-            <div className="intro-buttons flex">
+            <div className="intro-buttons">
               {pathname !== '/' ? (
                 <>
                   <Button
