@@ -1,15 +1,21 @@
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import useStore from '../GlobalState'
 import Button from './Button'
-import FlourishPattern from '../Svg/FlourishPattern'
-import { useMediaQuery } from 'react-responsive'
 import NavPrevNextButtons from './NavPrevNextButtons'
+
+const getTranslatable = (item, language, defaultLanguage = 'en') => {
+  if (typeof item === 'string') return item
+  if (item[language]) return item[language]
+  if (item[defaultLanguage]) return item[defaultLanguage]
+  return 'no translation'
+}
 
 const Feature = ({ title, description, ref, i, lastItem, contents, openModal, scrollToTop }) => {
   const showFullscreenMode = useStore(state => state.showFullscreenMode)
-  const isBigScreen = useMediaQuery({ query: '(min-width: 640px)' })
   const location = useLocation()
   const pathname = location.pathname
+  const titleHtml = getTranslatable(title, 'en')
+  const descriptionHtml = getTranslatable(description, 'en')
 
   const fullscreenMode = () => {
     if (showFullscreenMode === false) {
@@ -84,9 +90,9 @@ const Feature = ({ title, description, ref, i, lastItem, contents, openModal, sc
           </div>
         </div>
       ) : (
-        <h2 ref={ref} dangerouslySetInnerHTML={{ __html: title }}></h2>
+        <h2 ref={ref} dangerouslySetInnerHTML={{ __html: titleHtml }}></h2>
       )}
-      <p className="my-4" dangerouslySetInnerHTML={{ __html: description }} onClick={onClickHandler}></p>
+      <p className="my-4" dangerouslySetInnerHTML={{ __html: descriptionHtml }} onClick={onClickHandler}></p>
 
       {/* {i === 0 && pathname !== '/' ? (
 
