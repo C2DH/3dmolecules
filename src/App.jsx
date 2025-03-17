@@ -2,7 +2,7 @@ import Background from './Ui/Background'
 import Header from './Ui/Header'
 import { Route, Routes } from 'react-router-dom'
 import Footer from './Ui/Footer'
-import { modalVisible, modalImage } from './GlobalState'
+import useGlobalStore, { modalVisible, modalImage } from './GlobalState'
 import { useAtom } from 'jotai'
 import FullscreenModelPage from './Pages/FullscreenModelPage'
 import ContentManager from './components/ContentManager'
@@ -23,13 +23,14 @@ import useStore from './GlobalState'
 import VideoBackground from './Ui/VideoBackground'
 import { useMediaQuery } from 'react-responsive'
 import Autoplay from './Ui/Autoplay'
+import useInactivityTimeout from './hooks/useInactivityTimeout'
 
 function App() {
   const location = useLocation()
   const pathname = location.pathname
   const [isModalVisible, setModalVisible] = useAtom(modalVisible)
   const [isModalImage, setModalImage] = useAtom(modalImage) // Use an empty object as the key
-
+  const setIsPaused = useGlobalStore(state => state.setIsPaused)
   const isBigScreen = useMediaQuery({ query: '(min-width: 640px)' })
 
   const scrollToTopEf = useStore(state => state.scrollToTopEf)
@@ -47,6 +48,18 @@ function App() {
       setModalImage(null)
     }, 500)
   }
+
+  useInactivityTimeout(
+    30000,
+    () => {
+      console.info('[App] Inactivity timeout')
+      setIsPaused(false)
+    },
+    {
+      deps: [pathname],
+      enabled: pathname !== '/'
+    }
+  )
 
   return (
     <>

@@ -28,6 +28,7 @@ const useGlobalStore = create(set => ({
   setSectionCount: count => set({ sectionCount: count }), // Action to update the count
   isPaused: true, // isPaused is true by default
   setIsPaused: value => set({ isPaused: value }), // Action to update isPaused
+  setIsPausedOnlyWhenDifferent: value => set(state => (state.isPaused === value ? state : { isPaused: value })), // Action to update isPaused only when different
   currentPage: 0, // isPaused is true by default
   setCurrentPage: currentPage => set({ currentPage }) // Add setter for currentPage
 }))
