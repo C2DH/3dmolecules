@@ -12,10 +12,13 @@
     {
       "id": 2,
       "title": {
-        "fr": "Qu'est-ce que l'acide trifluoroacétique?",
-        "en": "What is trifluoroacetic acid?"
+        "en": "What is trifluoroacetic acid?",
+        "fr": "Qu'est-ce que l'acide trifluoroacétique?"
       },
-      "description": "Trifluoroacetic acid or TFA is a very small molecule composed of a CF3 group connected to a carboxylic acid. It is one of the smallest 'forever chemicals' according to the new <a href='https://one.oecd.org/document/ENV/CBC/MONO(2021)25/En/pdf' target='_blanc'>OCED defintion</a>. TFA is used in many manufacturing processes, but can also form from larger 'forever chemicals'."
+      "description": {
+        "en": "Trifluoroacetic acid or TFA is a very small molecule composed of a CF3 group connected to a carboxylic acid. It is one of the smallest 'forever chemicals' according to the new <a href='https://one.oecd.org/document/ENV/CBC/MONO(2021)25/En/pdf' target='_blanc'>OCED defintion</a>. TFA is used in many manufacturing processes, but can also form from larger 'forever chemicals'.",
+        "fr": "L'acide trifluoroacétique ou TFA est une molécule très petite composée d'un groupe CF3 connecté à un acide carboxylique. C'est l'un des plus petits 'produits chimiques éternels' selon la nouvelle <a href='https://one.oecd.org/document/ENV/CBC/MONO(2021)25/En/pdf' target='_blanc'>définition de l'OCED</a>. Le TFA est utilisé dans de nombreux processus de fabrication, mais peut également se former à partir de 'produits chimiques éternels' plus grands."
+      }
     },
     {
       "id": 3,
