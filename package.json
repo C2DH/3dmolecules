@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "qrcodegen": "qrcode -t svg -o public/qrcode.svg $REMOTE_HOST",
+    "build": "qrcodegen && vite build",
     "lintfix": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0 --fix",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -25,6 +26,7 @@
     "framer-motion-3d": "^11.3.6",
     "iconoir-react": "^7.10.1",
     "jotai": "^2.9.0",
+    "qrcode": "^1.5.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet-async": "^2.0.5",
