@@ -12,7 +12,7 @@ const Header = () => {
         style={{ width: '100%' }}
       >
         <Link to="/" aria-label="Link to homepage">
-          <Logo3dStories width={isBigScreen ? 80 : 60} />
+          <Logo3dStories width={isBigScreen ? 70 : 50} />
         </Link>
         <MenuCloseButton />
       </header>
