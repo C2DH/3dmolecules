@@ -19,10 +19,8 @@ import Images from './Data/images.json'
 import { AnimatePresence } from 'framer-motion'
 import IntroPage from './Pages/IntroPage'
 import Preloader from './Ui/Preloader'
-import { useEffect, useRef } from 'react'
 import useStore from './GlobalState'
 import VideoBackground from './Ui/VideoBackground'
-import AutoScroller from './Ui/AutoScroller'
 import { useMediaQuery } from 'react-responsive'
 import Autoplay from './Svg/Autoplay'
 
@@ -31,30 +29,12 @@ function App() {
   const pathname = location.pathname
   const [isModalVisible, setModalVisible] = useAtom(modalVisible)
   const [isModalImage, setModalImage] = useAtom(modalImage) // Use an empty object as the key
-  const { isPaused, setIsPaused } = useStore()
+
   const isBigScreen = useMediaQuery({ query: '(min-width: 640px)' })
 
-  const scrollToTopRef = useRef(null)
   const scrollToTopEf = useStore(state => state.scrollToTopEf)
-  const setScrollToTopEf = useStore(state => state.setScrollToTopEf)
 
   console.info('[App] pathname', pathname, '\n - isModalVisible', isModalVisible, '\n - isModalImage', isModalImage)
-
-  const autoPlayTrigger = () => {
-    setIsPaused(!isPaused) // Toggle isPaused
-  }
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: window.top,
-      behavior: 'smooth' // Optional: for smooth scrolling§
-    })
-    setScrollToTopEf(true)
-    console.debug('scrollToTopEf', scrollToTopEf)
-    scrollToTopRef.current = setTimeout(() => {
-      setScrollToTopEf(false)
-    }, 2000)
-  }
 
   const openModal = imageId => {
     setModalVisible(true)
@@ -68,27 +48,12 @@ function App() {
     }, 500)
   }
 
-  useEffect(() => {
-    scrollToTop
-  }, [pathname])
-
   return (
     <>
       {}
-      {isBigScreen && pathname !== '/' ? (
-        <>
-          <button
-            className="autoplay-button auto-play-trigger fixed flex justify-center items-center z-10"
-            onClick={autoPlayTrigger}
-          >
-            <Autoplay className={'absolute'} width={100} />
-            <span className="text-center absolute'">{isPaused ? 'OFF' : 'ON'}</span>
-          </button>
-          <AutoScroller />
-        </>
-      ) : null}
+      {isBigScreen && pathname !== '/' ? <Autoplay className={'absolute'} width={100} /> : null}
       <ModalWindow closeModal={closeModal} isModalImage={isModalImage} isModalVisible={isModalVisible} />
-      <Header scrollToTop={scrollToTop} />
+      <Header />
 
       <MenuFullPage />
       <Preloader pathname={pathname} />
@@ -114,7 +79,7 @@ function App() {
       </AnimatePresence>
 
       <ViewportManager />
-      <Footer scrollToTop={scrollToTop} pathname={pathname} />
+      <Footer pathname={pathname} />
       <VideoBackground pathname={pathname} />
       <Background pathname={pathname} showFullscreenMode={true} />
     </>

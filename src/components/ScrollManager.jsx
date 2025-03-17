@@ -1,6 +1,6 @@
-import { useEffect } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { scrollOffset } from '../GlobalState'
-import useStore from '../GlobalState'
+import useGlobalStore from '../GlobalState'
 import { useSetAtom } from 'jotai'
 import { create } from 'zustand'
 import { useMediaQuery } from 'react-responsive'
@@ -28,18 +28,33 @@ const ScrollManager = ({ pages = [], pathname = '/' }) => {
   const windowHeight = useViewportStore(state => state.availableHeight)
 
   const setScrollOffset = useSetAtom(scrollOffset)
-  const { setCurrentPage } = useStore()
+  const setCurrentPage = useGlobalStore(state => state.setCurrentPage)
+  const setIsPaused = useGlobalStore(state => state.setIsPaused)
   const setScrollRatio = useScrollStore(state => state.setScrollRatio)
   const setPage = useScrollStore(state => state.setPage)
+  const demoTimerRef = useRef(null)
+  const isPaused = useGlobalStore(state => state.isPaused)
 
-  const parser = new UAParser()
-  const device = parser.getDevice()
+  const [device] = useState(() => {
+    const parser = new UAParser()
+    return parser.getDevice()
+  })
 
-  console.info('[ScrollManager] rendered', pages)
+  console.info('[ScrollManager] rendered', pages.length, device, windowHeight)
+
+  const scrollToNextPage = () => {
+    const currentPage = Math.round(window.scrollY / windowHeight)
+    console.log('[ScrollManager] demo scroll from:', currentPage)
+    const targetPage = currentPage + 1 > pages.length - 1 ? 0 : currentPage + 1
+    window.scrollTo({
+      top: windowHeight * targetPage,
+      behavior: 'smooth'
+    })
+  }
 
   useEffect(() => {
     window.scrollTo(0, 0)
-
+    setIsPaused(true)
     const scrollme = () => {
       if (device.type === 'mobile') window.innerHeight = windowHeight
       const ratio = window.scrollY / (windowHeight * (pages.length - 1))
@@ -58,6 +73,31 @@ const ScrollManager = ({ pages = [], pathname = '/' }) => {
     }
   }, [pages, pathname, windowHeight])
 
+  // demo scroll
+  useEffect(() => {
+    if (isPaused) {
+      clearInterval(demoTimerRef.current)
+      return
+    }
+    clearInterval(demoTimerRef.current)
+    scrollToNextPage()
+    demoTimerRef.current = setInterval(scrollToNextPage, 5000)
+    return () => clearInterval(demoTimerRef.current)
+  }, [isPaused, pages, windowHeight])
+
+  useEffect(() => {
+    const handleWheel = event => {
+      if (event.deltaY !== 0) {
+        clearInterval(demoTimerRef.current)
+        setIsPaused(true)
+      }
+    }
+
+    window.addEventListener('wheel', handleWheel)
+    return () => {
+      window.removeEventListener('wheel', handleWheel)
+    }
+  })
   return (
     <div
       style={{

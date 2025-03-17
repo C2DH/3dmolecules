@@ -3,7 +3,7 @@ import Logo3dStories from '../Svg/Logo3dStories'
 import MenuCloseButton from './MenuCloseButton'
 import { useMediaQuery } from 'react-responsive'
 
-const Header = ({ scrollToTop }) => {
+const Header = () => {
   const isBigScreen = useMediaQuery({ query: '(min-width: 640px)' })
   return (
     <>
@@ -12,7 +12,7 @@ const Header = ({ scrollToTop }) => {
         style={{ width: '100%' }}
       >
         <Link to="/" aria-label="Link to homepage">
-          <Logo3dStories width={isBigScreen ? 80 : 60} scrollToTop={scrollToTop} />
+          <Logo3dStories width={isBigScreen ? 80 : 60} />
         </Link>
         <MenuCloseButton />
       </header>

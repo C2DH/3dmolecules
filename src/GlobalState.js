@@ -15,7 +15,7 @@ export const currentPage = atom(0)
 export const modalVisible = atom(false)
 export const modalImage = atom(0)
 
-const useStore = create(set => ({
+const useGlobalStore = create(set => ({
   isMenuOpen: false,
   toggleMenu: () => set(state => ({ isMenuOpen: !state.isMenuOpen })),
   showFullscreenMode: false,
@@ -32,4 +32,4 @@ const useStore = create(set => ({
   setCurrentPage: currentPage => set({ currentPage }) // Add setter for currentPage
 }))
 
-export default useStore
+export default useGlobalStore

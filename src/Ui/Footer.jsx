@@ -6,7 +6,7 @@ import { useSpring, a } from '@react-spring/web'
 import CircleButton from './CircleButton'
 import { useViewportStore } from '../components/ViewportManager'
 
-const Footer = ({ scrollToTop, pathname }) => {
+const Footer = ({ pathname }) => {
   const isBigScreen = useMediaQuery({ query: '(min-width: 640px)' })
   const [isVisibleFooter, setIsVisibleFooter] = useState(false)
   const isBottomVisible = useViewportStore(state => state.isBottomVisible)
@@ -15,6 +15,14 @@ const Footer = ({ scrollToTop, pathname }) => {
     opacity: scrollY === innerHeight ? 1 : 0,
     y: scrollY === innerHeight ? 10 : 0
   }))
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   useEffect(() => {
     console.debug('[Footer] isBottomVisible', isBottomVisible)
     if (!isBottomVisible) {
