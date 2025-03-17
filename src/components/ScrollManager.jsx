@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
-import { currentPage, scrollOffset } from '../GlobalState'
+import { scrollOffset } from '../GlobalState'
+import useStore from '../GlobalState'
 import { useSetAtom } from 'jotai'
 import { create } from 'zustand'
 import { useMediaQuery } from 'react-responsive'
@@ -27,7 +28,7 @@ const ScrollManager = ({ pages = [], pathname = '/' }) => {
   const windowHeight = useViewportStore(state => state.availableHeight)
 
   const setScrollOffset = useSetAtom(scrollOffset)
-  const setCurrentPage = useSetAtom(currentPage)
+  const { setCurrentPage } = useStore()
   const setScrollRatio = useScrollStore(state => state.setScrollRatio)
   const setPage = useScrollStore(state => state.setPage)
 
@@ -47,7 +48,7 @@ const ScrollManager = ({ pages = [], pathname = '/' }) => {
       setScrollRatio(ratio)
       setCurrentPage(currentPage)
       setPage(currentPage)
-      console.debug('[ScrollManager] @useEffect', ratio)
+      console.debug('[ScrollManager] @useEffect', ratio, currentPage)
     }
     window.addEventListener('scroll', scrollme)
     return () => {

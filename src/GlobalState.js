@@ -27,7 +27,9 @@ const useStore = create(set => ({
   sectionCount: 0, // Initial state
   setSectionCount: count => set({ sectionCount: count }), // Action to update the count
   isPaused: true, // isPaused is true by default
-  setIsPaused: value => set({ isPaused: value }) // Action to update isPaused
+  setIsPaused: value => set({ isPaused: value }), // Action to update isPaused
+  currentPage: 0, // isPaused is true by default
+  setCurrentPage: currentPage => set({ currentPage }) // Add setter for currentPage
 }))
 
 export default useStore
