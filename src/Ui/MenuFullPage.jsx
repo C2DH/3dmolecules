@@ -75,7 +75,7 @@ const Navigation = ({ data }) => {
             <li key={slide.id} className={`sub-menu slide-${slide.id} ${slide.id === activeSlideId ? 'active' : ''}`}>
               <button
                 onClick={() => scrollToSlide(slide.id, arr.length, i)}
-                dangerouslySetInnerHTML={{ __html: slide.title }}
+                dangerouslySetInnerHTML={{ __html: slide.title?.en ? slide.title?.en : slide.title }}
               ></button>
             </li>
           ) : slide.title ? (
@@ -85,7 +85,7 @@ const Navigation = ({ data }) => {
             >
               <button
                 onClick={() => scrollToSlide(slide.id, arr.length, i)}
-                dangerouslySetInnerHTML={{ __html: slide.title }}
+                dangerouslySetInnerHTML={{ __html: slide.title?.en ? slide.title?.en : slide.title }}
               ></button>
             </li>
           ) : null
