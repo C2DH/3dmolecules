@@ -22,7 +22,7 @@ import Preloader from './Ui/Preloader'
 import useStore from './GlobalState'
 import VideoBackground from './Ui/VideoBackground'
 import { useMediaQuery } from 'react-responsive'
-import Autoplay from './Svg/Autoplay'
+import Autoplay from './Ui/Autoplay'
 
 function App() {
   const location = useLocation()
