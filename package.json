@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "qrcodegen": "qrcode -t svg -o public/qrcode.svg $REMOTE_HOST",
+    "qrcodegen": "qrcode -t svg -o public/qrcode.svg -l FF000000 -d FFFFFFFF $REMOTE_HOST",
     "build": "npm run qrcodegen && vite build",
     "lintfix": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0 --fix",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",

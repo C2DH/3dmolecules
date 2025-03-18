@@ -5,10 +5,12 @@ import { Link } from 'react-router-dom'
 import ScrollDownIndicator from '../Ui/ScrollDownIndicator'
 import Team from '../Ui/Team'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
+import QrCode from '../Ui/QrCode'
 
 const IntroPage = () => {
   return (
     <div className="IntroPage">
+      <QrCode />
       <div className="overflow-hidden absolute w-full h-screen flex items-end pointer-events-none">
         <ScrollDownIndicator className={'mb-10 absolute'}></ScrollDownIndicator>
       </div>
