@@ -57,7 +57,7 @@ function App() {
     },
     {
       deps: [pathname],
-      enabled: pathname !== '/'
+      enabled: isBigScreen && pathname !== '/'
     }
   )
 
