@@ -13,6 +13,7 @@ import CaffeineSvg from '../Svg/Chemical/CaffeineSvg'
 import { useViewportStore } from '../components/ViewportManager'
 import { useLocation } from 'react-router-dom'
 import { useScrollStore } from '../components/ScrollManager'
+import LanguageSwitcher from './LanguageSwitcher'
 
 // eslint-disable-next-line react/prop-types
 const Navigation = ({ data }) => {
@@ -135,6 +136,7 @@ const MenuFullPage = () => {
       style={styles}
       className={`MenuFullPage ${clickedSlideId === true ? 'black' : ''} ${isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
     >
+      <LanguageSwitcher />
       <menu className=" flex">
         <ul className="flex flex-col items-center">
           {/* <li>

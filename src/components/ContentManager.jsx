@@ -12,6 +12,7 @@ import { useSpring, a, config } from '@react-spring/web'
 import { useViewportStore } from './ViewportManager'
 import ScrollDownIndicator from '../Ui/ScrollDownIndicator'
 import useStore from '../GlobalState'
+import { useTranslation } from 'react-i18next'
 
 // import { modalVisible } from '../GlobalState'
 // import { useAtom } from 'jotai'
@@ -30,6 +31,10 @@ const AvailableContents = {
   [BisphenolSRoute]: BisphenolSContent
 }
 const ContentManager = ({ openModal, scrollToTop }) => {
+  const { t } = useTranslation()
+
+  // Access the sections from the translation file
+  const sections = t('sections', { returnObjects: true })
   const bottomRef = useRef(null)
   const availableHeight = useViewportStore(state => state.availableHeight)
   const setBottomVisible = useViewportStore(state => state.setBottomVisible)

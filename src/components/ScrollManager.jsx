@@ -81,7 +81,7 @@ const ScrollManager = ({ pages = [], pathname = '/' }) => {
     }
     clearInterval(demoTimerRef.current)
     scrollToNextPage()
-    demoTimerRef.current = setInterval(scrollToNextPage, 5000)
+    demoTimerRef.current = setInterval(scrollToNextPage, 8000)
     return () => clearInterval(demoTimerRef.current)
   }, [isPaused, pages, windowHeight])
 

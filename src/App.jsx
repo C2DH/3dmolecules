@@ -50,7 +50,7 @@ function App() {
   }
 
   useInactivityTimeout(
-    30000,
+    60000,
     () => {
       console.info('[App] Inactivity timeout')
       setIsPaused(false)

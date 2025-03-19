@@ -4,6 +4,8 @@ import App from './App.jsx'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 
+import './components/i18n.js'
+
 const editMode = false
 
 if (editMode) {

@@ -2,6 +2,7 @@ import { useLocation } from 'react-router-dom'
 import useStore from '../GlobalState'
 import Button from './Button'
 import NavPrevNextButtons from './NavPrevNextButtons'
+import { useTranslation } from 'react-i18next'
 
 const getTranslatable = (item, language, defaultLanguage = 'en') => {
   if (typeof item === 'string') return item
@@ -11,6 +12,7 @@ const getTranslatable = (item, language, defaultLanguage = 'en') => {
 }
 
 const Feature = ({ title, description, ref, i, lastItem, contents, openModal, scrollToTop }) => {
+  const { t } = useTranslation()
   const showFullscreenMode = useStore(state => state.showFullscreenMode)
   const location = useLocation()
   const pathname = location.pathname
@@ -76,13 +78,13 @@ const Feature = ({ title, description, ref, i, lastItem, contents, openModal, sc
                   <Button
                     onClick={autoScrollTrigger}
                     className="mt-5 w-full md:w-auto sm:mr-0 md:mr-3 xl2:mr-3 pointer-events-auto"
-                    value="Read model's story"
+                    value={t('read story')}
                   />
                   <Button
                     onClick={fullscreenMode}
                     type="secondary"
                     className="mt-5 pointer-events-auto w-full md:w-auto"
-                    value="Explore model"
+                    value={t('explore')}
                   />
                 </>
               ) : null}

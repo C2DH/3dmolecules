@@ -6,8 +6,10 @@ import ScrollDownIndicator from '../Ui/ScrollDownIndicator'
 import Team from '../Ui/Team'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import QrCode from '../Ui/QrCode'
+import { useTranslation } from 'react-i18next'
 
 const IntroPage = () => {
+  const { t } = useTranslation()
   return (
     <div className="IntroPage">
       <QrCode />
@@ -31,7 +33,7 @@ const IntroPage = () => {
                 <Link to="/trifluoroacetic_acid">
                   <Button
                     className="mt-5 w-full md:w-auto sm:mr-0 md:mr-3 xl2:mr-3 pointer-events-auto"
-                    value="EXPLORE STORIES"
+                    value={t('explore stories')}
                   />
                 </Link>
               </div>

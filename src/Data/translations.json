@@ -1,0 +1,23 @@
+{
+  "en": {
+    "translation": {
+      "explore": "Explore mode",
+      "read story": "Read model's story",
+      "explore stories": "Explore stories"
+    }
+  },
+  "fr": {
+    "translation": {
+      "explore": "Mode Explorer",
+      "read story": "Lire l'histoire du modèle",
+      "explore stories": "Explorer les histoires"
+    }
+  },
+  "de": {
+    "translation": {
+      "explore": "Erkundungsmodus",
+      "read story": "Modellgeschichte lesen",
+      "explore stories": "Geschichten erkunden"
+    }
+  }
+}
