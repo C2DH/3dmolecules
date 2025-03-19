@@ -134,7 +134,7 @@ const ContentManager = ({ openModal, scrollToTop }) => {
               scrollToTop={scrollToTop}
               openModal={openModal}
               contents={contents}
-              title={d.title?.en ? d.title?.en : d.title}
+              title={d.title}
               description={d.description}
               i={i}
               lastItem={i === arr.length - 1 ? true : false}

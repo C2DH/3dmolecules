@@ -14,9 +14,12 @@ import { useViewportStore } from '../components/ViewportManager'
 import { useLocation } from 'react-router-dom'
 import { useScrollStore } from '../components/ScrollManager'
 import LanguageSwitcher from './LanguageSwitcher'
+import { getTranslatable } from '../utils'
+import { useTranslation } from 'react-i18next'
 
 // eslint-disable-next-line react/prop-types
 const Navigation = ({ data }) => {
+  const { i18n } = useTranslation()
   const [activeSlideId, setActiveSlideId] = useState(null)
   const availableHeight = useViewportStore(state => state.availableHeight)
   const toggleMenu = useStore(state => state.toggleMenu)
@@ -76,7 +79,7 @@ const Navigation = ({ data }) => {
             <li key={slide.id} className={`sub-menu slide-${slide.id} ${slide.id === activeSlideId ? 'active' : ''}`}>
               <button
                 onClick={() => scrollToSlide(slide.id, arr.length, i)}
-                dangerouslySetInnerHTML={{ __html: slide.title?.en ? slide.title?.en : slide.title }}
+                dangerouslySetInnerHTML={{ __html: getTranslatable(slide.title, i18n.language, 'en') }}
               ></button>
             </li>
           ) : slide.title ? (
@@ -86,7 +89,7 @@ const Navigation = ({ data }) => {
             >
               <button
                 onClick={() => scrollToSlide(slide.id, arr.length, i)}
-                dangerouslySetInnerHTML={{ __html: slide.title?.en ? slide.title?.en : slide.title }}
+                dangerouslySetInnerHTML={{ __html: getTranslatable(slide.title, i18n.language, 'en') }}
               ></button>
             </li>
           ) : null

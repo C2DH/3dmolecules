@@ -3,21 +3,15 @@ import useStore from '../GlobalState'
 import Button from './Button'
 import NavPrevNextButtons from './NavPrevNextButtons'
 import { useTranslation } from 'react-i18next'
-
-const getTranslatable = (item, language, defaultLanguage = 'en') => {
-  if (typeof item === 'string') return item
-  if (item[language]) return item[language]
-  if (item[defaultLanguage]) return item[defaultLanguage]
-  return 'no translation'
-}
+import { getTranslatable } from '../utils'
 
 const Feature = ({ title, description, ref, i, lastItem, contents, openModal, scrollToTop }) => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const showFullscreenMode = useStore(state => state.showFullscreenMode)
   const location = useLocation()
   const pathname = location.pathname
-  const titleHtml = getTranslatable(title, 'en')
-  const descriptionHtml = getTranslatable(description, 'en')
+  const titleHtml = getTranslatable(title, i18n.language, 'en')
+  const descriptionHtml = getTranslatable(description, i18n.language, 'en')
 
   const fullscreenMode = () => {
     if (showFullscreenMode === false) {
@@ -95,7 +89,6 @@ const Feature = ({ title, description, ref, i, lastItem, contents, openModal, sc
         <h2 ref={ref} dangerouslySetInnerHTML={{ __html: titleHtml }}></h2>
       )}
       <p className="my-4" dangerouslySetInnerHTML={{ __html: descriptionHtml }} onClick={onClickHandler}></p>
-
       {/* {i === 0 && pathname !== '/' ? (
 
       ) : null} */}
