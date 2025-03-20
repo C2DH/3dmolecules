@@ -83,6 +83,7 @@ function App() {
       <FullscreenModelPage pathname={pathname} />
       <AnimatePresence mode="wait">
         <Routes location={location} key={pathname} pathname={pathname}>
+          <Route path="/" element={<IntroPage pathname={pathname} />}></Route>
           {Pages.map(page => {
             const PageComponent = PagesComponents[page]
             return (
