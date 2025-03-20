@@ -6,7 +6,8 @@
       "explore stories": "Explore stories",
       "view on mobile": "View on<br/>mobile",
       "copyright": "© University of Luxembourg {{year}}. All rights reserved.",
-      "legal notice": "Legal notice"
+      "legal notice": "Legal notice",
+      "team": "Team"
     }
   },
   "fr": {
@@ -16,7 +17,8 @@
       "explore stories": "Explorer les histoires",
       "view on mobile": "Voir sur<br/>mobile",
       "copyright": "© Université du Luxembourg {{year}}. Tous droits réservés.",
-      "legal notice": "Mentions légales"
+      "legal notice": "Mentions légales",
+      "team": "Équipe"
     }
   },
   "de": {
@@ -26,7 +28,8 @@
       "explore stories": "Geschichten erkunden",
       "view on mobile": "Auf dem<br>Handy ansehen",
       "copyright": "© Universität Luxemburg {{year}}. Alle Rechte vorbehalten.",
-      "legal notice": "Impressum"
+      "legal notice": "Impressum",
+      "team": "Team"
     }
   }
 }

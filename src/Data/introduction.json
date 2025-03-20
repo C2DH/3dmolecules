@@ -3,47 +3,107 @@
   "sections": [
     {
       "id": 1,
-      "title": "Telling stories about<br>chemicals",
+      "title": {
+        "en": "Telling stories about<br>chemicals",
+        "de": "Geschichten über<br>Chemikalien erzählen",
+        "fr": "Raconter des histoires<br>sur les produits chimiques"
+      },
       "description": ""
     },
     {
       "id": 2,
-      "title": "Chemicals",
-      "description": "Chemicals are everywhere - our bodies and our world would not function without them! Chemicals are essential building-blocks in our cells, our food and drinks, but also in the products we use every day. There are millions of chemicals known (and likely many millions more we do not know yet). Many of them are 'good', like vitamins, water, and oxygen, while some chemicals can be 'bad', including cyanide, environmental contaminants or natural toxins. Some chemicals can even be both! Since public awareness of environmental contamination is increasing, and public opinion about chemicals can be overwhelmingly negative, we started to give some of the chemicals in our research a 'voice' through this 3D Stories interface, to bring these chemicals and our research activities at the University of Luxembourg to life."
+      "title": {
+        "en": "Chemicals",
+        "de": "Chemikalien",
+        "fr": "Produits chimiques"
+      },
+      "description": {
+        "en": "Chemicals are everywhere - our bodies and our world would not function without them! Chemicals are essential building-blocks in our cells, our food and drinks, but also in the products we use every day. There are millions of chemicals known (and likely many millions more we do not know yet). Many of them are 'good', like vitamins, water, and oxygen, while some chemicals can be 'bad', including cyanide, environmental contaminants or natural toxins. Some chemicals can even be both! Since public awareness of environmental contamination is increasing, and public opinion about chemicals can be overwhelmingly negative, we started to give some of the chemicals in our research a 'voice' through this 3D Stories interface, to bring these chemicals and our research activities at the University of Luxembourg to life.",
+        "de": "Chemikalien sind überall - unser Körper und unsere Welt würden ohne sie nicht funktionieren! Chemikalien sind essentielle Bausteine in unseren Zellen, unserer Nahrung und unseren Getränken, aber auch in den Produkten, die wir jeden Tag verwenden. Es sind Millionen von Chemikalien bekannt (und wahrscheinlich viele Millionen mehr, die wir noch nicht kennen). Viele von ihnen sind 'gut', wie Vitamine, Wasser und Sauerstoff, während einige Chemikalien 'schlecht' sein können, darunter Cyanid, Umweltkontaminanten oder natürliche Gifte. Einige Chemikalien können sogar beides sein! Da das öffentliche Bewusstsein für Umweltverschmutzung zunimmt und die öffentliche Meinung über Chemikalien überwiegend negativ sein kann, haben wir begonnen, einigen der Chemikalien in unserer Forschung eine 'Stimme' durch diese 3D Stories-Schnittstelle zu geben, um diese Chemikalien und unsere Forschungsaktivitäten an der Universität Luxemburg zum Leben zu erwecken.",
+        "fr": "Les produits chimiques sont partout - nos corps et notre monde ne fonctionneraient pas sans eux ! Les produits chimiques sont des éléments essentiels dans nos cellules, nos aliments et nos boissons, mais aussi dans les produits que nous utilisons tous les jours. Des millions de produits chimiques sont connus (et probablement encore beaucoup d'autres que nous ne connaissons pas encore). Beaucoup d'entre eux sont 'bons', comme les vitamines, l'eau et l'oxygène, tandis que certains produits chimiques peuvent être 'mauvais', comme le cyanure, les contaminants environnementaux ou les toxines naturelles. Certains produits chimiques peuvent même être les deux ! Étant donné que la sensibilisation du public à la contamination environnementale augmente et que l'opinion publique sur les produits chimiques peut être extrêmement négative, nous avons commencé à donner une 'voix' à certains des produits chimiques dans nos recherches grâce à cette interface 3D Stories, pour donner vie à ces produits chimiques et à nos activités de recherche à l'Université du Luxembourg."
+      }
     },
     {
       "id": 3,
-      "title": "Open Science and Interdisciplinarity",
-      "description": "As researchers, we do a lot of Open Science developments that are designed for specialists in our particular field, but are difficult for non-specialists to appreciate. Joining forces in interdisciplinary projects helps us explore our research topics in new ways - did you know that this '3D molecules' website was based on a C2DH project website to explore historical garments? We hope you will enjoy exploring chemicals in this very visual manner."
+      "title": {
+        "en": "Interdisciplinary Research",
+        "de": "Interdisziplinäre Forschung",
+        "fr": "Recherche interdisciplinaire"
+      },
+      "description": {
+        "en": "As researchers, we do a lot of Open Science developments that are designed for specialists in our particular field, but are difficult for non-specialists to appreciate. Joining forces in interdisciplinary projects helps us explore our research topics in new ways - did you know that this '3D molecules' website was based on a C2DH project website to explore historical garments? We hope you will enjoy exploring chemicals in this very visual manner.",
+        "de": "Als Forscher entwickeln wir viele Open-Science-Projekte, die für Spezialisten in unserem Fachgebiet konzipiert sind, aber für Nicht-Spezialisten schwer zu verstehen sind. Die Zusammenarbeit in interdisziplinären Projekten hilft uns, unsere Forschungsthemen auf neue Weise zu erkunden - wussten Sie, dass diese '3D Molecules'-Website auf einer C2DH-Projektwebsite basiert, die historische Kleidungsstücke erforscht? Wir hoffen, dass Sie es genießen werden, Chemikalien auf diese sehr visuelle Weise zu erkunden.",
+        "fr": "En tant que chercheurs, nous réalisons de nombreux développements en science ouverte conçus pour des spécialistes dans notre domaine particulier, mais qui sont difficiles à apprécier pour les non-spécialistes. Unir nos forces dans des projets interdisciplinaires nous aide à explorer nos sujets de recherche de nouvelles façons - saviez-vous que ce site web '3D molecules' était basé sur un site web de projet C2DH pour explorer des vêtements historiques ? Nous espérons que vous apprécierez explorer les produits chimiques de cette manière très visuelle."
+      }
     },
     {
       "id": 4,
-      "title": "Interface Design",
-      "description": "While specialist chemistry databases and software offer 3D views of molecules, the ability to attach narratives helps provide easy-to-read information about chemicals and make this more engaging for the public. The narrative-driven animation application ‘3D Stories’ allows different approaches: the user can either lean back and follow the story or select one of the highlights and be directed to the relevant paragraph. The ‘Explore’ button enables users to roam the 3D Model on their own terms."
+      "title": {
+        "en": "Interface Design",
+        "de": "Schnittstellendesign",
+        "fr": "Conception de l'interface"
+      },
+      "description": {
+        "en": "While specialist chemistry databases and software offer 3D views of molecules, the ability to attach narratives helps provide easy-to-read information about chemicals and make this more engaging for the public. The narrative-driven animation application ‘3D Stories’ allows different approaches: the user can either lean back and follow the story or select one of the highlights and be directed to the relevant paragraph. The ‘Explore’ button enables users to roam the 3D Model on their own terms.",
+        "de": "Während spezialisierte Chemiedatenbanken und Software 3D-Ansichten von Molekülen bieten, hilft die Möglichkeit, Erzählungen anzufügen, leicht verständliche Informationen über Chemikalien bereitzustellen und dies für die Öffentlichkeit ansprechender zu gestalten. Die narrativ gesteuerte Animationsanwendung '3D Stories' ermöglicht unterschiedliche Ansätze: Der Benutzer kann entweder zurücklehnen und der Geschichte folgen oder eines der Highlights auswählen und zum entsprechenden Absatz geleitet werden. Die Schaltfläche 'Erkunden' ermöglicht es Benutzern, das 3D-Modell nach ihren eigenen Vorstellungen zu durchstreifen.",
+        "fr": "Alors que les bases de données et les logiciels de chimie spécialisés offrent des vues 3D des molécules, la possibilité d'attacher des récits aide à fournir des informations faciles à lire sur les produits chimiques et rend cela plus engageant pour le public. L'application d'animation pilotée par le récit '3D Stories' permet différentes approches : l'utilisateur peut soit s'adosser et suivre l'histoire, soit sélectionner l'un des points forts et être dirigé vers le paragraphe correspondant. Le bouton 'Explorer' permet aux utilisateurs de parcourir le modèle 3D selon leurs propres termes."
+      }
     },
     {
       "id": 5,
-      "title": "Background",
-      "description": "The project was implemented for 'Love my Data Week' 2025 in a collaboration between the Centre for Contemporary and Digital History Luxembourg (C²DH) and the Luxembourg Centre for Systems Biomedicine (LCSB), inspired by Helena Korjonen from the Luxembourg Learning Centre (LLC) and Open Science Working Group, all at the University of Luxembourg. Kirill Mitsurov and Daniele Guido (C²DH) created the interface and Emma Schymanski provided the content for the stories."
+      "title": {
+        "en": "Background",
+        "de": "Hintergrund",
+        "fr": "Contexte"
+      },
+      "description": {
+        "en": "The project was implemented for 'Love my Data Week' 2025 in a collaboration between the Centre for Contemporary and Digital History Luxembourg (C²DH) and the Luxembourg Centre for Systems Biomedicine (LCSB), inspired by Helena Korjonen from the Luxembourg Learning Centre (LLC) and Open Science Working Group, all at the University of Luxembourg. Kirill Mitsurov and Daniele Guido (C²DH) created the interface and Emma Schymanski provided the content for the stories.",
+        "de": "Das Projekt wurde für die 'Love my Data Week' 2025 in Zusammenarbeit zwischen dem Centre for Contemporary and Digital History Luxembourg (C²DH) und dem Luxembourg Centre for Systems Biomedicine (LCSB) umgesetzt, inspiriert von Helena Korjonen vom Luxembourg Learning Centre (LLC) und der Open Science Working Group, alle an der Universität Luxemburg. Kirill Mitsurov und Daniele Guido (C²DH) haben die Schnittstelle erstellt und Emma Schymanski hat die Inhalte für die Geschichten bereitgestellt.",
+        "fr": "Le projet a été mis en œuvre pour la 'Love my Data Week' 2025 dans le cadre d'une collaboration entre le Centre d'histoire contemporaine et numérique du Luxembourg (C²DH) et le Luxembourg Centre for Systems Biomedicine (LCSB), inspiré par Helena Korjonen du Luxembourg Learning Centre (LLC) et le groupe de travail sur la science ouverte, tous à l'Université du Luxembourg. Kirill Mitsurov et Daniele Guido (C²DH) ont créé l'interface et Emma Schymanski a fourni le contenu des histoires."
+      }
     },
     {
       "id": 6,
-      "title": "Software",
-      "description": "3D Stories is a freely reusable prototype based on open source software (React Vite, React Three Fiber, Theatre JS, Blender). You can find the technical components of the project on the <a href='https://github.com/C2DH/3dmolecules' target='_blank'>C2DH GitHub repository</a>"
+      "title": {
+        "en": "Software",
+        "de": "Software",
+        "fr": "Logiciel"
+      },
+      "description": {
+        "en": "3D Stories is a freely reusable prototype based on open source software (React Vite, React Three Fiber, Theatre JS, Blender). You can find the technical components of the project on the <a href='https://github.com/C2DH/3dmolecules' target='_blank'>C2DH GitHub repository</a>",
+        "de": "3D Stories ist ein frei wiederverwendbarer Prototyp, der auf Open-Source-Software basiert (React Vite, React Three Fiber, Theatre JS, Blender). Sie finden die technischen Komponenten des Projekts im <a href='https://github.com/C2DH/3dmolecules' target='_blank'>C2DH GitHub-Repository</a>",
+        "fr": "3D Stories est un prototype librement réutilisable basé sur des logiciels open source (React Vite, React Three Fiber, Theatre JS, Blender). Vous trouverez les composants techniques du projet sur le <a href='https://github.com/C2DH/3dmolecules' target='_blank'>dépôt GitHub du C2DH</a>"
+      }
     },
-	{
+    {
       "id": 7,
-      "title": "Suggest a (Chemical) Story",
-      "description": "Would you like us to add more chemical stories? Is your favourite chemical missing? You can suggest new stories by posting an <a href='https://github.com/C2DH/3dmolecules/issues' target='_blank'>issue</a> on the <a href='https://github.com/C2DH/3dmolecules' target='_blank'>C2DH GitHub repository</a> or reaching out to one of the team."
+      "title": {
+        "en": "Suggest a (Chemical) Story",
+        "de": "Schlagen Sie eine (Chemikalien-)Geschichte vor",
+        "fr": "Proposer une histoire (chimique)"
+      },
+      "description": {
+        "en": "Would you like us to add more chemical stories? Is your favourite chemical missing? You can suggest new stories by posting an <a href='https://github.com/C2DH/3dmolecules/issues' target='_blank'>issue</a> on the <a href='https://github.com/C2DH/3dmolecules' target='_blank'>C2DH GitHub repository</a> or reaching out to one of the team.",
+        "de": "Möchten Sie, dass wir weitere Chemikaliengeschichten hinzufügen? Fehlt Ihr Lieblingschemikalie? Sie können neue Geschichten vorschlagen, indem Sie ein <a href='https://github.com/C2DH/3dmolecules/issues' target='_blank'>issue</a> im <a href='https://github.com/C2DH/3dmolecules' target='_blank'>C2DH GitHub-Repository</a> posten oder sich an eines der Teammitglieder wenden.",
+        "fr": "Souhaitez-vous que nous ajoutions plus d'histoires chimiques ? Votre produit chimique préféré manque-t-il ? Vous pouvez suggérer de nouvelles histoires en postant un <a href='https://github.com/C2DH/3dmolecules/issues' target='_blank'>problème</a> sur le <a href='https://github.com/C2DH/3dmolecules' target='_blank'>dépôt GitHub du C2DH</a> ou en contactant l'un des membres de l'équipe."
+      }
     },
     {
       "id": 8,
-      "title": "Team",
+      "title": {
+        "en": "Team",
+        "de": "Team",
+        "fr": "Équipe"
+      },
       "team": [
         {
           "id": 1,
           "uni": "LCSB",
-          "role": "Deputy Director of LCSB",
+          "role": {
+            "en": "Deputy Director of LCSB",
+            "de": "Stellvertretender Direktor des LCSB",
+            "fr": "Directeur adjoint du LCSB"
+          },
           "img": "img/team/emma_schymanski.jpg",
           "name": "Emma SCHYMANSKI",
           "link": "https://www.uni.lu/lcsb-en/people/emma-schymanski/"
@@ -52,7 +112,11 @@
         {
           "id": 2,
           "uni": "C²DH",
-          "role": "UI/UX Design/Development",
+          "role": {
+            "en": "UI/UX Design/Development",
+            "de": "UI/UX Design/Entwicklung",
+            "fr": "Conception/Développement UI/UX"
+          },
           "img": "img/team/kirill_mitsurov.jpg",
           "name": "Kirill MITSUROV",
           "link": "https://www.c2dh.uni.lu/people/kirill-mitsurov"
@@ -60,7 +124,11 @@
         {
           "id": 3,
           "uni": "C²DH",
-          "role": "Development",
+          "role": {
+            "en": "Development",
+            "de": "Entwicklung",
+            "fr": "Développement"
+          },
           "img": "img/team/daniele_guido.jpg",
           "name": "Daniele GUIDO",
           "link": "https://www.c2dh.uni.lu/people/daniele-guido"
