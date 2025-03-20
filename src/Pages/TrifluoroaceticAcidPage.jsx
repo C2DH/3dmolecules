@@ -111,10 +111,7 @@ const TrifluoroaceticAcidPage = ({ pathname }) => {
         dpr={[1, 2]}
         gl={{
           pixelRatio: Math.min(window.devicePixelRatio, 2),
-          antialias: false,
-          forceWebGL1: true,
-          powerPreference: 'low-power',
-          preserveDrawingBuffer: true
+          antialias: true
         }}
       >
         {/* <DebugMemory /> */}

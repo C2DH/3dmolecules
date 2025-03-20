@@ -79,9 +79,7 @@ const NicotinePage = ({ pathname }) => {
       <Canvas
         gl={{
           pixelRatio: Math.min(window.devicePixelRatio, 2),
-          antialias: false,
-          forceWebGL1: true,
-          powerPreference: 'low-power'
+          antialias: true
         }}
       >
         <SheetProvider sheet={sheet}>
