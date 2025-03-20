@@ -5,11 +5,13 @@ import { useEffect, useState } from 'react'
 import { useSpring, a } from '@react-spring/web'
 import CircleButton from './CircleButton'
 import { useViewportStore } from '../components/ViewportManager'
+import { useTranslation } from 'react-i18next'
 
 const Footer = ({ pathname }) => {
   const isBigScreen = useMediaQuery({ query: '(min-width: 640px)' })
   const [isVisibleFooter, setIsVisibleFooter] = useState(false)
   const isBottomVisible = useViewportStore(state => state.isBottomVisible)
+  const { t } = useTranslation()
 
   const [stylesScrollUp, apiScrollUp] = useSpring(() => ({
     opacity: scrollY === innerHeight ? 1 : 0,
@@ -90,12 +92,15 @@ const Footer = ({ pathname }) => {
             rel="no-referrer"
             target="_blank"
           >
-            Legal Notice
+            {t('legal notice')}
           </a>
         </div>
       </div>
       <span className="mt-3  flex text-xs grow md:text-right text-center justify-center">
-        © University of Luxembourg {currentYear}. All rights reserved.
+        © University of Luxembourg . All rights reserved.
+        {t('copyright', {
+          year: currentYear
+        })}
       </span>
     </a.footer>
   )

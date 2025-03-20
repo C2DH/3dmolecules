@@ -3,21 +3,30 @@
     "translation": {
       "explore": "Explore mode",
       "read story": "Read model's story",
-      "explore stories": "Explore stories"
+      "explore stories": "Explore stories",
+      "view on mobile": "View on<br/>mobile",
+      "copyright": "© University of Luxembourg {{year}}. All rights reserved.",
+      "legal notice": "Legal notice"
     }
   },
   "fr": {
     "translation": {
       "explore": "Mode Explorer",
       "read story": "Lire l'histoire du modèle",
-      "explore stories": "Explorer les histoires"
+      "explore stories": "Explorer les histoires",
+      "view on mobile": "Voir sur<br/>mobile",
+      "copyright": "© Université du Luxembourg {{year}}. Tous droits réservés.",
+      "legal notice": "Mentions légales"
     }
   },
   "de": {
     "translation": {
       "explore": "Erkundungsmodus",
       "read story": "Modellgeschichte lesen",
-      "explore stories": "Geschichten erkunden"
+      "explore stories": "Geschichten erkunden",
+      "view on mobile": "Auf dem<br>Handy ansehen",
+      "copyright": "© Universität Luxemburg {{year}}. Alle Rechte vorbehalten.",
+      "legal notice": "Impressum"
     }
   }
 }
