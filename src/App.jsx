@@ -25,6 +25,16 @@ import { useMediaQuery } from 'react-responsive'
 import Autoplay from './Ui/Autoplay'
 import useInactivityTimeout from './hooks/useInactivityTimeout'
 
+const Pages = ['trifluoroacetic_acid', 'caffeine', 'nicotine', 'bisphenol_s', 'ddt']
+
+const PagesComponents = {
+  trifluoroacetic_acid: TrifluoroaceticAcidPage,
+  caffeine: CaffeinePage,
+  nicotine: NicotinePage,
+  bisphenol_s: BisphenolSPage,
+  ddt: DdtPage
+}
+
 function App() {
   const location = useLocation()
   const pathname = location.pathname
@@ -73,7 +83,17 @@ function App() {
       <FullscreenModelPage pathname={pathname} />
       <AnimatePresence mode="wait">
         <Routes location={location} key={pathname} pathname={pathname}>
-          <Route path="/" element={<IntroPage pathname={pathname} />}></Route>
+          {Pages.map(page => {
+            const PageComponent = PagesComponents[page]
+            return (
+              <Route
+                key={page}
+                path={`/${page}`}
+                element={<PageComponent pathname={pathname} scrollToTopEf={scrollToTopEf} />}
+              ></Route>
+            )
+          })}
+          {/* <Route path="/" element={<IntroPage pathname={pathname} />}></Route>
           <Route
             path="/trifluoroacetic_acid"
             element={<TrifluoroaceticAcidPage pathname={pathname} scrollToTopEf={scrollToTopEf} />}
@@ -84,10 +104,10 @@ function App() {
           <Route
             path="/bisphenol_s"
             element={<BisphenolSPage pathname={pathname} scrollToTopEf={scrollToTopEf} />}
-          ></Route>
+          ></Route> */}
         </Routes>
         {pathname === '/' ? null : (
-          <ContentManager openModal={openModal} isModalVisible={isModalVisible} key="sss-robe" />
+          <ContentManager openModal={openModal} isModalVisible={isModalVisible} pathnames={Pages} key="sss-robe" />
         )}
       </AnimatePresence>
 

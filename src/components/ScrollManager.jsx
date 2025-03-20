@@ -6,6 +6,7 @@ import { create } from 'zustand'
 import { useMediaQuery } from 'react-responsive'
 import { useViewportStore } from './ViewportManager'
 import { UAParser } from 'ua-parser-js'
+import { useNavigate } from 'react-router-dom'
 
 export const useScrollStore = create(set => ({
   scrollRatio: 0,
@@ -23,7 +24,8 @@ export const useScrollStore = create(set => ({
   setMenuLinkPosition: menuLinkPosition => set({ menuLinkPosition })
 }))
 
-const ScrollManager = ({ pages = [], pathname = '/' }) => {
+const ScrollManager = ({ pages = [], pathname = '/', pathnames = ['/'] }) => {
+  const navigate = useNavigate()
   const isBigScreen = useMediaQuery({ query: '(min-width: 440px)' })
   const windowHeight = useViewportStore(state => state.availableHeight)
 
@@ -35,21 +37,58 @@ const ScrollManager = ({ pages = [], pathname = '/' }) => {
   const demoTimerRef = useRef(null)
   const isPaused = useGlobalStore(state => state.isPaused)
 
+  const currentPathnameIndex = pathnames.findIndex(path => pathname.includes(path))
+
   const [device] = useState(() => {
     const parser = new UAParser()
     return parser.getDevice()
   })
 
-  console.info('[ScrollManager] rendered', pages.length, device, windowHeight)
+  console.info(
+    '[ScrollManager] rendered',
+    '\n - n sections (aka pages):',
+    pages.length,
+    '\n - device vendor, type:',
+    device.vendor,
+    device.type,
+    '\n - windowHeight:',
+    windowHeight,
+    '\n - pathname:',
+    pathname,
+    currentPathnameIndex
+  )
 
   const scrollToNextPage = () => {
     const currentPage = Math.round(window.scrollY / windowHeight)
-    console.log('[ScrollManager] demo scroll from:', currentPage)
-    const targetPage = currentPage + 1 > pages.length - 1 ? 0 : currentPage + 1
-    window.scrollTo({
-      top: windowHeight * targetPage,
-      behavior: 'smooth'
-    })
+
+    if (currentPage + 1 < pages.length) {
+      console.info('[ScrollManager] scrollToNextPage:', currentPage + 1)
+      window.scrollTo({
+        top: windowHeight * (currentPage + 1),
+        behavior: 'smooth'
+      })
+    } else {
+      console.info('[ScrollManager] scrollToNextPage:', 0)
+      setIsPaused(true)
+      // window.scrollTo({
+      //   top: 0,
+      //   behavior: 'smooth'
+      // })
+      // got to next page!
+      if (currentPathnameIndex > -1) {
+        if (currentPathnameIndex + 1 < pathnames.length) {
+          // \use react dom to go to next path Navigate
+          const nextPathname = pathnames[currentPathnameIndex + 1]
+          console.info('[ScrollManager] scrollToNextPage:', nextPathname)
+          navigate(nextPathname)
+        } else {
+          // go to first page
+          const nextPathname = pathnames[0]
+          console.info('[ScrollManager] scrollToNextPage:', nextPathname)
+          navigate(nextPathname)
+        }
+      }
+    }
   }
 
   useEffect(() => {
@@ -63,7 +102,7 @@ const ScrollManager = ({ pages = [], pathname = '/' }) => {
       setScrollRatio(ratio)
       setCurrentPage(currentPage)
       setPage(currentPage)
-      console.debug('[ScrollManager] @useEffect', ratio, currentPage)
+      // console.debug('[ScrollManager] @useEffect', ratio, currentPage)
     }
     window.addEventListener('scroll', scrollme)
     return () => {

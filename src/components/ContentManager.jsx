@@ -30,7 +30,7 @@ const AvailableContents = {
   [DdtRoute]: DdtContent,
   [BisphenolSRoute]: BisphenolSContent
 }
-const ContentManager = ({ openModal, scrollToTop }) => {
+const ContentManager = ({ openModal, scrollToTop, pathnames = [] }) => {
   const { t } = useTranslation()
 
   // Access the sections from the translation file
@@ -146,7 +146,7 @@ const ContentManager = ({ openModal, scrollToTop }) => {
         </div>
       </a.div>
 
-      <ScrollManager pages={contents?.sections} pathname={pathname} />
+      <ScrollManager pages={contents?.sections} pathname={pathname} pathnames={pathnames} />
     </>
   )
 }
