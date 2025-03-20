@@ -93,7 +93,7 @@ const Feature = ({ title, description, ref, i, lastItem, contents, openModal, sc
 
       ) : null} */}
       {lastItem ? (
-        <div className="flex">
+        <>
           {contents?.links?.[0] ? (
             <Button
               onClick={findThisItem}
@@ -109,7 +109,7 @@ const Feature = ({ title, description, ref, i, lastItem, contents, openModal, sc
               value={contents?.links?.[1]?.linkValue ? contents.links[1].linkValue : ' PubChem'}
             />
           ) : null}
-        </div>
+        </>
       ) : null}
     </div>
   )
