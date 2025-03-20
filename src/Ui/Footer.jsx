@@ -86,7 +86,7 @@ const Footer = ({ pathname }) => {
             Imprint
           </a> */}
           <a
-            className="ml-5"
+            className="ml-5 text-sm"
             aria-label="Link to FH;P datenschutz"
             href="https://www.uni.lu/en/legal-notice/"
             rel="no-referrer"
