@@ -104,7 +104,7 @@ const MenuFullPage = () => {
   const isMenuOpen = useStore(state => state.isMenuOpen)
   const isBigScreen = useMediaQuery({ query: '(min-width: 1024px)' })
   const clickedSlideId = useStore(state => state.clickedSlideId)
-  const { i18n } = useTranslation() // Use the useTranslation hook
+  const { i18n, t } = useTranslation() // Use the useTranslation hook
 
   const duration = { duration: 200 } // Set the duration to 500ms or any desired value
   const [styles, api] = useSpring(() => ({
@@ -148,6 +148,9 @@ const MenuFullPage = () => {
       <LanguageSwitcher />
       <menu className="flex">
         <ul className="flex flex-col items-center">
+          <li className="text-[1.2rem]">
+            {pathnameUpdated !== '/' ? <NavLink to="/">{t('introduction')}</NavLink> : null}
+          </li>
           <li>
             {pathnameUpdated !== '/trifluoroacetic_acid' ? (
               <NavLink to="/trifluoroacetic_acid">{getFirstSectionTitle(TrifluoroaceticAcidContent)}</NavLink>
