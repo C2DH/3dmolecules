@@ -6,18 +6,38 @@
   "sections": [
     {
       "id": 1,
-      "title": "Bisphenol S",
+      "title": {
+        "en": "Bisphenol S",
+        "fr": "Bisphénol S",
+        "de": "Bisphenol S"
+      },
       "description": ""
     },
     {
       "id": 2,
-      "title": "What is Bisphenol S (BPS)?",
-      "description": "Bisphenol S (BPS) is one of several compounds used to replace the more well-known Bisphenol A or BPA (think of all those 'BPA-free products'). Sadly, it has become a good example of 'regrettable substitution', where one chemical has been replaced by another chemical that shows similar negative effects."
+      "title": {
+        "en": "What is Bisphenol S (BPS)?",
+        "fr": "Qu'est-ce que le Bisphénol S (BPS) ?",
+        "de": "Was ist Bisphenol S (BPS)?"
+      },
+      "description": {
+        "en": "Bisphenol S (BPS) is one of several compounds used to replace the more well-known Bisphenol A or BPA (think of all those 'BPA-free products'). Sadly, it has become a good example of 'regrettable substitution', where one chemical has been replaced by another chemical that shows similar negative effects.",
+        "fr": "Le Bisphénol S (BPS) est l'un des nombreux composés utilisés pour remplacer le Bisphénol A ou BPA (pensez à tous ces produits 'sans BPA'). Malheureusement, il est devenu un bon exemple de 'substitution regrettable', où un produit chimique a été remplacé par un autre produit chimique qui montre des effets négatifs similaires.",
+        "de": "Bisphenol S (BPS) ist eine von mehreren Verbindungen, die verwendet werden, um das bekanntere Bisphenol A oder BPA zu ersetzen (denken Sie an all die 'BPA-freien Produkte'). Leider ist es zu einem guten Beispiel für 'bedauerliche Substitution' geworden, bei der ein chemischer Stoff durch einen anderen chemischen Stoff ersetzt wurde, der ähnliche negative Auswirkungen zeigt."
+      }
     },
     {
       "id": 3,
-      "title": "BPS uses",
-      "description": "Bisphenol S is used in a number of products, including in paper, polymers and fine chemicals. It is used to develop thermal paper (e.g., payment receipts) and also used in industry, for electroplating and washfastening. It is known as a high production volume chemical (it is produced annually in very large amounts)."
+      "title": {
+        "en": "BPS uses",
+        "fr": "Utilisations du BPS",
+        "de": "BPS-Verwendungen"
+      },
+      "description": {
+        "en": "Bisphenol S is used in a number of products, including in paper, polymers and fine chemicals. It is used to develop thermal paper (e.g., payment receipts) and also used in industry, for electroplating and washfastening. It is known as a high production volume chemical (it is produced annually in very large amounts).",
+        "fr": "Le Bisphénol S est utilisé dans un certain nombre de produits, notamment dans le papier, les polymères et les produits chimiques fins. Il est utilisé pour développer du papier thermique (par exemple, les reçus de paiement) et également utilisé dans l'industrie, pour le placage électrolytique et le lavage. Il est connu comme un produit chimique à volume de production élevé (il est produit annuellement en très grandes quantités).",
+        "de": "Bisphenol S wird in einer Reihe von Produkten verwendet, darunter in Papier, Polymeren und Feinchemikalien. Es wird verwendet, um Thermopapier (z. B. Zahlungsbelege) zu entwickeln und wird auch in der Industrie für das Galvanisieren und Waschen verwendet. Es ist als Chemikalie mit hohem Produktionsvolumen bekannt (es wird jährlich in sehr großen Mengen produziert)."
+      }
     },
     {
       "id": 4,
@@ -26,25 +46,57 @@
     },
     {
       "id": 5,
-      "title": "BPS and Parkinson's disease",
-      "description": "Did you know that a recent study at LCSB, University of Luxembourg, indicated that Bisphenol S may be related to whether genetic mutation carriers for Parkinson's disease develop the disease or not? You can read more about this collaborative effort here: DOI: <a href='https://doi.org/10.1016/j.envint.2024.109151' target='_blanc'>10.1016/j.envint.2024.109151</a>. "
+      "title": {
+        "en": "BPS and Parkinson's disease",
+        "fr": "BPS et la maladie de Parkinson",
+        "de": "BPS und Parkinson-Krankheit"
+      },
+      "description": {
+        "en": "Did you know that a recent study at LCSB, University of Luxembourg, indicated that Bisphenol S may be related to whether genetic mutation carriers for Parkinson's disease develop the disease or not? You can read more about this collaborative effort here: DOI: <a href='https://doi.org/10.1016/j.envint.2024.109151' target='_blanc'>10.1016/j.envint.2024.109151</a>.",
+        "fr": "Saviez-vous qu'une étude récente menée au LCSB, Université du Luxembourg, a indiqué que le Bisphénol S pourrait être lié à la question de savoir si les porteurs de mutations génétiques pour la maladie de Parkinson développent la maladie ou non ? Vous pouvez en savoir plus sur cet effort collaboratif ici : DOI : <a href='https://doi.org/10.1016/j.envint.2024.109151' target='_blanc'>10.1016/j.envint.2024.109151</a>.",
+        "de": "Wussten Sie, dass eine kürzlich durchgeführte Studie am LCSB, Universität Luxemburg, darauf hindeutet, dass Bisphenol S möglicherweise damit zusammenhängt, ob genetische Mutationsträger für die Parkinson-Krankheit die Krankheit entwickeln oder nicht? Sie können mehr über diese gemeinsame Anstrengung hier lesen: DOI: <a href='https://doi.org/10.1016/j.envint.2024.109151' target='_blanc'>10.1016/j.envint.2024.109151</a>."
+      }
     },
     {
       "id": 6,
-      "title": "Bisphenol S metabolites",
-      "description": "Bisphenol S does not biodegrade easily and so far no metabolites or environmental transformation products of BPS are recorded in openly available resources such as the <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>.",
+      "title": {
+        "en": "Bisphenol S metabolites",
+        "fr": "Métabolites du Bisphénol S",
+        "de": "Bisphenol S-Metaboliten"
+      },
+      "description": {
+        "en": "Bisphenol S does not biodegrade easily and so far no metabolites or environmental transformation products of BPS are recorded in openly available resources such as the <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>.",
+        "fr": "Le Bisphénol S ne se biodégrade pas facilement et jusqu'à présent, aucun métabolite ou produit de transformation environnemental du BPS n'est enregistré dans des ressources disponibles publiquement telles que le <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>.",
+        "de": "Bisphenol S baut sich nicht leicht ab und bisher sind keine Metaboliten oder Umwandlungsprodukte von BPS in öffentlich verfügbaren Ressourcen wie dem <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a> aufgezeichnet."
+      },
       "background": "right"
     },
     {
       "id": 7,
-      "title": "Measuring Bisphenol S",
-      "description": "Bisphenol S can be measured using mass spectrometry and is found in surface waters and house dust samples, among others. You can view mass spectra on <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, an open mass spectral library where the University of Luxembourg acts as both contributor and developer. Find out more about our MassBank efforts <a href='https://doi.org/10.1039/D3EM00181D' target='_blanc'>here</a>.",
+      "title": {
+        "en": "Measuring Bisphenol S",
+        "fr": "Mesure du Bisphénol S",
+        "de": "Messung von Bisphenol S"
+      },
+      "description": {
+        "en": "Bisphenol S can be measured using mass spectrometry and is found in surface waters and house dust samples, among others. You can view mass spectra on <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, an open mass spectral library where the University of Luxembourg acts as both contributor and developer. Find out more about our MassBank efforts <a href='https://doi.org/10.1039/D3EM00181D' target='_blanc'>here</a>.",
+        "fr": "Le Bisphénol S peut être mesuré à l'aide de la spectrométrie de masse et se retrouve dans les eaux de surface et les échantillons de poussière domestique, entre autres. Vous pouvez consulter les spectres de masse sur <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, une bibliothèque de spectres de masse ouverte où l'Université du Luxembourg agit à la fois comme contributeur et développeur. Découvrez-en plus sur nos efforts MassBank <a href='https://doi.org/10.1039/D3EM00181D' target='_blanc'>ici</a>.",
+        "de": "Bisphenol S kann mit Hilfe der Massenspektrometrie gemessen werden und wird unter anderem in Oberflächengewässern und Hausstaubproben gefunden. Sie können Massenspektren auf <a href='https://massbank.eu/' target='_blanc'>MassBank</a> einsehen, einer offenen Massenspektrenbibliothek, in der die Universität Luxemburg sowohl als Beitragende als auch als Entwicklerin tätig ist. Erfahren Sie mehr über unsere MassBank-Bemühungen <a href='https://doi.org/10.1039/D3EM00181D' target='_blanc'>hier</a>."
+      },
       "background": "right"
     },
     {
       "id": 8,
-      "title": "Further details and sources",
-      "description": "Find out more about Bisphenol S on <a href='https://pubchemlite.lcsb.uni.lu/e/compound/6626' target='_blanc'>PubChemLite</a>, which includes the <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“chemical stripes”</a> visualization. Further details can be found on <a href='https://pubchem.ncbi.nlm.nih.gov/compound/6626' target='_blanc'>PubChem</a> and in Talavera Andújar et al (2024) DOI: <a href='https://doi.org/10.1016/j.envint.2024.109151' target='_blanc'>10.1016/j.envint.2024.109151</a>, the resources used to compile the text here. This 3D story also mentions other developments at the LCSB, University of Luxembourg, including the NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>website</a>) and <a href='https://massbank.eu/' target='_blanc'>MassBank</a>. You can read more about our work on chemicals related to Parkinson's disease at DOI: <a href='https://doi.org/10.1016/j.envint.2024.109151' target='_blanc'>10.1016/j.envint.2024.109151</a>. Text compiled by <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, University of Luxembourg.",
+      "title": {
+        "en": "Further details and sources",
+        "fr": "Détails supplémentaires et sources",
+        "de": "Weitere Details und Quellen"
+      },
+      "description": {
+        "en": "Find out more about Bisphenol S on <a href='https://pubchemlite.lcsb.uni.lu/e/compound/6626' target='_blanc'>PubChemLite</a>, which includes the <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“chemical stripes”</a> visualization. Further details can be found on <a href='https://pubchem.ncbi.nlm.nih.gov/compound/6626' target='_blanc'>PubChem</a> and in Talavera Andújar et al (2024) DOI: <a href='https://doi.org/10.1016/j.envint.2024.109151' target='_blanc'>10.1016/j.envint.2024.109151</a>, the resources used to compile the text here. This 3D story also mentions other developments at the LCSB, University of Luxembourg, including the NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>website</a>) and <a href='https://massbank.eu/' target='_blanc'>MassBank</a>. You can read more about our work on chemicals related to Parkinson's disease at DOI: <a href='https://doi.org/10.1016/j.envint.2024.109151' target='_blanc'>10.1016/j.envint.2024.109151</a>. Text compiled by <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, University of Luxembourg.",
+        "fr": "Découvrez-en plus sur le Bisphénol S sur <a href='https://pubchemlite.lcsb.uni.lu/e/compound/6626' target='_blanc'>PubChemLite</a>, qui inclut la visualisation des <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“bandes chimiques”</a>. Vous trouverez d'autres détails sur <a href='https://pubchem.ncbi.nlm.nih.gov/compound/6626' target='_blanc'>PubChem</a> et dans Talavera Andújar et al (2024) DOI : <a href='https://doi.org/10.1016/j.envint.2024.109151' target='_blanc'>10.1016/j.envint.2024.109151</a>, les ressources utilisées pour compiler le texte ici. Cette histoire 3D mentionne également d'autres développements au LCSB, Université du Luxembourg, y compris le NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>site web</a>) et <a href='https://massbank.eu/' target='_blanc'>MassBank</a>. Vous pouvez en savoir plus sur notre travail sur les produits chimiques liés à la maladie de Parkinson à DOI : <a href='https://doi.org/10.1016/j.envint.2024.109151' target='_blanc'>10.1016/j.envint.2024.109151</a>. Texte compilé par <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, Université du Luxembourg.",
+        "de": "Erfahren Sie mehr über Bisphenol S auf <a href='https://pubchemlite.lcsb.uni.lu/e/compound/6626' target='_blanc'>PubChemLite</a>, das die <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“chemischen Streifen”</a> Visualisierung enthält. Weitere Details finden Sie auf <a href='https://pubchem.ncbi.nlm.nih.gov/compound/6626' target='_blanc'>PubChem</a> und in Talavera Andújar et al (2024) DOI: <a href='https://doi.org/10.1016/j.envint.2024.109151' target='_blanc'>10.1016/j.envint.2024.109151</a>, die Ressourcen, die verwendet wurden, um den Text hier zusammenzustellen. Diese 3D-Geschichte erwähnt auch andere Entwicklungen am LCSB, Universität Luxemburg, einschließlich des NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>Artikel</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>Website</a>) und <a href='https://massbank.eu/' target='_blanc'>MassBank</a>. Sie können mehr über unsere Arbeit zu Chemikalien im Zusammenhang mit der Parkinson-Krankheit unter DOI: <a href='https://doi.org/10.1016/j.envint.2024.109151' target='_blanc'>10.1016/j.envint.2024.109151</a> lesen. Text zusammengestellt von <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, Universität Luxemburg."
+      },
       "background": "left"
     }
   ]

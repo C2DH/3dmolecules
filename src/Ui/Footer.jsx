@@ -97,7 +97,6 @@ const Footer = ({ pathname }) => {
         </div>
       </div>
       <span className="mt-3  flex text-xs grow md:text-right text-center justify-center">
-        © University of Luxembourg . All rights reserved.
         {t('copyright', {
           year: currentYear
         })}

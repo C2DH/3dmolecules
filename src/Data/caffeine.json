@@ -6,56 +6,128 @@
   "sections": [
     {
       "id": 1,
-      "title": "Caffeine",
+      "title": {
+        "en": "Caffeine",
+        "fr": "Caféine",
+        "de": "Koffein"
+      },
       "description": ""
     },
     {
       "id": 2,
       "title": "",
-      "description": "Caffeine is known to many of us through coffee, black tea and energy drinks, where we benefit from its ability to increase alertness and keep us feeling awake. It is naturally occurring in tea and coffee, but is sometimes deliberately added to other products like energy drinks."
+      "description": {
+        "en": "Caffeine is known to many of us through coffee, black tea and energy drinks, where we benefit from its ability to increase alertness and keep us feeling awake. It is naturally occurring in tea and coffee, but is sometimes deliberately added to other products like energy drinks.",
+        "fr": "La caféine est connue de beaucoup d'entre nous à travers le café, le thé noir et les boissons énergisantes, où nous bénéficions de sa capacité à augmenter l'attention et à nous maintenir éveillés. Elle est naturellement présente dans le thé et le café, mais est parfois délibérément ajoutée à d'autres produits comme les boissons énergisantes.",
+        "de": "Koffein ist vielen von uns durch Kaffee, schwarzen Tee und Energy-Drinks bekannt, wo wir von seiner Fähigkeit profitieren, die Aufmerksamkeit zu steigern und uns wach zu halten. Es kommt natürlich in Tee und Kaffee vor, wird aber manchmal gezielt anderen Produkten wie Energy-Drinks zugesetzt."
+      }
     },
     {
       "id": 3,
-      "title": "A natural stimulant",
-      "description": "Caffeine is what's known as a natural stimulant. It stimulates the central nervous system and is used in drinks but also in cosmetics and medical treatment for premature birth or to counteract drugs acting to suppress the central nervous system. Athletes have used caffeine to boost performance."
+      "title": {
+        "en": "A natural stimulant",
+        "fr": "Un stimulant naturel",
+        "de": "Ein natürlicher Stimulans"
+      },
+      "description": {
+        "en": "Caffeine is a natural stimulant that affects the brain and nervous system. It is the most widely consumed psychoactive substance in the world, and is used to improve alertness and concentration. It is also used to reduce fatigue and improve mood.",
+        "fr": "La caféine est un stimulant naturel qui agit sur le cerveau et le système nerveux. C'est la substance psychoactive la plus consommée au monde, et elle est utilisée pour améliorer l'attention et la concentration. Elle est également utilisée pour réduire la fatigue et améliorer l'humeur.",
+        "de": "Koffein ist ein natürlicher Stimulans, das auf das Gehirn und das Nervensystem wirkt. Es ist die weltweit am weitesten verbreitete psychoaktive Substanz und wird verwendet, um die Aufmerksamkeit und Konzentration zu verbessern. Es wird auch verwendet, um die Müdigkeit zu reduzieren und die Stimmung zu verbessern."
+      }
     },
     {
       "id": 4,
-      "title": "Natural sources",
-      "description": "Caffeine occurs naturally in several plants, including coffee and cocoa beans, tea leaves, mate leaves, guarana paste and kola nuts. Despite having natural sources, it is also prepared synthetically for some consumer products."
+      "title": {
+        "en": "Natural sources",
+        "fr": "Sources naturelles",
+        "de": "Natürliche Quellen"
+      },
+      "description": {
+        "en": "Caffeine occurs naturally in several plants, including coffee and cocoa beans, tea leaves, mate leaves, guarana paste and kola nuts. Despite having natural sources, it is also prepared synthetically for some consumer products.",
+        "fr": "La caféine se trouve naturellement dans plusieurs plantes, y compris les grains de café et de cacao, les feuilles de thé, les feuilles de mate, la pâte de guarana et les noix de kola. Malgré ses sources naturelles, elle est également préparée synthétiquement pour certains produits de consommation.",
+        "de": "Koffein kommt natürlich in mehreren Pflanzen vor, darunter Kaffee- und Kakaobohnen, Teeblätter, Mateblätter, Guaranapaste und Kolanüsse. Trotz natürlicher Quellen wird es auch synthetisch für einige Verbraucherprodukte hergestellt."
+      }
     },
     {
       "id": 5,
-      "title": "Extracting caffeine",
-      "description": "As we all know when we prepare tea or coffee, caffeine can be extracted from coffee beans or tea leaves with boiling water. Anyone who enjoys a good tea or coffee will know that the way it is prepared has a huge influence on the taste and experience, but this is not due to caffeine alone."
+      "title": {
+        "en": "Natural sources",
+        "fr": "Sources naturelles",
+        "de": "Natürliche Quellen"
+      },
+      "description": {
+        "en": "As we all know when we prepare tea or coffee, caffeine can be extracted from coffee beans or tea leaves with boiling water. Anyone who enjoys a good tea or coffee will know that the way it is prepared has a huge influence on the taste and experience, but this is not due to caffeine alone.",
+        "fr": "Comme nous le savons tous lorsque nous préparons du thé ou du café, la caféine peut être extraite des grains de café ou des feuilles de thé avec de l'eau bouillante. Toute personne qui apprécie un bon thé ou un bon café saura que la façon dont il est préparé a une énorme influence sur le goût et l'expérience, mais cela n'est pas dû à la caféine seule.",
+        "de": "Wie wir alle wissen, wenn wir Tee oder Kaffee zubereiten, kann Koffein aus Kaffeebohnen oder Teeblättern mit kochendem Wasser extrahiert werden. Jeder, der einen guten Tee oder Kaffee genießt, weiß, dass die Zubereitung einen großen Einfluss auf den Geschmack und das Erlebnis hat, aber das liegt nicht nur an Koffein."
+      }
     },
     {
       "id": 6,
-      "title": "Decaffination",
-      "description": "Since some people cannot sleep after consuming caffeinated drinks, decaffeinated beverages are popular. Did you know that one safe decaffeination method involves supercritical carbon dioxide extraction at high pressure?"
+      "title": {
+        "en": "Decaffeination",
+        "fr": "Décaféination",
+        "de": "Entkoffeinierung"
+      },
+      "description": {
+        "en": "Decaffeination is the process of removing caffeine from coffee beans, cocoa, tea leaves and other caffeine-containing materials. The goal is to produce coffee, tea and other products that are caffeine-free. There are several methods to remove caffeine, including the Swiss Water Process, the carbon dioxide method and the ethyl acetate method.",
+        "fr": "La décaféination est le processus de retrait de la caféine des grains de café, du cacao, des feuilles de thé et d'autres matériaux contenant de la caféine. L'objectif est de produire du café, du thé et d'autres produits sans caféine. Il existe plusieurs méthodes pour éliminer la caféine, y compris le procédé de l'eau suisse, la méthode au dioxyde de carbone et la méthode à l'acétate d'éthyle.",
+        "de": "Die Entkoffeinierung ist der Prozess des Entfernens von Koffein aus Kaffeebohnen, Kakao, Teeblättern und anderen koffeinhaltigen Materialien. Ziel ist es, koffeinfreien Kaffee, Tee und andere Produkte herzustellen. Es gibt mehrere Methoden, um Koffein zu entfernen, darunter das Schweizer Wasser-Verfahren, die Kohl endioxid-Methode und die Ethylacetat-Methode."
+      }
     },
     {
       "id": 7,
-      "title": "Caffeine metabolites",
-      "description": "Caffeine does not move through our bodies unscathed. A number of metabolites can be formed from caffeine, including theophylline, paraxanthine, theobromine and many more. At LCSB we have been adding data about caffeine (and other) metabolites to open resources, via the <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a> and <a href='https://doi.org/10.1021/acs.estlett.3c00537' target='_blanc'>ShinyTPs</a>, among others. You can view some of the caffeine metabolites in the '<a href='https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Transformations' target='_blanc'>Transformations</a>' section of <a href='https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Transformations' target='_blanc'>PubChem</a>.",
+      "title": {
+        "en": "Caffeine metabolites",
+        "fr": "Métabolites de la caféine",
+        "de": "Koffeinmetaboliten"
+      },
+      "description": {
+        "en": "Caffeine does not move through our bodies unscathed. A number of metabolites can be formed from caffeine, including theophylline, paraxanthine, theobromine and many more. At LCSB we have been adding data about caffeine (and other) metabolites to open resources, via the <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a> and <a href='https://doi.org/10.1021/acs.estlett.3c00537' target='_blanc'>ShinyTPs</a>, among others. You can view some of the caffeine metabolites in the '<a href='https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Transformations' target='_blanc'>Transformations</a>' section of <a href='https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Transformations' target='_blanc'>PubChem</a>.",
+        "fr": "La caféine ne traverse pas notre corps indemne. Un certain nombre de métabolites peuvent être formés à partir de la caféine, y compris la théophylline, la paraxanthine, la théobromine et bien d'autres. Au LCSB, nous avons ajouté des données sur les métabolites de la caféine (et d'autres) à des ressources ouvertes, via le <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a> et <a href='https://doi.org/10.1021/acs.estlett.3c00537' target='_blanc'>ShinyTPs</a>, entre autres. Vous pouvez voir certains des métabolites de la caféine dans la section '<a href='https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Transformations' target='_blanc'>Transformations</a>' de <a href='https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Transformations' target='_blanc'>PubChem</a>.",
+        "de": "Koffein durchläuft unseren Körper nicht unbeschadet. Aus Koffein können eine Reihe von Metaboliten gebildet werden, darunter Theophyllin, Paraxanthin, Theobromin und viele mehr. Am LCSB haben wir Daten zu Koffein- (und anderen) Metaboliten zu offenen Ressourcen hinzugefügt, über das <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a> und <a href='https://doi.org/10.1021/acs.estlett.3c00537' target='_blanc'>ShinyTPs</a>, unter anderem. Sie können einige der Koffeinmetaboliten im Abschnitt '<a href='https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Transformations' target='_blanc'>Transformations</a>' von <a href='https://pubchem.ncbi.nlm.nih.gov/compound/2519#section=Transformations' target='_blanc'>PubChem</a> ansehen."
+      },
       "background": "right"
     },
     {
       "id": 8,
-      "title": "Measuring caffeine",
-      "description": "Caffeine can be measured using mass spectrometry and is found in surface waters, house dust and many other samples. You can view mass spectra of caffeine on <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, an open mass spectral library where the University of Luxembourg acts as both contributor and developer. Find out more about our MassBank efforts <a href='https://doi.org/10.1039/D3EM00181D' target='_blanc'>here</a>.",
+      "title": {
+        "en": "Measuring caffeine",
+        "fr": "Mesure de la caféine",
+        "de": "Koffein messen"
+      },
+      "description": {
+        "en": "Caffeine can be measured in a variety of ways, including in the blood, urine and saliva. The concentration of caffeine in the blood can be measured using a blood test, while the concentration of caffeine in the urine can be measured using a urine test. The concentration of caffeine in the saliva can be measured using a saliva test.",
+        "fr": "La caféine peut être mesurée de diverses manières, notamment dans le sang, l'urine et la salive. La concentration de caféine dans le sang peut être mesurée à l'aide d'un test sanguin, tandis que la concentration de caféine dans l'urine peut être mesurée à l'aide d'un test urinaire. La concentration de caféine dans la salive peut être mesurée à l'aide d'un test salivaire.",
+        "de": "Koffein kann auf verschiedene Weisen gemessen werden, unter anderem im Blut, Urin und Speichel. Die Konzentration von Koffein im Blut kann mit einem Bluttest gemessen werden, während die Konzentration von Koffein im Urin mit einem Urintest gemessen werden kann. Die Konzentration von Koffein im Speichel kann mit einem Speicheltest gemessen werden."
+      },
       "background": "right"
     },
     {
       "id": 9,
-      "title": "Waking up an audience",
-      "description": "Did you know that even talking about caffeine can wake up an audience? Choosing examples that people can relate to is very helpful to get attention, as discovered by IAS Fellow Dagny Aurich while explaining her <em>chemical stripes</em> at a scientific conference. You can view her slides <a href='https://zenodo.org/records/7885032' target='_blanc'>here</a>.",
+      "title": {
+        "en": "Waking up an audience",
+        "fr": "Réveiller un public",
+        "de": "Ein Publikum aufwecken"
+      },
+      "description": {
+        "en": "Did you know that even talking about caffeine can wake up an audience? Choosing examples that people can relate to is very helpful to get attention, as discovered by IAS Fellow Dagny Aurich while explaining her <em>chemical stripes</em> at a scientific conference. You can view her slides <a href='https://zenodo.org/records/7885032' target='_blanc'>here</a>.",
+        "fr": "Saviez-vous que même parler de caféine peut réveiller un public? Choisir des exemples auxquels les gens peuvent s'identifier est très utile pour attirer l'attention, comme l'a découvert la boursière de l'IAS Dagny Aurich en expliquant ses <em>bandes chimiques</em> lors d'une conférence scientifique. Vous pouvez voir ses diapositives <a href='https://zenodo.org/records/7885032' target='_blanc'>ici</a>.",
+        "de": "Wussten Sie, dass schon das Sprechen über Koffein ein Publikum aufwecken kann? Die Auswahl von Beispielen, die die Menschen nachvollziehen können, ist sehr hilfreich, um Aufmerksamkeit zu erregen, wie IAS-Fellow Dagny Aurich bei der Erklärung ihrer <em>chemischen Streifen</em> auf einer wissenschaftlichen Konferenz festgestellt hat. Ihre Folien können Sie <a href='https://zenodo.org/records/7885032' target='_blanc'>hier</a> ansehen."
+      },
       "background": "right"
     },
     {
       "id": 10,
-      "title": "Further details and sources",
-      "description": "Find out more about caffeine on <a href='https://pubchemlite.lcsb.uni.lu/e/compound/2519' target='_blanc'>PubChemLite</a>, which includes the <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“chemical stripes”</a> visualization. Further details can be found on <a href='https://pubchem.ncbi.nlm.nih.gov/compound/2519' target='_blanc'>PubChem</a>, which was used to compile the text presented here. This 3D story about caffeine also mentions other developments at the LCSB, University of Luxembourg, including the NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>website</a>), <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, <a href='https://doi.org/10.1021/acs.estlett.3c00537' target='_blanc'>ShinyTPs</a> and the <a href='https://doi.org/10.1021/acs.estlett.4c00560' target='_blanc'>chemical stripes</a>. Text compiled by <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, University of Luxembourg.",
+      "title": {
+        "en": "Further details and sources",
+        "fr": "Détails et sources supplémentaires",
+        "de": "Weitere Details und Quellen"
+      },
+      "description": {
+        "en": "Find out more about caffeine on <a href='https://pubchemlite.lcsb.uni.lu/e/compound/2519' target='_blanc'>PubChemLite</a>, which includes the <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“chemical stripes”</a> visualization. Further details can be found on <a href='https://pubchem.ncbi.nlm.nih.gov/compound/2519' target='_blanc'>PubChem</a>, which was used to compile the text presented here. This 3D story about caffeine also mentions other developments at the LCSB, University of Luxembourg, including the NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>website</a>), <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, <a href='https://doi.org/10.1021/acs.estlett.3c00537' target='_blanc'>ShinyTPs</a> and the <a href='https://doi.org/10.1021/acs.estlett.4c00560' target='_blanc'>chemical stripes</a>. Text compiled by <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, University of Luxembourg.",
+        "fr": "Pour en savoir plus sur la caféine, rendez-vous sur <a href='https://pubchemlite.lcsb.uni.lu/e/compound/2519' target='_blanc'>PubChemLite</a>, qui inclut la visualisation des <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“bandes chimiques”</a>. Vous trouverez d'autres détails sur <a href='https://pubchem.ncbi.nlm.nih.gov/compound/2519' target='_blanc'>PubChem</a>, qui a été utilisé pour compiler le texte présenté ici. Cette histoire 3D sur la caféine mentionne également d'autres développements au LCSB, Université du Luxembourg, y compris le NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>site web</a>), <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, <a href='https://doi.org/10.1021/acs.estlett.3c00537' target='_blanc'>ShinyTPs</a> et les <a href='https://doi.org/10.1021/acs.estlett.4c00560' target='_blanc'>bandes chimiques</a>. Texte compilé par <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, Université du Luxembourg.",
+        "de": "Weitere Informationen zu Koffein finden Sie auf <a href='https://pubchemlite.lcsb.uni.lu/e/compound/2519' target='_blanc'>PubChemLite</a>, das die Visualisierung der <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“chemischen Streifen”</a> enthält. Weitere Details finden Sie auf <a href='https://pubchem.ncbi.nlm.nih.gov/compound/2519' target='_blanc'>PubChem</a>, das zur Erstellung des hier präsentierten Textes verwendet wurde. Diese 3D-Geschichte über Koffein erwähnt auch andere Entwicklungen am LCSB, Universität Luxemburg, einschließlich des NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>Artikel</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>Website</a>), <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, <a href='https://doi.org/10.1021/acs.estlett.3c00537' target='_blanc'>ShinyTPs</a> und der <a href='https://doi.org/10.1021/acs.estlett.4c00560' target='_blanc'>chemischen Streifen</a>. Text zusammengestellt von <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, Universität Luxemburg."
+      },
       "background": "left"
     }
   ]

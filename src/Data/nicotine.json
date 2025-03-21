@@ -6,50 +6,110 @@
   "sections": [
     {
       "id": 1,
-      "title": "Nicotine",
+      "title": {
+        "en": "Nicotine",
+        "fr": "Nicotine",
+        "de": "Nikotin"
+      },
       "description": ""
     },
     {
       "id": 2,
       "title": "",
-      "description": "Nicotine is a naturally occuring stimulant found in tobacco plants. Cigarettes, cigars and other tobacco products - as well as the resulting smoke - contain nicotine. Other products such as vapes and gums/patches to quit smoking also contain nicotine."
+      "description": {
+        "en": "Nicotine is a naturally occuring stimulant found in tobacco plants. Cigarettes, cigars and other tobacco products - as well as the resulting smoke - contain nicotine. Other products such as vapes and gums/patches to quit smoking also contain nicotine.",
+        "fr": "La nicotine est un stimulant naturel présent dans les plantes de tabac. Les cigarettes, les cigares et autres produits du tabac - ainsi que la fumée qui en résulte - contiennent de la nicotine. D'autres produits tels que les cigarettes électroniques et les gommes/patchs pour arrêter de fumer contiennent également de la nicotine.",
+        "de": "Nikotin ist ein natürlich vorkommendes Stimulans, das in Tabakpflanzen vorkommt. Zigaretten, Zigarren und andere Tabakprodukte - sowie der daraus resultierende Rauch - enthalten Nikotin. Andere Produkte wie E-Zigaretten und Kaugummis/Pflaster zum Rauchen aufhören enthalten ebenfalls Nikotin."
+      }
     },
     {
       "id": 3,
       "title": "",
-      "description": "Nicotine is a natural stimulant affecting the central nervous system and heart. Relatively small doses can be fatal, although the amount of nicotine in products such as cigarettes is well below these limits. Nicotine is also highly addictive, which is why many people find it difficult to quit smoking."
+      "description": {
+        "en": "Nicotine is a natural stimulant affecting the central nervous system and heart. Relatively small doses can be fatal, although the amount of nicotine in products such as cigarettes is well below these limits. Nicotine is also highly addictive, which is why many people find it difficult to quit smoking.",
+        "fr": "La nicotine est un stimulant naturel qui agit sur le système nerveux central et le cœur. Des doses relativement faibles peuvent être fatales, bien que la quantité de nicotine dans des produits tels que les cigarettes soit bien inférieure à ces limites. La nicotine est également très addictive, c'est pourquoi de nombreuses personnes trouvent difficile d'arrêter de fumer.",
+        "de": "Nikotin ist ein natürliches Stimulans, das das zentrale Nervensystem und das Herz beeinflusst. Relativ kleine Dosen können tödlich sein, obwohl die Menge an Nikotin in Produkten wie Zigaretten weit unter diesen Grenzwerten liegt. Nikotin ist auch sehr süchtig machend, weshalb es vielen Menschen schwer fällt, mit dem Rauchen aufzuhören."
+      }
     },
     {
       "id": 4,
-      "title": "Natural sources",
-      "description": "Nicotine occurs naturally in tobacco plants, which is the main source of nicotine used in products. Harvesting tobacco leaves can expose the workers to chronic hazards such as nicotine poisoning if safety measures aren't taken."
+      "title": {
+        "en": "Natural sources",
+        "fr": "Sources naturelles",
+        "de": "Natürliche Quellen"
+      },
+      "description": {
+        "en": "Nicotine occurs naturally in tobacco plants, which is the main source of nicotine used in products. Harvesting tobacco leaves can expose the workers to chronic hazards such as nicotine poisoning if safety measures aren't taken.",
+        "fr": "La nicotine se trouve naturellement dans les plantes de tabac, qui est la principale source de nicotine utilisée dans les produits. La récolte des feuilles de tabac peut exposer les travailleurs à des dangers chroniques tels que l'empoisonnement à la nicotine si des mesures de sécurité ne sont pas prises.",
+        "de": "Nikotin kommt natürlicherweise in Tabakpflanzen vor, die die Hauptquelle für in Produkten verwendetes Nikotin sind. Die Ernte von Tabakblättern kann die Arbeiter chronischen Gefahren wie Nikotinvergiftung aussetzen, wenn keine Sicherheitsmaßnahmen ergriffen werden müssen."
+      }
     },
     {
       "id": 5,
-      "title": "Third-Hand Smoke",
-      "description": "Although many people think of second-hand smoke (passive smoking), did you know that third-hand smoke - longer term emissions from upholstery in furniture, for example - can be particularly hazardous to children under the age of 6, due to the presence of nitrosamines? You can read more about this <a href='https://doi.org/10.1016/j.envint.2014.06.012' target='_blanc'>here</a>."
+      "title": {
+        "en": "Third-Hand Smoke",
+        "fr": "Fumée de troisième main",
+        "de": "Dritthand-Rauch"
+      },
+      "description": {
+        "en": "Although many people think of second-hand smoke (passive smoking), did you know that third-hand smoke - longer term emissions from upholstery in furniture, for example - can be particularly hazardous to children under the age of 6, due to the presence of nitrosamines? You can read more about this <a href='https://doi.org/10.1016/j.envint.2014.06.012' target='_blanc'>here</a>.",
+        "fr": "Bien que de nombreuses personnes pensent à la fumée de tabac passive (tabagisme passif), saviez-vous que la fumée de troisième main - les émissions à plus long terme des meubles, par exemple - peut être particulièrement dangereuse pour les enfants de moins de 6 ans, en raison de la présence de nitros amines? Vous pouvez en lire plus à ce sujet <a href='https://doi.org/10.1016/j.envint.2014.06.012' target='_blanc'>ici</a>.",
+        "de": "Obwohl viele Menschen an Passivrauchen denken, wussten Sie, dass Dritthand-Rauch - langfristige Emissionen aus Polstermöbeln zum Beispiel - besonders gefährlich für Kinder unter 6 Jahren sein kann, aufgrund des Vorhandenseins von Nitrosaminen? Sie können mehr darüber lesen <a href='https://doi.org/10.1016/j.envint.2014.06.012' target='_blanc'>hier</a>."
+      }
     },
     {
       "id": 6,
-      "title": "Is it all bad?",
-      "description": "Although nicotine is generally associated with negative information, it's not all bad! Did you know that nicotine is considered neuroprotective for some neurodegenerative disorders such as Parkinson's disease?"
+      "title": {
+        "en": "Is it all bad?",
+        "fr": "Est-ce tout mauvais?",
+        "de": "Ist alles schlecht?"
+      },
+      "description": {
+        "en": "Although nicotine is generally associated with negative information, it's not all bad! Did you know that nicotine is considered neuroprotective for some neurodegenerative disorders such as Parkinson's disease?",
+        "fr": "Bien que la nicotine soit généralement associée à des informations négatives, tout n'est pas mauvais! Saviez-vous que la nicotine est considérée comme neuroprotectrice pour certains troubles neurodégénératifs tels que la maladie de Parkinson?",
+        "de": "Obwohl Nikotin im Allgemeinen mit negativen Informationen in Verbindung gebracht wird, ist nicht alles schlecht! Wussten Sie, dass Nikotin für einige neurodegenerative Erkrankungen wie Parkinson als neuroprotektiv angesehen wird?"
+      }
     },
     {
       "id": 7,
-      "title": "Nicotine metabolites",
-      "description": "Nicotine is transformed in our bodies and the environment to form several metabolites, including cotinine, nornicotine, 2-hydroxynicotine, NNA and many more. At LCSB we have added data about nicotine metabolites, including the third-hand smoke metabolites to open resources in collaboration with Noelia Ramirez and students from Tarragona, Spain, via the <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>. You can view some of these nicotine metabolites in the '<a href='https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Transformations' target='_blanc'>Transformations</a>' section of <a href='https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Transformations' target='_blanc'>PubChem</a>.",
+      "title": {
+        "en": "Nicotine metabolites",
+        "fr": "Métabolites de la nicotine",
+        "de": "Nikotinmetaboliten"
+      },
+      "description": {
+        "en": "Nicotine is transformed in our bodies and the environment to form several metabolites, including cotinine, nornicotine, 2-hydroxynicotine, NNA and many more. At LCSB we have added data about nicotine metabolites, including the third-hand smoke metabolites to open resources in collaboration with Noelia Ramirez and students from Tarragona, Spain, via the <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>. You can view some of these nicotine metabolites in the '<a href='https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Transformations' target='_blanc'>Transformations</a>' section of <a href='https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Transformations' target='_blanc'>PubChem</a>.",
+        "fr": "La nicotine est transformée dans notre corps et dans l'environnement pour former plusieurs métabolites, y compris la cotinine, la nornicotine, la 2-hydroxynicotine, la NNA et bien d'autres. Au LCSB, nous avons ajouté des données sur les métabolites de la nicotine, y compris les métabolites de la fumée de troisième main, à des ressources ouvertes en collaboration avec Noelia Ramirez et des étudiants de Tarragone, en Espagne, via le <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>. Vous pouvez voir certains de ces métabolites de la nicotine dans la section '<a href='https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Transformations' target='_blanc'>Transformations</a>' de <a href='https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Transformations' target='_blanc'>PubChem</a>.",
+        "de": "Nikotin wird in unserem Körper und in der Umwelt umgewandelt, um mehrere Metaboliten zu bilden, darunter Cotinin, Nornikotin, 2-Hydroxynikotin, NNA und viele mehr. Am LCSB haben wir Daten zu Nikotinmetaboliten hinzugefügt, einschließlich der Metaboliten von Dritthand-Rauch, zu offenen Ressourcen in Zusammenarbeit mit Noelia Ramirez und Studenten aus Tarragona, Spanien, über den <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>. Sie können einige dieser Nikotinmetaboliten im Abschnitt '<a href='https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Transformations' target='_blanc'>Transformations</a>' von <a href='https://pubchem.ncbi.nlm.nih.gov/compound/89594#section=Transformations' target='_blanc'>PubChem</a> anzeigen."
+      },
       "background": "right"
     },
     {
       "id": 8,
-      "title": "Measuring nicotine",
-      "description": "Nicotine and its metabolites can be measured using mass spectrometry and are found in surface waters, house dust, blood, urine and many other samples. You can view mass spectra of nicotine on <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, an open mass spectral library where the University of Luxembourg acts as both contributor and developer. Find out more about our MassBank efforts <a href='https://doi.org/10.1039/D3EM00181D' target='_blanc'>here</a>.",
+      "title": {
+        "en": "Measuring nicotine",
+        "fr": "Mesure de la nicotine",
+        "de": "Messung von Nikotin"
+      },
+      "description": {
+        "en": "Nicotine and its metabolites can be measured using mass spectrometry and are found in surface waters, house dust, blood, urine and many other samples. You can view mass spectra of nicotine on <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, an open mass spectral library where the University of Luxembourg acts as both contributor and developer. Find out more about our MassBank efforts <a href='https://doi.org/10.1039/D3EM00181D' target='_blanc'>here</a>.",
+        "fr": "La nicotine et ses métabolites peuvent être mesurés à l'aide de la spectrométrie de masse et se retrouvent dans les eaux de surface, la poussière de maison, le sang, l'urine et de nombreux autres échantillons. Vous pouvez voir les spectres de masse de la nicotine sur <a href='https://massbank.eu/' target='_blanc'>MassBank</a>, une bibliothèque de spectres de masse ouverte où l'Université du Luxembourg agit à la fois comme contributeur et développeur. Découvrez-en plus sur nos efforts MassBank <a href='https://doi.org/10.1039/D3EM00181D' target='_blanc'>ici</a>.",
+        "de": "Nikotin und seine Metaboliten können mit Hilfe der Massenspektrometrie gemessen werden und sind in Oberflächengewässern, Hausstaub, Blut, Urin und vielen anderen Proben zu finden. Sie können Massenspektren von Nikotin auf <a href='https://massbank.eu/' target='_blanc'>MassBank</a> ansehen, einer offenen Massenspektrenbibliothek, in der die Universität Luxemburg sowohl als Beitragender als auch als Entwickler tätig ist. Erfahren Sie mehr über unsere MassBank-Bemühungen <a href='https://doi.org/10.1039/D3EM00181D' target='_blanc'>hier</a>."
+      },
       "background": "right"
     },
     {
       "id": 9,
-      "title": "Further details and sources",
-      "description": "Find out more about nicotine on <a href='https://pubchemlite.lcsb.uni.lu/e/compound/89594' target='_blanc'>PubChemLite</a>, which includes the <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“chemical stripes”</a> visualization. Further details can be found on <a href='https://pubchem.ncbi.nlm.nih.gov/compound/89594' target='_blanc'>PubChem</a>, which was used to compile the text presented here, along with articles from Swedish radio (<a href='https://www.svt.se/nyheter/utrikes/vita-snuset-sparas-till-tobaksfalt-i-indien-extrem-utsatthet' target='_blanc'>short report</a>; <a href='https://www.sverigesradio.se/avsnitt/det-vita-snusets-baksida-p3-nyheter-dokumentar' target='_blanc'>long report</a>). This 3D story about nicotine also mentions other developments at the LCSB, University of Luxembourg, including the NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>website</a>), <a href='https://doi.org/10.1021/acs.estlett.4c00560' target='_blanc'>chemical stripes</a> and <a href='https://massbank.eu/' target='_blanc'>MassBank</a>. You can read more about the work of our Spanish collaborators on Third-Hand Smoke at DOI: <a href='https://doi.org/10.1124/pr.57.1.3' target='_blanc'>10.1124/pr.57.1.3</a>. Text compiled by <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a> and <a href='https://www.uni.lu/lcsb-en/people/emma-helena-palm/' target='_blanc'>Emma Palm</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, University of Luxembourg.",
+      "title": {
+        "en": "Further details and sources",
+        "fr": "Détails et sources supplémentaires",
+        "de": "Weitere Details und Quellen"
+      },
+      "description": {
+        "en": "Find out more about nicotine on <a href='https://pubchemlite.lcsb.uni.lu/e/compound/89594' target='_blanc'>PubChemLite</a>, which includes the <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“chemical stripes”</a> visualization. Further details can be found on <a href='https://pubchem.ncbi.nlm.nih.gov/compound/89594' target='_blanc'>PubChem</a>, which was used to compile the text presented here, along with articles from Swedish radio (<a href='https://www.svt.se/nyheter/utrikes/vita-snuset-sparas-till-tobaksfalt-i-indien-extrem-utsatthet' target='_blanc'>short report</a>; <a href='https://www.sverigesradio.se/avsnitt/det-vita-snusets-baksida-p3-nyheter-dokumentar' target='_blanc'>long report</a>). This 3D story about nicotine also mentions other developments at the LCSB, University of Luxembourg, including the NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>website</a>), <a href='https://doi.org/10.1021/acs.estlett.4c00560' target='_blanc'>chemical stripes</a> and <a href='https://massbank.eu/' target='_blanc'>MassBank</a>. You can read more about the work of our Spanish collaborators on Third-Hand Smoke at DOI: <a href='https://doi.org/10.1124/pr.57.1.3' target='_blanc'>10.1124/pr.57.1.3</a>. Text compiled by <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a> and <a href='https://www.uni.lu/lcsb-en/people/emma-helena-palm/' target='_blanc'>Emma Palm</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, University of Luxembourg.",
+        "fr": "Découvrez-en plus sur la nicotine sur <a href='https://pubchemlite.lcsb.uni.lu/e/compound/89594' target='_blanc'>PubChemLite</a>, qui inclut la visualisation des <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“chemical stripes”</a>. Vous trouverez plus de détails sur <a href='https://pubchem.ncbi.nlm.nih.gov/compound/89594' target='_blanc'>PubChem</a>, qui a été utilisé pour compiler le texte présenté ici, ainsi que des articles de la radio suédoise (<a href='https://www.svt.se/nyheter/utrikes/vita-snuset-sparas-till-tobaksfalt-i-indien-extrem-utsatthet' target='_blanc'>court reportage</a>; <a href='https://www.sverigesradio.se/avsnitt/det-vita-snusets-baksida-p3-nyheter-dokumentar' target='_blanc'>long reportage</a>). Cette histoire 3D sur la nicotine mentionne également d'autres développements au LCSB, Université du Luxembourg, y compris le NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>site web</a>), les <a href='https://doi.org/10.1021/acs.estlett.4c00560' target='_blanc'>chemical stripes</a> et <a href='https://massbank.eu/' target='_blanc'>MassBank</a>. Vous pouvez en savoir plus sur le travail de nos collaborateurs espagnols sur la fumée de troisième main à DOI: <a href='https://doi.org/10.1124/pr.57.1.3' target='_blanc'>10.1124/pr.57.1.3</a>. Texte compilé par <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a> et <a href='https://www.uni.lu/lcsb-en/people/emma-helena-palm/' target='_blanc'>Emma Palm</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, Université du Luxembourg.",
+        "de": "Erfahren Sie mehr über Nikotin auf <a href='https://pubchemlite.lcsb.uni.lu/e/compound/89594' target='_blanc'>PubChemLite</a>, das die Visualisierung der <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>“chemical stripes”</a> enthält. Weitere Details finden Sie auf <a href='https://pubchem.ncbi.nlm.nih.gov/compound/89594' target='_blanc'>PubChem</a>, das zur Erstellung des hier präsentierten Textes verwendet wurde, zusammen mit Artikeln des schwedischen Radios (<a href='https://www.svt.se/nyheter/utrikes/vita-snuset-sparas-till-tobaksfalt-i-indien-extrem-utsatthet' target='_blanc'>kurzer Bericht</a>; <a href='https://www.sverigesradio.se/avsnitt/det-vita-snusets-baksida-p3-nyheter-dokumentar' target='_blanc'>langer Bericht</a>). Diese 3D-Geschichte über Nikotin erwähnt auch andere Entwicklungen am LCSB, Universität Luxemburg, einschließlich des NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>Artikel</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>Website</a>), <a href='https://doi.org/10.1021/acs.estlett.4c00560' target='_blanc'>chemical stripes</a> und <a href='https://massbank.eu/' target='_blanc'>MassBank</a>. Lesen Sie mehr über die Arbeit unserer spanischen Kollegen zu Dritthand-Rauch unter DOI: <a href='https://doi.org/10.1124/pr.57.1.3' target='_blanc'>10.1124/pr.57.1.3</a>. Text zusammengestellt von <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a> und <a href='https://www.uni.lu/lcsb-en/people/emma-helena-palm/' target='_blanc'>Emma Palm</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, Universität Luxemburg."
+      },
       "background": "left"
     }
   ]

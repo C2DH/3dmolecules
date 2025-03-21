@@ -11,33 +11,81 @@
     },
     {
       "id": 2,
-      "title": "What is DDT?",
-      "description": "DDT or dichlorodiphenyltrichloroethane (also known as clofenotane) is an insecticide that is infamous for its environmental impacts. It was first used during the second world war to limit the spread of diseases such as malaria and typhus, but had a devestating effect on wildlife. It is a 'persistent organic pollutant' or POP."
+      "title": {
+        "en": "What is DDT?",
+        "fr": "Qu'est-ce que le DDT?",
+        "de": "Was ist DDT?"
+      },
+      "description": {
+        "en": "DDT or dichlorodiphenyltrichloroethane (also known as clofenotane) is an insecticide that is infamous for its environmental impacts. It was first used during the second world war to limit the spread of diseases such as malaria and typhus, but had a devestating effect on wildlife. It is a 'persistent organic pollutant' or POP.",
+        "fr": "Le DDT ou dichlorodiphényltrichloroéthane (également connu sous le nom de clofénotane) est un insecticide tristement célèbre pour ses impacts environnementaux. Il a été utilisé pour la première fois pendant la Seconde Guerre mondiale pour limiter la propagation de maladies telles que le paludisme et le typhus, mais a eu un effet dévastateur sur la faune. C'est un 'polluant organique persistant' ou POP.",
+        "de": "DDT oder Dichlordiphenyltrichlorethan (auch bekannt als Clofenotan) ist ein Insektizid, das für seine Umweltauswirkungen berüchtigt ist. Es wurde erstmals während des Zweiten Weltkriegs eingesetzt, um die Ausbreitung von Krankheiten wie Malaria und Typhus einzudämmen, hatte jedoch verheerende Auswirkungen auf die Tierwelt. Es handelt sich um einen 'persistenten organischen Schadstoff' oder POP."
+      }
     },
     {
       "id": 3,
-      "title": "Silent Spring",
-      "description": "Rachel Carson's book Silent Spring helped raise public awareness of the environmental impacts related to pesticide use. The resulting public outcry led to a ban on DDT in agriculture in the US in 1972."
+      "title": {
+        "en": "Silent Spring",
+        "fr": "Printemps silencieux",
+        "de": "Stummer Frühling"
+      },
+      "description": {
+        "en": "The book 'Silent Spring' by Rachel Carson, published in 1962, was one of the first to raise public awareness of the environmental impacts of DDT. The book led to a public outcry and the eventual ban of DDT in the US in 1972.",
+        "fr": "Le livre 'Silent Spring' de Rachel Carson, publié en 1962, a été l'un des premiers à sensibiliser le public aux impacts environnementaux du DDT. Le livre a provoqué un tollé public et l'interdiction ultérieure du DDT aux États-Unis en 1972.",
+        "de": "Das Buch 'Silent Spring' von Rachel Carson, das 1962 veröffentlicht wurde, war eines der ersten, das das Bewusstsein der Öffentlichkeit für die Umweltauswirkungen von DDT schärfte. Das Buch führte zu einem öffentlichen Aufschrei und dem schließlichem Verbot von DDT in den USA im Jahr 1972."
+      }
     },
     {
       "id": 4,
-      "title": "Stockholm Convention",
-      "description": "The use of DDT in agriculture was banned worldwide under the Stockholm Convention on Persistent Organic Pollutants, coming into effect in 2004. The recovery of some bird species from the brink of extinction has been credited to the US and worldwide bans of DDT. "
+      "title": {
+        "en": "The Stockholm Convention",
+        "fr": "La Convention de Stockholm",
+        "de": "Die Stockholmer Konvention"
+      },
+      "description": {
+        "en": "The Stockholm Convention on Persistent Organic Pollutants is a global treaty to protect human health and the environment from chemicals that remain intact in the environment for long periods, become widely distributed geographically, accumulate in the fatty tissue of humans and wildlife, and have harmful impacts on human health or the environment. DDT is one of the chemicals listed in the convention.",
+        "fr": "La Convention de Stockholm sur les polluants organiques persistants est un traité mondial visant à protéger la santé humaine et l'environnement contre les produits chimiques qui restent intacts dans l'environnement pendant de longues périodes, se répandent largement géographiquement, s'accumulent dans les tissus adipeux des humains et de la faune et ont des impacts nocifs sur la santé humaine ou l'environnement. Le DDT est l'un des produits chimiques répertoriés dans la convention.",
+        "de": "Die Stockholmer Konvention über persistente organische Schadstoffe ist ein globales Abkommen zum Schutz der menschlichen Gesundheit und der Umwelt vor Chemikalien, die lange Zeit intakt in der Umwelt verbleiben, sich geografisch weit verbreiten, sich im Fettgewebe von Menschen und Tieren anreichern und schädliche Auswirkungen auf die menschliche Gesundheit oder die Umwelt haben. DDT ist eine der in der Konvention aufgeführten Chemikalien."
+      }
     },
     {
       "id": 5,
-      "title": "The lesser evil",
-      "description": "While DDT is banned for agricultural use worldwide (the Stockholm Convention is ratified by over 170 countries), it is still permitted for use to control mosquitos and thus limit the spread of maleria where no alternatives exist. This is a so-called case of 'essential use'."
+      "title": {
+        "en": "The lesser evil",
+        "fr": "Le moindre mal",
+        "de": "Das kleinere Übel"
+      },
+      "description": {
+        "en": "While DDT is banned for agricultural use worldwide (the Stockholm Convention is ratified by over 170 countries), it is still permitted for use to control mosquitos and thus limit the spread of maleria where no alternatives exist. This is a so-called case of 'essential use'.",
+        "fr": "Bien que le DDT soit interdit pour une utilisation agricole dans le monde entier (la Convention de Stockholm est ratifiée par plus de 170 pays), il est toujours autorisé pour lutter contre les moustiques et ainsi limiter la propagation du paludisme là où aucune alternative n'existe. Il s'agit d'un cas dit d' 'utilisation essentielle'.",
+        "de": "Obwohl DDT weltweit für den landwirtschaftlichen Einsatz verboten ist (die Stockholmer Konvention wird von über 170 Ländern ratifiziert), ist es immer noch erlaubt, um Mücken zu bekämpfen und so die Ausbreitung von Malaria zu begrenzen, wo keine Alternativen existieren. Dies ist ein sogenannter Fall von 'essentiellem Einsatz'."
+      }
     },
     {
       "id": 6,
-      "title": "Our chemical past, present and future",
-      "description": "Although DDT was one of the first 'POPs' to raise public attention, we are now confronted with data from millions of chemicals, far more than ever anticipated by Rachel Carson. Check out this amazing sonification (<a href='https://soundcloud.com/jamieperera/our-chemical-past-present-and-future' target='_blanc'>SoundCloud</a>, <a href='https://vimeo.com/862087332' target='_blanc'>Vimeo</a>) by <a href='https://www.jamieperera.com/' target='_blanc'>Jamie Perera</a> featuring DDT and other chemicals, based on the chemical stripes visualization presented in DOI: <a href='https://pubs.acs.org/doi/full/10.1021/acs.est.3c01735' target='_blanc'>10.1021/acs.est.3c01735</a>. "
+      "title": {
+        "en": "Our chemical past, present and future",
+        "fr": "Notre passé, présent et futur chimique",
+        "de": "Unsere chemische Vergangenheit, Gegenwart und Zukunft"
+      },
+      "description": {
+        "en": "Although DDT was one of the first 'POPs' to raise public attention, we are now confronted with data from millions of chemicals, far more than ever anticipated by Rachel Carson. Check out this amazing sonification (<a href='https://soundcloud.com/jamieperera/our-chemical-past-present-and-future' target='_blanc'>SoundCloud</a>, <a href='https://vimeo.com/862087332' target='_blanc'>Vimeo</a>) by <a href='https://www.jamieperera.com/' target='_blanc'>Jamie Perera</a> featuring DDT and other chemicals, based on the chemical stripes visualization presented in DOI: <a href='https://pubs.acs.org/doi/full/10.1021/acs.est.3c01735' target='_blanc'>10.1021/acs.est.3c01735</a>.",
+        "fr": "Bien que le DDT ait été l'un des premiers 'POPs' à attirer l'attention du public, nous sommes maintenant confrontés à des données provenant de millions de produits chimiques, bien plus que ce que Rachel Carson n'avait jamais anticipé. Découvrez cette incroyable sonification (<a href='https://soundcloud.com/jamieperera/our-chemical-past-present-and-future' target='_blanc'>SoundCloud</a>, <a href='https://vimeo.com/862087332' target='_blanc'>Vimeo</a>) de <a href='https://www.jamieperera.com/' target='_blanc'>Jamie Perera</a> mettant en vedette le DDT et d'autres produits chimiques, basée sur la visualisation des bandes chimiques présentée dans DOI: <a href='https://pubs.acs.org/doi/full/10.1021/acs.est.3c01735' target='_blanc'>10.1021/acs.est.3c01735</a>.",
+        "de": "Obwohl DDT eines der ersten 'POPs' war, das die öffentliche Aufmerksamkeit erregte, werden wir jetzt mit Daten von Millionen von Chemikalien konfrontiert, weit mehr als jemals von Rachel Carson erwartet. Schauen Sie sich diese erstaunliche Sonifikation (<a href='https://soundcloud.com/jamieperera/our-chemical-past-present-and-future' target='_blanc'>SoundCloud</a>, <a href='https://vimeo.com/862087332' target='_blanc'>Vimeo</a>) von <a href='https://www.jamieperera.com/' target='_blanc'>Jamie Perera</a> an, die DDT und andere Chemikalien basierend auf der in DOI präsentierten chemischen Streifenvisualisierung zeigt: <a href='https://pubs.acs.org/doi/full/10.1021/acs.est.3c01735' target='_blanc'>10.1021/acs.est.3c01735</a>."
+      }
     },
     {
       "id": 7,
-      "title": "DDT metabolites",
-      "description": "DDT can be transformed to metabolites including DDD, DDE and 2,3-dihydrodiol-DDT. At LCSB we have been adding data about DDT (and other) metabolites to open resources, via the <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>, among others. You can view some of the DDT metabolites in the '<a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Transformations' target='_blanc'>Transformations</a>' section of <a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Transformations' target='_blanc'>PubChem</a>.",
+      "title": {
+        "en": "DDT metabolites",
+        "fr": "Métabolites du DDT",
+        "de": "DDT-Metaboliten"
+      },
+      "description": {
+        "en": "DDT can be transformed to metabolites including DDD, DDE and 2,3-dihydrodiol-DDT. At LCSB we have been adding data about DDT (and other) metabolites to open resources, via the <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>, among others. You can view some of the DDT metabolites in the '<a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Transformations' target='_blanc'>Transformations</a>' section of <a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Transformations' target='_blanc'>PubChem</a>.",
+        "fr": "Le DDT peut être transformé en métabolites, y compris le DDD, le DDE et le 2,3-dihydrodiol-DDT. Au LCSB, nous avons ajouté des données sur les métabolites du DDT (et d'autres) à des ressources ouvertes, via le <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>, entre autres. Vous pouvez voir certains des métabolites du DDT dans la section '<a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Transformations' target='_blanc'>Transformations</a>' de <a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Transformations' target='_blanc'>PubChem</a>.",
+        "de": "DDT kann in Metaboliten wie DDD, DDE und 2,3-Dihydrodiol-DDT umgewandelt werden. Am LCSB haben wir Daten zu DDT-(und anderen) Metaboliten zu offenen Ressourcen hinzugefügt, über das <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>NORMAN-SLE</a>, unter anderem. Sie können einige der DDT-Metaboliten im Abschnitt '<a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Transformations' target='_blanc'>Transformations</a>' von <a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036#section=Transformations' target='_blanc'>PubChem</a> ansehen."
+      },
       "background": "right"
     },
     {
@@ -48,8 +96,16 @@
     },
     {
       "id": 9,
-      "title": "Further details and sources",
-      "description": "Find out more about DDT on <a href='https://pubchemlite.lcsb.uni.lu/e/compound/3036' target='_blanc'>PubChemLite</a>, which includes the <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>'chemical stripes'</a> visualization, sonified (<a href='https://soundcloud.com/jamieperera/our-chemical-past-present-and-future' target='_blanc'>SoundCloud</a>, <a href='https://vimeo.com/862087332' target='_blanc'>Vimeo</a>) by <a href='https://www.jamieperera.com/' target='_blanc'>Jamie Perera</a>. Further details can be found on <a href='https://en.wikipedia.org/wiki/DDT' target='_blanc'>Wikipedia</a> and <a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036' target='_blanc'>PubChem</a>, which were used to compile the text presented here. This 3D story also mentions other developments at the LCSB, University of Luxembourg, including the NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>website</a>), <a href='https://massbank.eu/' target='_blanc'>MassBank</a> and the <a href='https://doi.org/10.1021/acs.estlett.4c00560' target='_blanc'>chemical stripes</a>. Text compiled by <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, University of Luxembourg.",
+      "title": {
+        "en": "Further details and sources",
+        "fr": "Détails et sources supplémentaires",
+        "de": "Weitere Details und Quellen"
+      },
+      "description": {
+        "en": "Find out more about DDT on <a href='https://pubchemlite.lcsb.uni.lu/e/compound/3036' target='_blanc'>PubChemLite</a>, which includes the <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>'chemical stripes'</a> visualization, sonified (<a href='https://soundcloud.com/jamieperera/our-chemical-past-present-and-future' target='_blanc'>SoundCloud</a>, <a href='https://vimeo.com/862087332' target='_blanc'>Vimeo</a>) by <a href='https://www.jamieperera.com/' target='_blanc'>Jamie Perera</a>. Further details can be found on <a href='https://en.wikipedia.org/wiki/DDT' target='_blanc'>Wikipedia</a> and <a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036' target='_blanc'>PubChem</a>, which were used to compile the text presented here. This 3D story also mentions other developments at the LCSB, University of Luxembourg, including the NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>website</a>), <a href='https://massbank.eu/' target='_blanc'>MassBank</a> and the <a href='https://doi.org/10.1021/acs.estlett.4c00560' target='_blanc'>chemical stripes</a>. Text compiled by <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, University of Luxembourg.",
+        "fr": "Découvrez-en plus sur le DDT sur <a href='https://pubchemlite.lcsb.uni.lu/e/compound/3036' target='_blanc'>PubChemLite</a>, qui inclut la visualisation des <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>'bandes chimiques'</a>, sonifiée (<a href='https://soundcloud.com/jamieperera/our-chemical-past-present-and-future' target='_blanc'>SoundCloud</a>, <a href='https://vimeo.com/862087332' target='_blanc'>Vimeo</a>) par <a href='https://www.jamieperera.com/' target='_blanc'>Jamie Perera</a>. Vous trouverez plus de détails sur <a href='https://en.wikipedia.org/wiki/DDT' target='_blanc'>Wikipédia</a> et <a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036' target='_blanc'>PubChem</a>, qui ont été utilisés pour compiler le texte présenté ici. Cette histoire 3D mentionne également d'autres développements au LCSB, Université du Luxembourg, y compris le NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>article</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>site web</a>), <a href='https://massbank.eu/' target='_blanc'>MassBank</a> et les <a href='https://doi.org/10.1021/acs.estlett.4c00560' target='_blanc'>bandes chimiques</a>. Texte compilé par <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, Université du Luxembourg.",
+        "de": "Erfahren Sie mehr über DDT auf <a href='https://pubchemlite.lcsb.uni.lu/e/compound/3036' target='_blanc'>PubChemLite</a>, das die <a href='https://gitlab.com/uniluxembourg/lcsb/eci/chemicalstripes' target='_blanc'>'chemischen Streifen'</a>-Visualisierung, sonifiziert (<a href='https://soundcloud.com/jamieperera/our-chemical-past-present-and-future' target='_blanc'>SoundCloud</a>, <a href='https://vimeo.com/862087332' target='_blanc'>Vimeo</a>) von <a href='https://www.jamieperera.com/' target='_blanc'>Jamie Perera</a> enthält. Weitere Details finden Sie auf <a href='https://en.wikipedia.org/wiki/DDT' target='_blanc'>Wikipedia</a> und <a href='https://pubchem.ncbi.nlm.nih.gov/compound/3036' target='_blanc'>PubChem</a>, die zur Erstellung des hier präsentierten Textes verwendet wurden. Diese 3D-Geschichte erwähnt auch andere Entwicklungen am LCSB, Universität Luxemburg, einschließlich des NORMAN-SLE (<a href='https://doi.org/10.1186/s12302-022-00680-6' target='_blanc'>Artikel</a>, <a href='https://www.norman-network.com/nds/SLE/' target='_blanc'>Website</a>), <a href='https://massbank.eu/' target='_blanc'>MassBank</a> und der <a href='https://doi.org/10.1021/acs.estlett.4c00560' target='_blanc'>chemischen Streifen</a>. Text zusammengestellt von <a href='https://www.uni.lu/lcsb-en/people/emma-schymanski/' target='_blanc'>Emma Schymanski</a>, <a href='https://www.uni.lu/lcsb-en/research-groups/environmental-cheminformatics/' target='_blanc'>ECI</a>, LCSB, Universität Luxemburg."
+      },
       "background": "left"
     }
   ]

@@ -29,8 +29,6 @@ const Navigation = ({ data }) => {
   const setClickedSlideId = useStore(state => state.setClickedSlideId)
 
   const scrollToSlide = id => {
-    // const isBigScreen = useMediaQuery({ query: '(min-width: 640px)' })
-
     if (isMenuOpen) {
       setClickedSlideId(true)
       clearTimeout(toggleMenuTimerRef.current)
@@ -48,7 +46,7 @@ const Navigation = ({ data }) => {
     })
     setMenuLinkPosition(top)
   }
-  // Update active slide ID based on scroll position
+
   useLayoutEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + availableHeight / 2
@@ -106,12 +104,14 @@ const MenuFullPage = () => {
   const isMenuOpen = useStore(state => state.isMenuOpen)
   const isBigScreen = useMediaQuery({ query: '(min-width: 1024px)' })
   const clickedSlideId = useStore(state => state.clickedSlideId)
+  const { i18n } = useTranslation() // Use the useTranslation hook
 
   const duration = { duration: 200 } // Set the duration to 500ms or any desired value
   const [styles, api] = useSpring(() => ({
     config: duration,
     opacity: 0
   }))
+
   useEffect(() => {
     pathnameUpdatedTimerRef.current = setTimeout(() => {
       setPathnameUpdated(pathname)
@@ -134,37 +134,46 @@ const MenuFullPage = () => {
     }
   }, [isMenuOpen])
 
+  // Helper function to get the title of the first section
+  const getFirstSectionTitle = data => {
+    const firstSection = data.sections.find(section => section.id === 1)
+    return firstSection ? getTranslatable(firstSection.title, i18n.language, 'en') : ''
+  }
+
   return (
     <a.section
       style={styles}
       className={`MenuFullPage ${clickedSlideId === true ? 'black' : ''} ${isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
     >
       <LanguageSwitcher />
-      <menu className=" flex">
+      <menu className="flex">
         <ul className="flex flex-col items-center">
-          {/* <li>
-            <NavLink to="/test">Test</NavLink>
-          </li> */}
           <li>
             {pathnameUpdated !== '/trifluoroacetic_acid' ? (
-              <NavLink to="/trifluoroacetic_acid">Trifluoroacetic Acid (TFA)</NavLink>
+              <NavLink to="/trifluoroacetic_acid">{getFirstSectionTitle(TrifluoroaceticAcidContent)}</NavLink>
             ) : null}
             {pathnameUpdated === '/trifluoroacetic_acid' ? <Navigation data={TrifluoroaceticAcidContent} /> : null}
           </li>
           <li>
-            {pathnameUpdated !== '/caffeine' ? <NavLink to="/caffeine">Caffeine</NavLink> : null}
+            {pathnameUpdated !== '/caffeine' ? (
+              <NavLink to="/caffeine">{getFirstSectionTitle(CaffeineContent)}</NavLink>
+            ) : null}
             {pathnameUpdated === '/caffeine' ? <Navigation data={CaffeineContent} /> : null}
           </li>
           <li>
-            {pathnameUpdated !== '/nicotine' ? <NavLink to="/nicotine">Nicotine</NavLink> : null}
+            {pathnameUpdated !== '/nicotine' ? (
+              <NavLink to="/nicotine">{getFirstSectionTitle(NicotineContent)}</NavLink>
+            ) : null}
             {pathnameUpdated === '/nicotine' ? <Navigation data={NicotineContent} /> : null}
           </li>
           <li>
-            {pathnameUpdated !== '/ddt' ? <NavLink to="/ddt">DDT</NavLink> : null}
+            {pathnameUpdated !== '/ddt' ? <NavLink to="/ddt">{getFirstSectionTitle(DdtContent)}</NavLink> : null}
             {pathnameUpdated === '/ddt' ? <Navigation data={DdtContent} /> : null}
           </li>
           <li>
-            {pathnameUpdated !== '/bisphenol_s' ? <NavLink to="/bisphenol_s">Bisphenol S</NavLink> : null}
+            {pathnameUpdated !== '/bisphenol_s' ? (
+              <NavLink to="/bisphenol_s">{getFirstSectionTitle(BisphenolSContent)}</NavLink>
+            ) : null}
             {pathnameUpdated === '/bisphenol_s' ? <Navigation data={BisphenolSContent} /> : null}
           </li>
         </ul>
