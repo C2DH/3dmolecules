@@ -5,7 +5,7 @@ const QrCode = ({ relative = false }) => {
   const view_on_mobile = t('view on mobile')
 
   return (
-    <div className={`${relative ? 'relative' : 'absolute w-full h-screen '}  hidden sm:block scale-[0.7]`}>
+    <div className={`${relative ? 'relative scale-[0.7]' : 'absolute w-full h-screen'}  hidden sm:block`}>
       <div
         className={`flex flex-col justify-center items-center ${relative ? 'relative' : 'absolute bottom-6 right-6'}  opacity-60`}
       >
