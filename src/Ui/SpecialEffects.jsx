@@ -17,13 +17,13 @@ const SpecialEffects = () => {
               luminanceThreshold={0.01} // Adjust the threshold for what gets glowing
               luminanceSmoothing={0.01} // Adjust the smoothness of the glow
             />
-
+            {/* 
             <DepthOfField
               focusDistance={0} // Distance to the focus target
               focalLength={1} // Strength of the blur
               bokehScale={4} // Scale of the bokeh effect
               height={480} // Optional: Height of the effect (can be adjusted)
-            />
+            /> */}
           </>
         ) : null}
       </EffectComposer>

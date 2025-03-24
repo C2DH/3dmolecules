@@ -15,7 +15,7 @@ const Transition = OgComponent => {
         exit={{ opacity: 1 }}
         transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
       >
-        <Logo3dStories pointerEvent={false} width={120} />
+        <Logo3dStories pointerEvent={false} width={100} />
       </motion.div>
       <motion.div
         key="2"
@@ -25,7 +25,7 @@ const Transition = OgComponent => {
         exit={{ opacity: 1 }}
         transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
       >
-        <Logo3dStories pointerEvent={false} width={120} />
+        <Logo3dStories pointerEvent={false} width={100} />
       </motion.div>
     </>
   )
