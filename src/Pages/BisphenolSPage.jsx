@@ -79,7 +79,8 @@ const BisphenolSPage = ({ pathname }) => {
       <Canvas
         gl={{
           pixelRatio: Math.min(window.devicePixelRatio, 2),
-          antialias: true
+          antialias: false,
+          powerPreference: 'high-performance'
         }}
       >
         <SheetProvider sheet={sheet}>

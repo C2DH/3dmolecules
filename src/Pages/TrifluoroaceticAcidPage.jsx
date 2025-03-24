@@ -108,10 +108,10 @@ const TrifluoroaceticAcidPage = ({ pathname }) => {
         </Helmet>
       </HelmetProvider>
       <Canvas
-        dpr={[1, 2]}
         gl={{
           pixelRatio: Math.min(window.devicePixelRatio, 2),
-          antialias: true
+          antialias: false,
+          powerPreference: 'high-performance'
         }}
       >
         {/* <DebugMemory /> */}
